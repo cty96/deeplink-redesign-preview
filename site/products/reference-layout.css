@@ -1,0 +1,47 @@
+/* v20: reference-inspired horizontal system cards, in DeepLink's light palette. */
+.kernelswift .product-story .feature-rail{position:relative}
+.kernelswift .product-story .feature-rail .product-features{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:31%;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:0;scrollbar-width:none;padding:6px 0 20px}
+.kernelswift .product-story .feature-rail .product-features::-webkit-scrollbar{display:none}
+.kernelswift .product-story .feature-rail .product-features:focus-visible{outline:2px solid #2b6ce1;outline-offset:6px;border-radius:18px}
+.kernelswift .product-story .feature-rail .product-feature{grid-column:auto;display:flex;flex-direction:column;min-height:370px;border:1px solid #dfe8f5;border-radius:22px;background:linear-gradient(150deg,#fff,#f2f7ff);scroll-snap-align:start;box-shadow:none}
+.kernelswift .product-story .feature-rail .product-feature:hover{transform:none;border-color:#a9c6f0;box-shadow:inset 0 0 0 1px #d9e7fa}
+.kernelswift .product-story .feature-rail .feature-copy{order:0;position:relative;width:100%;padding:34px 30px 0;flex:0 0 auto;min-height:158px}
+.kernelswift .product-story .feature-rail .feature-title{font-size:25px;line-height:1.45;margin-bottom:18px;color:#203e69}
+.kernelswift .product-story .feature-rail .feature-description{font-size:14px;line-height:1.9;color:#687f9f}
+.kernelswift .product-story .feature-rail .feature-art{order:1;position:relative;right:auto;top:auto;opacity:1;width:100%;height:210px;margin:auto 0 0;transform:scale(.9);transform-origin:center center}
+.kernelswift .product-story .feature-rail .art-core{box-shadow:0 5px 0 #9cbce9,0 16px 30px -14px #416da960}
+.feature-rail-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:12px}
+.feature-rail-controls button{display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid #d9e5f7;border-radius:50%;background:#fff;color:#2b61aa;font:inherit;font-size:22px;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
+.feature-rail-controls button:hover:not(:disabled){background:#eff5ff;border-color:#91b6ef}
+.feature-rail-controls button:disabled{opacity:.35;cursor:default}
+.feature-rail-controls button:focus-visible{outline:2px solid #1e61da;outline-offset:3px}
+.feature-rail-progress{appearance:none;width:128px;height:3px;border:0;background:#e5edf9;color:#5c8cdb;margin-right:16px;border-radius:3px;overflow:hidden}
+.feature-rail-progress::-webkit-progress-bar{background:#e5edf9}.feature-rail-progress::-webkit-progress-value{background:#5c8cdb}.feature-rail-progress::-moz-progress-bar{background:#5c8cdb}
+/* Flat dotted continents replace the cropped hemisphere. */
+.prd-strict.training #ecosystem{padding-bottom:56px;background:linear-gradient(180deg,#f8fafd,#f1f6fe)}
+.training .eco-network{row-gap:48px}
+.training .geo-stage{width:min(1440px,calc(100vw - 64px));aspect-ratio:1440/660;max-width:none;left:50%;transform:translateX(-50%);margin:8px 0 0}
+.training .geo-sphere{width:100%;height:100%;overflow:visible}
+.training .geo-label{font-size:12px;line-height:20px;padding:4px 10px;background:#ffffffdf;border-color:#dce8f8;box-shadow:0 4px 16px -12px #4476b9;color:#436da5}
+.training .geo-region.is-active .geo-pin{fill:#0d53de;stroke:#fff;stroke-width:2}
+.training .geo-region.is-active .geo-pulse{opacity:.35;transform:scale(1.8)}
+@media(max-width:1100px){
+ .kernelswift .product-story .feature-rail .product-features{grid-auto-columns:43%;gap:20px}
+ .kernelswift .product-story .feature-rail .feature-copy{padding:28px 26px 0}
+ .kernelswift .product-story .feature-rail .feature-title{font-size:23px}
+ .training .geo-stage{width:calc(100vw - 40px)}
+ .training .geo-label{font-size:11px;line-height:18px;padding:2px 6px}
+}
+@media(max-width:767px){
+ .kernelswift .product-story .feature-rail .product-features{grid-auto-columns:86%;gap:16px;padding-bottom:12px}
+ .kernelswift .product-story .feature-rail .product-feature{min-height:342px;border-radius:18px}
+ .kernelswift .product-story .feature-rail .feature-copy{padding:28px 24px 0;min-height:146px}
+ .kernelswift .product-story .feature-rail .feature-title{font-size:23px}
+ .kernelswift .product-story .feature-rail .feature-art{height:190px;transform:scale(.85)}
+ .feature-rail-controls{margin-top:8px}.feature-rail-controls button{width:38px;height:38px}
+ .training .geo-stage{width:100%;left:0;transform:none;aspect-ratio:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:14px 0 0}
+ .training .geo-sphere{flex:0 0 100%;width:100%;height:auto;aspect-ratio:1440/660;margin-bottom:12px}
+ .training .geo-label{position:static;transform:none;font-size:12px;padding:5px 12px;line-height:20px}
+ .prd-strict.training #ecosystem{padding-bottom:42px}
+}
+@media(prefers-reduced-motion:reduce){.feature-rail-controls button{transition:none}}

@@ -1,0 +1,7 @@
+/* A single process sample: legible HTML captions support the lightweight material illustration. */
+.kernelswift #scenario-panel-0 .research-process-art{display:flex;flex-direction:column;background:#f7f9ff}
+.kernelswift #scenario-panel-0 .research-process-art img{flex:1;min-height:0;height:calc(100% - 44px);width:100%;object-fit:cover}
+.research-process-labels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;flex:none;min-height:44px;padding:8px 16px 13px;text-align:center;color:#46668e;font-size:13px;font-weight:500;line-height:1.5}
+.research-process-labels span{position:relative;white-space:nowrap}
+.research-process-labels span:not(:last-child):after{content:"→";position:absolute;right:-7px;color:#9bb6e0;font-weight:400}
+@media(max-width:540px){.research-process-labels{font-size:11px;padding-inline:8px;min-height:38px}.kernelswift #scenario-panel-0 .research-process-art img{height:calc(100% - 38px)}}

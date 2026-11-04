@@ -1,0 +1,44 @@
+/* China focus: the operator strip and one map, with universities on the map. */
+.training .eco-network{grid-template-columns:minmax(0,1fr);gap:80px}
+.training .eco-operators{grid-column:1;grid-row:1;width:min(600px,100%);justify-self:center}
+.training .eco-operators .eco-partner-slots{font-style:normal;gap:18px}
+.training .eco-regions{grid-column:1;grid-row:2;width:100%}
+.training .geo-stage{position:relative;display:block;width:min(1100px,100%);max-width:none;aspect-ratio:1200/800;left:auto;transform:none;margin:0 auto}
+.training .geo-stage>span{display:contents}
+.training .geo-stage .eco-group-title{position:absolute;top:-44px;left:0;right:0;width:100%;text-align:center;margin:0;font-size:18px;color:#456a9e}
+.training .geo-sphere{display:block;width:100%;height:100%;margin:0;aspect-ratio:1200/800}
+.training .geo-label{position:absolute;left:var(--label-x);top:var(--label-y);transform:translate(-50%,-50%);font-size:14px;line-height:22px;padding:5px 12px;background:#ffffffec}
+.training .geo-university{font-weight:500;color:#1f58ad;background:#e3edff;border-color:#b8d0f4;padding:7px 14px;box-shadow:0 5px 18px -12px #3867aa66}
+.training .geo-university:before{content:'';display:inline-block;width:6px;height:6px;border-radius:1px;background:#2d64b8;margin-right:7px;vertical-align:2px}
+.training .geo-university:hover,.training .geo-university:focus-visible,.training .geo-university[aria-pressed=true]{background:#d6e5ff;border-color:#739fdf}
+/* One continuous logo strip; duplicate group is decorative and hidden from AT. */
+.ecosystem-logo-carousel{overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);padding:12px 0;outline-offset:6px}
+.ecosystem-logo-track{display:flex;width:max-content;animation:ecosystem-logos 32s linear infinite}
+.ecosystem-logo-group{display:flex;align-items:center;gap:24px;padding-right:24px;flex:none}
+.ecosystem-logo-group .partner-slot{width:220px;min-height:108px;flex:none;background:#fff;border-color:#e4ecf8;border-radius:14px;font-size:16px;box-shadow:0 10px 25px -23px #365e9b40;text-align:center}
+.ecosystem-logo-group .partner-logo{width:160px;height:64px}
+.ecosystem-logo-carousel:hover .ecosystem-logo-track,.ecosystem-logo-carousel:focus-within .ecosystem-logo-track{animation-play-state:paused}
+.ecosystem-logo-carousel:focus-visible{outline:2px solid #2c6bce}
+@keyframes ecosystem-logos{to{transform:translateX(-50%)}}
+@media(max-width:1100px){
+ .training .geo-label{font-size:12px;padding:4px 9px}
+ .training .geo-university{padding:6px 10px}
+}
+@media(max-width:767px){
+ .training .eco-network{gap:58px}
+ .training .eco-operators .eco-partner-slots{gap:10px}
+ .training .geo-stage{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;width:100%;aspect-ratio:auto;margin:0}
+ .training .geo-stage .eco-group-title{top:-34px;font-size:16px}
+ .training .geo-sphere{flex:0 0 100%;width:100%;height:auto;margin-bottom:12px}
+ .training .geo-label{position:static;transform:none;font-size:12px;line-height:20px;padding:5px 10px}
+ .training .geo-university{padding:6px 12px}
+ .ecosystem-logo-group{gap:14px;padding-right:14px}
+ .ecosystem-logo-group .partner-slot{width:180px;min-height:94px;font-size:14px}
+ .ecosystem-logo-group .partner-logo{width:140px;height:58px}
+}
+@media(prefers-reduced-motion:reduce),(hover:none){
+ .ecosystem-logo-carousel{overflow-x:auto;scrollbar-width:thin;mask-image:none;scroll-snap-type:x mandatory}
+ .ecosystem-logo-track{animation:none}
+ .ecosystem-logo-group[aria-hidden=true]{display:none}
+ .ecosystem-logo-group .partner-slot{scroll-snap-align:start}
+}

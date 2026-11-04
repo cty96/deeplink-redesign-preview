@@ -1,0 +1,21 @@
+{
+  "source": "https://lucide.dev",
+  "repository": "https://github.com/lucide-icons/lucide",
+  "icons": [
+    "landmark",
+    "refresh-cw",
+    "chart-no-axes-combined",
+    "layers",
+    "cpu",
+    "blocks",
+    "bot",
+    "network",
+    "sparkles",
+    "shield-check",
+    "database",
+    "server",
+    "zap",
+    "boxes"
+  ],
+  "treatment": "Original paths; same 24px canvas, 2px stroke and round caps; color inherited from DeepLink brand."
+}

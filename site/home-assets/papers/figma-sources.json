@@ -1,0 +1,73 @@
+{
+  "fileKey": "zWKk9v8l2pXUDv7OeGIKar",
+  "page": "5491:5970",
+  "mapping": "Left to right Figma covers, matching the six new paper records in order",
+  "assets": [
+    {
+      "paper": "Di-PS",
+      "figmaNode": "5491:6011",
+      "sourceFile": "figma-di-ps-background.png",
+      "transform": "",
+      "x": -20,
+      "sha256": "0a5bf43ff30eafafb08cdc413cbedb8b4d5df7fad92676f9a75383d699e57b84",
+      "shadowNode": "5491:6019",
+      "shadowFile": "figma-di-ps-shadow.svg",
+      "shadowSha256": "9e907d42a28aa27e959be6e7526f0bbfd5eb87b77537f1617cfdde2bfa16bc61"
+    },
+    {
+      "paper": "FlexLA",
+      "figmaNode": "5491:5995",
+      "sourceFile": "figma-flexla-background.png",
+      "transform": "translate(566 0) scale(-1 1)",
+      "x": -20,
+      "sha256": "833c6e7b7b3d25241c132dff1f4183560d9193e49978ac4136645b70526bf507",
+      "shadowNode": "5491:6020",
+      "shadowFile": "figma-flexla-shadow.svg",
+      "shadowSha256": "784acb02188755f2ddad821d34e5278eda4678b647ebbc58b2331e133e3a11f7"
+    },
+    {
+      "paper": "FlexRL",
+      "figmaNode": "5491:6003",
+      "sourceFile": "figma-flexrl-background.png",
+      "transform": "translate(566 0) rotate(90)",
+      "x": -20,
+      "sha256": "41b0abfc42df594fcce7653be4cd6c723e9592dbe7db28ef4c8747efc88b2460",
+      "shadowNode": "5491:6021",
+      "shadowFile": "figma-flexrl-shadow.svg",
+      "shadowSha256": "c6b7fb21e8bf2699a6ca17122b8252a3dc96e05a66fe4241a843b9948a38ebbb"
+    },
+    {
+      "paper": "DiTango",
+      "figmaNode": "5491:5971",
+      "sourceFile": "figma-ditango-background.png",
+      "transform": "translate(0 566) rotate(-90)",
+      "x": -103,
+      "sha256": "d114bd318ba90ffe608a27cda7f09f8462146532420899915c98674f91ac0648",
+      "shadowNode": "5491:6022",
+      "shadowFile": "figma-ditango-shadow.svg",
+      "shadowSha256": "8893c5b029ab395a5753c6b143fc3ef4025b6f1d3ebec9fc73d34b008ee37cd4"
+    },
+    {
+      "paper": "CoCoQuant",
+      "figmaNode": "5491:5979",
+      "sourceFile": "figma-cocoquant-background.png",
+      "transform": "translate(0 566) scale(1 -1)",
+      "x": -20,
+      "sha256": "f4a4b44327f275f020f971a76c4b32796c3c94bb4693c4833d5eed780d368b2a",
+      "shadowNode": "5491:6023",
+      "shadowFile": "figma-cocoquant-shadow.svg",
+      "shadowSha256": "66c3b0c0c1992f357219657360f6ff8de863e0c615ffec9ca55a33002ffba9dc"
+    },
+    {
+      "paper": "ResiHP",
+      "figmaNode": "5491:5983",
+      "sourceFile": "figma-resihp-background.png",
+      "transform": "translate(0 566) scale(1 -1)",
+      "x": -20,
+      "sha256": "6b1050ef135704a135c50bdf6061f324850d68e37f22d6f0378241536363869b",
+      "shadowNode": "5491:6024",
+      "shadowFile": "figma-resihp-shadow.svg",
+      "shadowSha256": "091c6998b3faa5adc71c83d10507b572992319cd10a4891e16b879bfc685bf01"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+/* Illustration wells unify the five compositions without changing the static feature layout. */
+.kernelswift .product-story .ks-feature-overview .product-feature{background:#fff}
+.kernelswift .product-story .ks-feature-overview .ks-interface-art{height:164px;margin:20px 0 0;border:1px solid #e6edfb;border-radius:12px;background:linear-gradient(145deg,#edf3ff,#f6f9ff);overflow:hidden;display:grid;place-items:center;padding:10px;isolation:isolate}
+.kernelswift .product-story .ks-feature-overview .ks-interface-art img{display:block;position:relative;width:100%;max-width:100%;height:100%;margin:0;object-fit:contain}
+.kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2){padding:22px;gap:26px}
+.kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2) .ks-interface-art{height:190px;margin:0;padding:8px}
+.kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2) .ks-interface-art img{width:100%;max-width:100%;height:100%;margin:0}
+/* Give the China map more width, remove unused viewBox space, and tighten the footer gap. */
+.prd-strict.training #ecosystem{padding:56px 0 14px}
+.training #ecosystem>.wrap{width:min(1360px,calc(100% - 64px))}
+.training #ecosystem .section-head{margin-bottom:12px}
+.training #ecosystem .eco-network{max-width:1200px}
+.training #ecosystem .geo-stage{aspect-ratio:1200/740;margin-top:0}
+.training #ecosystem .geo-sphere{aspect-ratio:1200/740}
+.training #ecosystem .eco-operators{top:2%;width:46%;max-width:600px}
+.training #ecosystem .eco-operators .eco-partner-slots{gap:14px}
+.training #ecosystem .eco-logo-slot{min-height:88px;padding:12px;background:#ffffffed;font-size:19px;border-radius:10px}
+.training #ecosystem .eco-logo-slot .partner-logo{width:148px;max-width:100%;height:64px;max-height:64px}
+@media(max-width:1100px){
+ .training #ecosystem .eco-operators{width:50%}
+ .training #ecosystem .eco-logo-slot{min-height:76px;padding:10px;font-size:17px}
+ .training #ecosystem .eco-logo-slot .partner-logo{height:54px;max-height:54px}
+}
+@media(max-width:850px){
+ .kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2){padding:24px;gap:0}
+ .kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2) .ks-interface-art{height:164px;margin:20px 0 0}
+ .kernelswift .product-story .ks-feature-overview .product-feature:last-child .ks-interface-art{margin:0}
+}
+@media(max-width:767px){
+ .prd-strict.training #ecosystem{padding:42px 0 18px}
+ .training #ecosystem>.wrap{width:calc(100% - 28px)}
+ .training #ecosystem .geo-stage{aspect-ratio:auto}
+ .training #ecosystem .geo-sphere{margin-bottom:4px}
+ .training #ecosystem .eco-operators{top:0;width:68%;max-width:none}
+ .training #ecosystem .eco-operators .eco-partner-slots{gap:6px}
+ .training #ecosystem .eco-logo-slot{min-height:48px;padding:5px;font-size:13px;border-radius:6px}
+ .training #ecosystem .eco-logo-slot .partner-logo{height:34px;max-height:34px}
+}
+@media(max-width:540px){
+ .kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2){padding:24px 20px;gap:12px}
+ .kernelswift .product-story .ks-feature-overview .ks-interface-art,
+ .kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2) .ks-interface-art,
+ .kernelswift .product-story .ks-feature-overview .product-feature:last-child .ks-interface-art{height:125px;padding:4px;margin:0;border-radius:9px}
+ .kernelswift .product-story .ks-feature-overview .ks-interface-art img,
+ .kernelswift .product-story .ks-feature-overview .product-feature:nth-child(-n+2) .ks-interface-art img{width:100%;max-width:100%;height:100%;margin:0}
+}

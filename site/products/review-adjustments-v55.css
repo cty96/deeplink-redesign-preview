@@ -1,0 +1,107 @@
+/* Keep the feature cards, remove only their separate illustration backdrops. */
+.kernelswift .product-story .ks-feature-overview .ks-interface-art{background:transparent;border-color:transparent;box-shadow:none}
+.kernelswift .product-story .ks-feature-overview .ks-interface-art:before{content:none;display:none}
+/* Both training scenarios share one surface; reserve distinct room for meaningful diagrams. */
+.training #scenarios .scenario-feature{background:#f7f9fd;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:16px}
+.training #scenarios .scenario-copy{min-width:0;flex:initial}
+.training #scenarios .scenario-copy h3,.training #scenarios .scenario-copy p{max-width:none}
+.training #scenarios .training-scenario-point{position:relative;inset:auto;width:100%;height:190px;margin:0;opacity:1;mask-image:none}
+.training #scenarios .training-scenario-point img{mix-blend-mode:darken;opacity:1;filter:none}
+.training .geo-stage .geo-sphere[data-view="china-strong-perspective"]{overflow:visible}
+.training .eco-world-background{transform:translate(-50%,-50%) perspective(1800px) rotateX(18deg) scale(1.04)}
+@media(max-width:1100px){.training #scenarios .scenario-feature{gap:10px;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}.training #scenarios .training-scenario-point{height:170px}}
+@media(max-width:767px){.training .eco-world-background{transform:translate(-50%,-50%) perspective(1400px) rotateX(16deg)}.training #scenarios .scenario-feature{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+@media(max-width:430px){.training #scenarios .scenario-feature{grid-template-columns:1fr;gap:8px}.training #scenarios .training-scenario-point{height:155px}}
+
+/* Reference layout: operator cards above a dotted hemisphere, center directory below. */
+.prd-strict.training #ecosystem{padding:80px 0 72px;background:#f7f9fd;overflow:hidden}
+.training #ecosystem .section-head{margin-bottom:40px}
+.training #ecosystem .eco-network-reference{display:block;position:relative;max-width:1200px;margin:0 auto;isolation:isolate}
+.training #ecosystem .eco-operators{position:relative;inset:auto;transform:none;width:100%;max-width:none;z-index:2;margin:0;translate:0 72px}
+.training #ecosystem .eco-operators .eco-partner-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-style:normal}
+.training #ecosystem .eco-logo-slot{display:flex;position:relative;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:138px;width:100%;padding:24px;background:#ffffffed;border:1px solid #e4ebf6;border-radius:16px;box-shadow:0 8px 28px -24px #34578044;backdrop-filter:blur(12px)}
+.training #ecosystem .eco-logo-slot .partner-logo{display:block;width:172px;height:56px;max-width:100%;max-height:56px}
+.training #ecosystem .eco-regions{position:relative;inset:auto;width:100%;max-width:none;overflow:visible}
+.training #ecosystem .geo-stage{position:relative;left:auto;transform:none;display:block;width:100%;max-width:none;aspect-ratio:auto;margin:-96px 0 0}
+.training #ecosystem .geo-sphere.network-world{position:relative;display:block;width:calc(100% + 160px);max-width:none;height:auto;aspect-ratio:1440/850;margin:0 -80px;transform:none;overflow:visible;mask-image:linear-gradient(#000 78%,transparent 100%)}
+.training #ecosystem .network-other-land{opacity:.8}
+.training #ecosystem .network-china-land{opacity:1}
+.training #ecosystem .eco-center-directory{position:relative;z-index:2;margin:-174px 0 0;padding:32px 36px;border:1px solid #e3ebf7;border-radius:18px;background:#ffffffed;backdrop-filter:blur(16px);box-shadow:0 14px 36px -30px #34578055}
+.training #ecosystem .eco-center-row>span,.training #ecosystem .eco-campus-row>span{display:grid;grid-template-columns:160px minmax(0,1fr);align-items:start;gap:20px;width:100%}
+.training #ecosystem .eco-campus-row{padding-top:24px;margin-top:24px;border-top:1px solid #edf1f8}
+.training #ecosystem .eco-directory-heading{font-size:18px;line-height:32px;font-weight:500;color:#345780}
+.training #ecosystem .eco-directory-items{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px 16px;font-style:normal}
+.training #ecosystem .geo-label,.training #ecosystem .geo-label.geo-university{position:static;inset:auto;transform:none;display:block;width:100%;font-family:inherit;font-weight:400;font-size:15px;line-height:32px;padding:0 8px;text-align:center;color:#637fA6;border:0;border-radius:6px;background:transparent;box-shadow:none;white-space:nowrap}
+.training #ecosystem .geo-label:hover,.training #ecosystem .geo-label:focus-visible,.training #ecosystem .geo-label.is-spotlight{color:#2869d8;background:#edf4ff}
+.training #ecosystem .geo-label:before,.training #ecosystem .geo-label:after{content:none}
+.training #ecosystem .eco-directory-items .format-only{position:absolute}
+@media(max-width:1000px){
+ .training #ecosystem .eco-operators{translate:0 56px}
+ .training #ecosystem .eco-operators .eco-partner-slots{gap:16px}
+ .training #ecosystem .eco-logo-slot{min-height:124px;padding:20px}
+ .training #ecosystem .eco-center-directory{margin-top:-120px;padding:28px}
+ .training #ecosystem .eco-center-row>span,.training #ecosystem .eco-campus-row>span{grid-template-columns:140px minmax(0,1fr);gap:12px}
+ .training #ecosystem .eco-directory-items{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+}
+@media(max-width:767px){
+ .prd-strict.training #ecosystem{padding:48px 0}
+ .training #ecosystem .section-head{margin-bottom:28px}
+ .training #ecosystem .eco-operators{translate:0 32px}
+ .training #ecosystem .eco-operators .eco-partner-slots{gap:10px}
+ .training #ecosystem .eco-logo-slot{min-height:96px;padding:12px 10px;gap:10px;border-radius:12px}
+ .training #ecosystem .eco-logo-slot .partner-logo{width:100%;height:36px;max-height:36px}
+ .training #ecosystem .geo-stage{margin-top:-24px}
+ .training #ecosystem .geo-sphere.network-world{width:calc(100% + 80px);margin:0 -40px}
+ .training #ecosystem .eco-center-directory{margin-top:-35px;padding:22px;border-radius:14px}
+ .training #ecosystem .eco-center-row>span,.training #ecosystem .eco-campus-row>span{display:block}
+ .training #ecosystem .eco-directory-heading{display:block;font-size:17px;margin-bottom:12px}
+ .training #ecosystem .eco-directory-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .training #ecosystem .geo-label,.training #ecosystem .geo-label.geo-university{font-size:14px;line-height:28px;padding:0 4px}
+ .training #ecosystem .eco-campus-row{padding-top:18px;margin-top:18px}
+}
+
+/* One centered banner measure across the home, product and solution pages. */
+.prd-strict .modern-hero>.wrap,.solutions .solution-hero.modern-hero>.wrap{width:min(1200px,calc(100% - 64px));max-width:none;margin-left:auto;margin-right:auto}
+/* Same translucent, softly raised surface as the KernelSwift hero card. */
+.training .orbital-scene:before{content:none;display:none;animation:none}
+.training .orbital-core{width:40%;aspect-ratio:1;padding:0;border:0;border-radius:50%;background:none;box-shadow:none}
+.training .orbital-core-face{width:100%;height:100%;border:1px solid #c4d8ff;border-radius:50%;background:linear-gradient(125deg,#edf3ff,#e5eeff);box-shadow:0 18px 50px -28px #275edb88,inset 0 1px 0 #fff;gap:20px}
+.training .orbital-core-face img{width:68%;height:auto}
+.training .orbital-core-face span{font-size:11px;color:#6482ae;letter-spacing:.12em}
+/* Match the home technical diagrams: same saturation, lightness and semantic colors. */
+.training #capabilities{--cap-blue:hsl(218 45% 96%);--cap-blue-line:hsl(218 35% 86%);--cap-blue-ink:hsl(218 28% 38%);--cap-mint:hsl(165 45% 96%);--cap-mint-line:hsl(165 35% 86%);--cap-mint-ink:hsl(165 28% 38%);--cap-violet:hsl(268 45% 96%);--cap-violet-line:hsl(268 35% 86%);--cap-violet-ink:hsl(268 28% 38%);--cap-sand:hsl(35 45% 96%);--cap-sand-line:hsl(35 35% 86%);--cap-sand-ink:hsl(35 28% 38%)}
+.training #capabilities .communication-diagram,.training #capabilities .parallel-diagram{background:#fff;border-color:#e1eaf6}
+.training #capabilities .cap-cell{background:var(--cap-blue);border-color:var(--cap-blue-line);color:var(--cap-blue-ink)}
+.training #capabilities .communication-root{padding:14px 12px;background:var(--cap-blue);border:1px solid var(--cap-blue-line);border-radius:9px;color:var(--cap-blue-ink)}
+.training #capabilities .gpu-cluster{background:var(--cap-blue);border-color:var(--cap-blue-line)}
+.training #capabilities .gpu-cluster h5{background:var(--cap-blue);border-color:var(--cap-blue-line);color:var(--cap-blue-ink)}
+.training #capabilities .gpu-grid .cap-cell{background:#fff}
+.training #capabilities .gpu-cluster:nth-child(2){background:var(--cap-mint);border-color:var(--cap-mint-line)}
+.training #capabilities .gpu-cluster:nth-child(2) h5,.training #capabilities .gpu-cluster:nth-child(2) .cap-cell{border-color:var(--cap-mint-line);color:var(--cap-mint-ink)}
+.training #capabilities .gpu-cluster:nth-child(2) h5{background:var(--cap-mint)}
+.training #capabilities .parallel-strategy,.training #capabilities .parallel-performance,.training #capabilities .parallel-chips{padding:14px;border:1px solid var(--cap-blue-line);border-radius:9px;background:var(--cap-blue)}
+.training #capabilities .strategy-profile{background:#fff}
+.training #capabilities .strategy-grid>.cap-cell:first-child{background:var(--cap-violet);border-color:var(--cap-violet-line);color:var(--cap-violet-ink)}
+.training #capabilities .profile-detail .cap-cell,.training #capabilities .profile-cost b{background:var(--cap-sand);border-color:var(--cap-sand-line);color:var(--cap-sand-ink)}
+.training #capabilities .parallel-performance{background:var(--cap-mint);border-color:var(--cap-mint-line)}
+.training #capabilities .parallel-performance .cap-cell{background:#fff;border-color:var(--cap-mint-line);color:var(--cap-mint-ink)}
+.training #capabilities .parallel-chips .cap-cell:nth-of-type(2){background:var(--cap-violet);border-color:var(--cap-violet-line);color:var(--cap-violet-ink)}
+.training #capabilities .parallel-chips .cap-cell:nth-of-type(3){background:var(--cap-mint);border-color:var(--cap-mint-line);color:var(--cap-mint-ink)}
+.training #capabilities .infer-layer{background:var(--cap-blue);border-color:var(--cap-blue-line)}
+.training #capabilities .infer-layer .cap-cell{background:#fff}
+.training #capabilities .infer-layer:nth-child(2){background:var(--cap-mint);border-color:var(--cap-mint-line)}
+.training #capabilities .infer-layer:nth-child(4){background:var(--cap-violet);border-color:var(--cap-violet-line)}
+.training #capabilities .infer-layer:nth-child(5){background:var(--cap-sand);border-color:var(--cap-sand-line)}
+.training #capabilities .infer-layer:nth-child(4) .infer-strong{background:var(--cap-violet);border-color:var(--cap-violet-line);color:var(--cap-violet-ink)}
+.training #capabilities .pd-flow{background:#fff;border-color:#e1eaf6}
+.training #capabilities .pd-instance:first-child{background:var(--cap-blue);border-color:var(--cap-blue-line);color:var(--cap-blue-ink);box-shadow:none}
+.training #capabilities .pd-instance:last-child{background:var(--cap-mint);border-color:var(--cap-mint-line);color:var(--cap-mint-ink);box-shadow:none}
+.training #capabilities .pd-instance>.cap-cell{background:#fff}
+.training #capabilities .pd-instance:last-child>.cap-cell{border-color:var(--cap-mint-line);color:var(--cap-mint-ink)}
+.training #capabilities .pd-hardware>div:last-child .cap-cell{background:var(--cap-mint);border-color:var(--cap-mint-line);color:var(--cap-mint-ink)}
+@media(max-width:768px){
+ .prd-strict .modern-hero>.wrap,.solutions .solution-hero.modern-hero>.wrap{width:calc(100% - 48px)}
+ .training .orbital-core-face{gap:12px}
+ .training .orbital-core-face span{font-size:9px}
+ .training #capabilities .parallel-strategy,.training #capabilities .parallel-performance,.training #capabilities .parallel-chips{padding:10px}
+}

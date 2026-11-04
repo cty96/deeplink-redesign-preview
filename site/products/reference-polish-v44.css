@@ -1,0 +1,10 @@
+/* User reference: soft interface illustrations with crisp white nodes and a pale blue accent. */
+.kernelswift .product-story .ks-feature-overview .ks-interface-art img{opacity:1;filter:none;box-shadow:none}
+.kernelswift .product-story .ks-feature-overview .product-feature{background:#f8faff}
+/* China remains the primary map. Geometry and label anchors share a display-only projection. */
+.training .geo-stage .geo-sphere[data-view="china-light-perspective"]{overflow:visible}
+.training .eco-world-background{transform:translate(-50%,-50%) perspective(1800px) rotateX(15deg) scale(1.04);transform-origin:50% 65%;opacity:.48}
+.training .geo-label{background:#ffffffed;box-shadow:0 3px 10px -8px #5574ac44}
+@media(max-width:767px){
+ .training .eco-world-background{transform:translate(-50%,-50%) perspective(1400px) rotateX(10deg);opacity:.32}
+}

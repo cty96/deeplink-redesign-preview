@@ -1,0 +1,113 @@
+/* Shared type roles. Explicit overrides reconcile the older scoped page styles.
+   Diagram labels, metrics, logos, code and legal emphasis retain their own roles. */
+:root {
+  --dl-font-sans: -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --dl-type-hero:56px;
+  --dl-type-section:32px;
+  --dl-type-subsection:24px;
+  --dl-type-card:20px;
+  --dl-type-lead:18px;
+  --dl-type-body:14px;
+  --dl-type-ui:14px;
+  --dl-type-caption:12px;
+  --dl-text-heading:#1c2f4a;
+  --dl-text-body:#61738e;
+  --dl-text-muted:#8191a8;
+  --dl-text-brand:#0d53de;
+}
+body,button,input,select,textarea { font-family:var(--dl-font-sans); }
+:is(.fd-navigation-wrap,.partners-wrap,.verification-wrap,.kernelswift-page,.form-container,.registration-info-page,.fd-page-wrapper,.fd-agreement-wrap),
+body:is(.prd-strict,.solutions) { font-family:var(--dl-font-sans) !important; }
+:is(.fd-navigation-wrap,.partners-wrap,.verification-wrap,.kernelswift-page,.form-container,.registration-info-page,.fd-page-wrapper,.fd-agreement-wrap) :is(h1,h2,h3,h4,p,button,label,input,textarea,[role="heading"]),
+body:is(.prd-strict,.solutions) :is(h1,h2,h3,h4,p,button,label,input,textarea,[role="heading"]) { font-family:var(--dl-font-sans) !important; }
+
+/* Marketing page headlines share one scale across home and product pages. */
+:is(.revision-brand h1,.prd-strict .modern-hero h1,.solutions .modern-hero h1,.partners-wrap .partners-plan,.verification-wrap .partners-plan,.kernelswift-page .h-title) {
+  font-family:var(--dl-font-sans) !important; font-size:var(--dl-type-hero) !important;
+  font-weight:600 !important; line-height:1.25 !important; letter-spacing:-.025em !important;
+  color:var(--dl-text-heading) !important;
+}
+:is(.modern-hero h1 strong,.modern-hero h1>span:not(.hero-name)) { font-size:inherit !important; font-weight:inherit !important; line-height:inherit !important; color:inherit !important; }
+:is(.revision-eyebrow,.modern-hero h1 .hero-name,.partners-wrap .banner>.deeplink-text,.partners-wrap .banner-mobile>.deeplink-text) {
+  font-size:var(--dl-type-lead) !important; line-height:1.5 !important; font-weight:600 !important;
+}
+:is(.modern-hero .lead,.solution-lead,.verification-wrap .slogan,.partners-wrap .banner>.start,.partners-wrap .banner-mobile>.start) {
+  font-size:var(--dl-type-lead) !important; line-height:1.7 !important; font-weight:400 !important;
+}
+:is(.revision-brand-copy>p:not(.revision-eyebrow),.modern-hero .intro,.solution-intro,.verification-wrap .start,.partners-wrap .slogan) {
+  font-size:var(--dl-type-body) !important; line-height:1.85 !important; font-weight:400 !important;
+}
+
+/* Main section titles, including legacy div/p titles. */
+:is(.fd-title-sy,.revision-section-head h2,#keyComponents>.title,.key-technology-mobile>.title,.evaluation-scene .compass-title,
+ .prd-strict main h2,.solutions main h2,.verification-wrap .section-title,
+ .partners-wrap .partner-logo-wrapper>.title,.partners-wrap .certification-requirements>.title,.partners-wrap .application-process-wrap>.title,
+ .partners-wrap .partner-benefits>.title,.partners-wrap .marquee-title,.partners-wrap .introduction-wrap>.title,.partners-wrap .part-title,
+ .kernelswift-page .sec-title) {
+  font-size:var(--dl-type-section) !important; line-height:1.5 !important;
+  font-weight:600 !important; color:var(--dl-text-heading) !important; letter-spacing:0 !important;
+}
+/* Nested subheadings are deliberately smaller than the enclosing section. */
+:is(.prd-strict .prd-intro-scenarios>h2,.fd-vision .fd-title,.solution-contact-box>span,.fd-standard-content-right-title,
+ .verification-wrap .page-footer .title,.partners-wrap .page-footer .title) {
+  font-size:var(--dl-type-subsection) !important; line-height:1.5 !important; font-weight:600 !important;
+}
+:root #scenarios>h2,.solutions #contact .solution-contact-box h2 { font-size:var(--dl-type-subsection) !important; line-height:1.5 !important; font-weight:600 !important; }
+:root body.prd-strict .case-slide h3 { font-size:var(--dl-type-card) !important; line-height:1.5 !important; font-weight:600 !important; }
+
+/* Card titles and descriptive content. Structural diagrams are excluded. */
+:is(.core-feature-card h3,.product-banner-copy h3,.revision-product h3,.flat-carousel .case-slide h3,
+ .prd-strict .scenario-copy h3,.prd-strict .cap-story>h3,.prd-strict .inference-board>h3,.deployment-description h3,.access-card h3,
+ .solutions .solution-module-support h3,.verification-wrap .card-title,.verification-wrap .skill-title,
+ .partners-wrap .reason-list .title,.partners-wrap .step-title,.partners-wrap .card-item>div>p,
+ .evaluation-advantages .advantage-item-title,.kernelswift-page .topic-title,.fd-zxdd>h2,.prd-strict .feature-title) {
+  font-size:var(--dl-type-card) !important; font-weight:600 !important; line-height:1.5 !important; color:var(--dl-text-heading) !important;
+}
+:is(.core-feature-description,.product-banner-lead,.revision-product p,.flat-carousel .case-copy,.flat-carousel .case-copy p,
+ .prd-strict .scenario-copy p,.prd-strict .cap-story-copy p,.deployment-description p,.access-card p,
+ .solutions .solution-module-value p,.solutions .solution-fact em,.solutions .customer-story p,
+ .verification-wrap .card-desc,.verification-wrap .skill-desc,.partners-wrap .reason-list .content,
+ .partners-wrap .card-item li,.evaluation-advantages .advantage-item-content,.fd-vision .fd-content,.pane-title,.feature-description,.fd-standard-content-right-desc) {
+  font-size:var(--dl-type-body) !important; line-height:1.85 !important; color:var(--dl-text-body) !important;
+}
+:is(.core-feature-tagline,.prd-section-subtitle,.section-subtitle,.solution-module-heading p,.partners-wrap .desc,.partners-wrap .reason-title) {
+  font-size:16px !important; line-height:1.75 !important; font-weight:400 !important;
+}
+.fd-news-left-item-title { font-size:var(--dl-type-card) !important; line-height:1.5 !important; font-weight:600 !important; }
+.fd-news-right-item-title { font-size:var(--dl-type-body) !important; line-height:1.7 !important; font-weight:500 !important; }
+.chronology-event h3 { font-size:var(--dl-type-card) !important; line-height:1.75 !important; font-weight:400 !important; }
+.chronology-date { font-size:16px !important; line-height:1.6 !important; }
+.chronology-date span { font-size:var(--dl-type-body) !important; }
+
+/* Tabs and labelled actions; icon-only controls retain their visual dimensions. */
+:is(.product-tabs button,.tab-title,.el-tabs__item,.prd-tab,.solution-tabs .tab,.local-nav a,.section-nav a,
+ .product-banner-copy>a,.hero-explore,.solution-contact-box>a,.solution-hero-cta,.prd-strict .btn,.solutions .btn,
+ .partners-wrap .be-partner-btn,.verification-wrap .learn-more-btn,.form-container button,.registration-info-page button) {
+  font-size:var(--dl-type-ui) !important; line-height:1.6 !important; font-weight:500 !important; font-family:var(--dl-font-sans) !important;
+}
+:is(.chronology-scroll-hint,.case-live,.fd-date,.product-banner-brand,.solution-keywords,.section-eyebrow,.fd-image-text,.title-kicker) {
+  font-size:var(--dl-type-caption) !important; line-height:1.7 !important;
+}
+
+/* Reading, tables and registration pages share typography without losing legal emphasis. */
+:is(.fd-page-wrapper>.fd-page-title,.fd-page-wrapper .fd-page-title,.fd-agreement-wrap>h2,.form-container .form-title,.registration-info-header h1) {
+  font-size:var(--dl-type-section) !important; line-height:1.5 !important; font-weight:600 !important; color:var(--dl-text-heading) !important;
+}
+:is(.fd-agreement-wrap h4,.fd-text-warpper .fd-subtitle,.fd-markdown h2,.fd-text-content h2,.fd-table-content h2,.registration-info-page h2) {
+  font-size:var(--dl-type-card) !important; line-height:1.5 !important; font-weight:600 !important;
+}
+:is(.fd-agreement-wrap p,.fd-text-warpper,.fd-text-warpper p,.fd-text-warpper li,.fd-text-content,
+ .form-container label,.form-container input,.form-container textarea,.form-container .desc,.registration-info-page p,.registration-info-page label) {
+  font-size:var(--dl-type-body) !important; line-height:1.85 !important;
+}
+.partners-wrap :is(td,th),.fd-table-content :is(td,th) { font-size:var(--dl-type-body) !important; line-height:1.7 !important; }
+
+@media(max-width:768px) {
+  :root { --dl-type-hero:32px; --dl-type-section:24px; --dl-type-subsection:20px; --dl-type-card:18px; --dl-type-lead:16px; --dl-type-ui:13px; }
+  :is(.revision-brand h1,.prd-strict .modern-hero h1,.solutions .modern-hero h1,.partners-wrap .partners-plan,.verification-wrap .partners-plan,.kernelswift-page .h-title) { letter-spacing:-.015em !important; }
+  :is(.core-feature-tagline,.section-subtitle,.prd-section-subtitle,.solution-module-heading p) { font-size:var(--dl-type-body) !important; }
+}
+@media(max-width:768px) and (max-height:700px) {
+  #chipEvaluation .evaluation-scene .compass-title { font-size:20px !important; }
+  .chronology-event h3 { font-size:16px !important; }
+}

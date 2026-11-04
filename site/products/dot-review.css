@@ -1,0 +1,97 @@
+/* v32: blue point-cloud surfaces and a lighter, wider case carousel. */
+.dot-art{position:relative;flex:none;height:206px;overflow:hidden;pointer-events:none}
+.dot-art img{display:block;width:100%;height:100%;object-fit:contain}
+.training .product-feature .dot-art{margin:0 8px;opacity:.95}
+.training .scenario-feature .dot-art{position:absolute;right:-35px;bottom:-12px;width:65%;height:100%;opacity:.65;z-index:0;mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.training .scenario-feature .scenario-copy{z-index:1}
+.hero-dot-field{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.6;z-index:-1;mask-image:radial-gradient(ellipse at 74% 76%,#000 0%,#0009 48%,transparent 82%)}
+
+.ring-carousel .case-viewport{padding:130px 0 70px;perspective:none;transform-style:flat}
+.ring-carousel .case-ring-core{top:62px}
+.ring-carousel .case-slide{width:420px;min-height:310px;padding:24px 28px;gap:14px;backface-visibility:visible;will-change:transform,opacity;transition:transform .55s cubic-bezier(.22,.68,.22,1),opacity .45s;contain:layout style}
+.ring-carousel .case-slide:before{height:28px}
+.ring-carousel .case-slide h3{min-height:76px}
+.ring-carousel .case-slide h3 .partner-logo{height:78px}
+.ring-carousel .case-slide h3 .logo-china-unicom,.ring-carousel .case-slide h3 .logo-china-telecom,.ring-carousel .case-slide h3 .logo-ixp{height:80px}
+.ring-carousel .case-slide[data-position=active]{transform:translate(0,46px)}
+.ring-carousel .case-slide[data-position=previous]{transform:translate(-98%,10px) scale(.78)}
+.ring-carousel .case-slide[data-position=next]{transform:translate(98%,10px) scale(.78)}
+.ring-carousel .case-slide[data-position=previous-far]{transform:translate(-128%,-65px) scale(.56)}
+.ring-carousel .case-slide[data-position=next-far]{transform:translate(128%,-65px) scale(.56)}
+.ring-carousel .case-slide[data-position=previous-back]{transform:translate(-58%,-105px) scale(.45)}
+.ring-carousel .case-slide[data-position=next-back]{transform:translate(58%,-105px) scale(.45)}
+
+/* The compact hero uses two data axes and larger endpoint symbols. */
+.hero-flow .flow-nodes>span{width:102px;min-height:90px}
+.hero-flow .abstract-model-glyph{width:37px;gap:6px}
+.hero-flow .abstract-model-glyph b{height:4px}
+.hero-flow .abstract-chip-glyph{width:30px;height:30px;outline-offset:4px}
+.hero-flow .abstract-chip-glyph b:first-child{width:15px;height:15px}
+@media(max-width:1100px){
+ .ring-carousel .case-slide{width:370px;padding:22px 26px}
+ .ring-carousel .case-slide[data-position=previous]{transform:translate(-82%,10px) scale(.76)}
+ .ring-carousel .case-slide[data-position=next]{transform:translate(82%,10px) scale(.76)}
+ .ring-carousel .case-slide[data-position=previous-far]{transform:translate(-110%,-65px) scale(.52)}
+ .ring-carousel .case-slide[data-position=next-far]{transform:translate(110%,-65px) scale(.52)}
+ .hero-flow .flow-nodes>span{width:82px;min-height:76px}
+}
+@media(max-width:767px){
+ .dot-art{height:180px}
+ .training .scenario-feature .dot-art{right:-55px;width:80%;opacity:.4}
+ .hero-dot-field{opacity:.35}
+ .ring-carousel .case-viewport{padding:10px 0 26px}
+ .ring-carousel .case-slide{width:88%;min-height:310px;padding:22px;will-change:auto}
+ .ring-carousel .case-slide h3{min-height:68px}
+ .ring-carousel .case-slide[data-position=active]{transform:none}
+ .ring-carousel .case-slide[data-position=previous]{transform:translateX(-91%) scale(.83)}
+ .ring-carousel .case-slide[data-position=next]{transform:translateX(91%) scale(.83)}
+ .hero-flow .flow-nodes>span{width:64px;min-height:58px}
+ .hero-flow .abstract-model-glyph{width:28px;gap:4px}.hero-flow .abstract-model-glyph b{height:3px}
+ .hero-flow .abstract-chip-glyph{width:23px;height:23px;outline-offset:3px}
+ .hero-flow .abstract-chip-glyph b:first-child{width:12px;height:12px}
+}
+@media(prefers-reduced-motion:reduce){.ring-carousel .case-slide{transition:none;will-change:auto}}
+
+/* Flat core and floating labels; dot visuals restored to v32 in v34. */
+.training .orbital-core{padding:0;background:none;box-shadow:none}
+.training .orbital-core-face{border:0;background:#f8fbffeb;box-shadow:none}
+@media(prefers-reduced-motion:no-preference){
+ .training .orbital-label{animation:orbital-label-float var(--float-duration,7s) ease-in-out infinite;animation-delay:var(--float-delay,0s)}
+ .training .orbital-north{--float-duration:6.8s;--float-delay:-1.2s;--float-x:2px;--float-y:-5px}
+ .training .orbital-east{--float-duration:7.4s;--float-delay:-3s;--float-x:-3px;--float-y:4px}
+ .training .orbital-south{--float-duration:6.2s;--float-delay:-2.4s;--float-x:3px;--float-y:-4px}
+ .training .orbital-west{--float-duration:7s;--float-delay:-4.6s;--float-x:-2px;--float-y:5px}
+}
+@keyframes orbital-label-float{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(calc(-50% + var(--float-x,2px)),calc(-50% + var(--float-y,-5px)))}}
+
+/* v37: shadow-free illustrations aligned to the #0D53DE tint family. */
+.training .generated-feature-art{position:relative;display:grid;place-items:center;flex:none;height:206px;overflow:hidden;pointer-events:none}
+.training .generated-feature-art img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:767px){.training .generated-feature-art{height:190px}}
+
+/* Small display corrections align the generated accent hues with the site token. */
+.training .feature-collaboration img{filter:hue-rotate(6deg)}
+.training .feature-inference img{filter:hue-rotate(2deg)}
+
+/* v38: quieter feature images and a sphere in the same brand-blue tint family. */
+.training .generated-feature-art img{opacity:.72}
+.training .orbital-scene:before{background:radial-gradient(circle at 32% 26%,#f4f7ff 0%,#dce6fc 36%,#b5caf7 66%,#8eaded 100%);opacity:1;box-shadow:none;filter:blur(10px)}
+
+.training .feature-integration img{filter:hue-rotate(3deg)}
+
+/* v39: the logo sits directly on the orbital sphere, without an inner disc. */
+.training .orbital-core,.training .orbital-core-face{background:transparent;border:0;border-radius:0;box-shadow:none}
+
+/* v40: equal feature surfaces, full-resolution image sources and a smaller breathing sphere. */
+.training .product-story>.product-features>.product-feature{background:#f7f9fd}
+.training .generated-feature-art img{opacity:.84;image-rendering:auto}
+.training .feature-collaboration img{filter:hue-rotate(6deg) contrast(1.06)}
+.training .feature-inference img{filter:hue-rotate(2deg) contrast(1.06)}
+.training .feature-integration img{filter:hue-rotate(3deg) contrast(1.06)}
+.training .orbital-scene:before{width:53%}
+@media(prefers-reduced-motion:no-preference){.training .orbital-scene:before{animation:training-sphere-breathe 7.5s ease-in-out infinite}}
+@keyframes training-sphere-breathe{0%,100%{transform:translate(-50%,-50%) scale(.97);opacity:.88}50%{transform:translate(-50%,-50%) scale(1.03);opacity:1}}
+
+/* v41: three crisp, pale brand-blue point surfaces, with no glass cards or shadows. */
+.training .product-feature .training-feature-dots{opacity:.88}
+.training .training-feature-dots img{filter:none;opacity:1;box-shadow:none}

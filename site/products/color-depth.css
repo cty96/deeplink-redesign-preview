@@ -1,0 +1,65 @@
+/* v27 colour study: light surfaces with navy focal points, shared by all pages. */
+:root,:root[data-theme=light]{--bg:#f7f9fc;--surface:#e8eef6;--panel:#fff;--text:#142b49;--muted:#526278;--line:#d8e1ed;--blue:#165dff;--tint:#e8eef6;--hero:#edf2f8;--shadow:0 10px 35px -22px #142b4938}
+body.prd-strict{background:#f7f9fc;color:#142b49}
+.prd-strict #introduction,.prd-strict .content:not(.tint){background:#f7f9fc}
+.prd-strict .content.tint{background:#e8eef6}
+.prd-strict .modern-hero,.solutions .solution-hero.modern-hero{background:#edf2f8;border-bottom-color:#dbe4ef}
+.modern-hero:before{background:radial-gradient(ellipse at 82% 42%,#c8d9f366,transparent 52%)}
+.prd-strict .modern-hero h1,.prd-strict .modern-hero.ks h1,.solutions .modern-hero h1{color:#142b49}
+.modern-hero h1 .hero-name{color:#526278}
+.prd-strict .modern-hero .lead,.prd-strict .modern-hero.ks .lead,.solutions .modern-hero .solution-lead{color:#304d72}
+.prd-strict .modern-hero .intro,.solutions .modern-hero .solution-intro{color:#526278}
+.hero-explore{background:#165dff;color:#fff;border-color:#165dff;box-shadow:0 8px 22px -14px #165dff99}
+.hero-explore:hover{background:#104bd1;color:#fff;border-color:#104bd1}
+.hero-explore:focus-visible{outline-color:#142b49}
+.section-nav{border-color:#d3deec;box-shadow:0 6px 22px -12px #142b4940}
+.section-nav a{color:#526278}
+.section-nav a.active{background:#142b49;color:#fff}
+.section-nav a.active:hover{background:#1e3c62;color:#fff}
+.prd-strict .section-head h2,.prd-strict .product-feature-heading h2,.solution-module-heading h2{color:#142b49}
+
+/* Strong centres; surrounding paths, labels and vendor marks stay light. */
+.orbital-core{background:linear-gradient(135deg,#adc4e2,#496b96 28%,#9db8db 48%,#35547e 72%,#aac0df);box-shadow:0 24px 52px -24px #142b496e,0 0 0 1px #7f9fc6,0 0 0 12px #dbe6f47a}
+.orbital-core-face{background:linear-gradient(145deg,#23466f,#142b49 70%);border-color:#315379;box-shadow:inset 0 0 0 7px #183453,inset 0 0 0 8px #4b6b93}
+.orbital-core-face img{filter:brightness(0) invert(1)}
+.orbital-core-face span{color:#b9cce5}
+.orbital-label{color:#37577e;border-color:#c7d6e9;background:#f7faff}
+.orbital-scene:before{background:radial-gradient(circle at 30% 24%,#f9fbff,#dfebfa 42%,#bad0eb 78%,#8faed3);opacity:.8}
+.hero-flow .flow-core,.system-solutions .compute-hub{background:linear-gradient(145deg,#23466f,#142b49 75%);border-color:#28496e;box-shadow:0 25px 45px -26px #142b4977,inset 0 1px 0 #6384a544}
+.hero-flow .flow-core>strong,.system-solutions .compute-hub strong{color:#fff}
+.hero-flow .flow-core p,.system-solutions .compute-hub em{color:#bdcde1}
+.hero-flow .flow-core-mark b{background:#8db7ff}.hero-flow .flow-core-mark b:nth-child(2){background:#fff}.hero-flow .flow-core-mark b:nth-child(3){background:#b6d0ff}
+.system-solutions .compute-hub .system-signal{background:#aacaff;box-shadow:0 0 0 5px #33557e}
+.system-solutions .solution-tile{background:#fff;border-color:#cbd9eb}
+.system-solutions .solution-tile strong{color:#29476c}
+.system-caption,.system-foot,.solution-tile small{color:#526c8b}
+
+/* White content surfaces replace the repeated pale blue card fills. */
+.prd-strict .product-feature,.prd-strict .product-feature.feature-route,.prd-strict .product-feature.feature-modules,.kernelswift .product-story .feature-rail .product-feature{background:#fff;border-color:#d8e1ed}
+.product-feature .feature-title,.kernelswift .product-story .feature-rail .feature-title{color:#142b49}
+.product-feature .feature-description,.kernelswift .product-story .feature-rail .feature-description,.scene-integrated .feature-description,.cap-notes li{color:#526278}
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab[aria-selected=true]{background:#e5edf8}
+.scene-integrated .tab[aria-selected=true] .feature-title{color:#1648a4}
+.solution-module-tagline,.solution-fact-grid .solution-fact em,.solution-summary-copy em,.solution-showcase .solution-summary-copy em{color:#526278}
+.solution-showcase{background:#fff;border-color:#d5e0ee}
+.solution-fact-grid .solution-fact{border-color:#d5e0ee}
+.solution-fact-grid .solution-fact strong{color:#213f65}
+.solution-fact-grid .solution-fact:before{background:#165dff}
+
+/* One navy reading card in a light ring; original partner logos retain their colours. */
+.prd-strict.training #cases{background:#f0f4f9}
+.ring-carousel .case-slide{background:#fff;border-color:#cfdbeb}
+.ring-carousel .case-copy p{color:#526278}
+.ring-carousel .case-slide[data-position=active]{background:#142b49;border-color:#142b49;box-shadow:0 28px 50px -26px #142b4970}
+.ring-carousel .case-slide[data-position=active] h3{color:#fff}
+.ring-carousel .case-slide[data-position=active] .case-copy p{color:#d6e1ef}
+.ring-carousel .case-slide[data-position=active]:before{background-image:radial-gradient(circle,#91baff 1.1px,transparent 1.5px);opacity:.65}
+.ring-carousel .case-slide[data-position=active] h3 .partner-logo{background:#fff;border-radius:7px;padding:5px 9px;box-sizing:content-box;max-width:calc(100% - 18px)}
+.ring-carousel .case-slide{transition:transform .7s cubic-bezier(.22,.68,.22,1),opacity .6s,border-color .6s,background-color .45s}
+.case-arrow{border-color:#bdcee5;color:#294f81}.case-autoplay{color:#526278}
+.case-dot[aria-current=true]:before{background:#165dff}
+.prd-strict.training #ecosystem{background:#e8eef6}
+.prd-strict .footer{background:#e8eef6;border-top-color:#cfdae9}
+.prd-strict .footer p,.prd-strict .footer a:not(.brand){color:#526278}
+@media(max-width:767px){.orbital-core-face{box-shadow:inset 0 0 0 4px #183453,inset 0 0 0 5px #4b6b93}}
+@media(prefers-reduced-motion:reduce){.ring-carousel .case-slide{transition:none}}

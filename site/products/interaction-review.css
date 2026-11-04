@@ -1,0 +1,17 @@
+/* Stronger case identities and a touring map; feature rail restored in v32. */
+.ring-carousel .case-slide h3{min-height:86px;color:#18467b;font-size:24px;font-weight:600;line-height:1.4}
+.ring-carousel .case-slide h3 .partner-logo{width:184px;max-width:100%;height:84px;object-position:left center}
+.ring-carousel .case-slide h3 .logo-china-unicom,.ring-carousel .case-slide h3 .logo-china-telecom,.ring-carousel .case-slide h3 .logo-ixp{width:112px;height:90px}
+.training .geo-label.is-spotlight{color:#1559be;background:#e4efff;border-color:#83aae3;box-shadow:0 0 0 4px #b8d2f32b,0 6px 18px -10px #4278be55}
+.training .geo-stage .geo-pulse{animation:none}
+.training .geo-stage.is-visible .geo-region.is-active .geo-pulse{animation:geo-spotlight 2.4s ease-out infinite}
+.training .geo-region.is-active .geo-pin{filter:drop-shadow(0 0 4px #518ae8b3)}
+@keyframes geo-spotlight{0%{transform:scale(.6);opacity:.4}80%,100%{transform:scale(2.1);opacity:0}}
+.scene-integrated .ks-scene-art{aspect-ratio:1.6}
+
+@media(max-width:767px){
+ .ring-carousel .case-slide h3{font-size:22px;min-height:78px}
+ .ring-carousel .case-slide h3 .partner-logo{height:76px;width:160px}
+ .ring-carousel .case-slide h3 .logo-china-unicom,.ring-carousel .case-slide h3 .logo-china-telecom,.ring-carousel .case-slide h3 .logo-ixp{width:100px;height:80px}
+}
+@media(prefers-reduced-motion:reduce){.training .geo-stage.is-visible .geo-region.is-active .geo-pulse{animation:none}}

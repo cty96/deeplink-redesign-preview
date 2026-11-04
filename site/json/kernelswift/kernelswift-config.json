@@ -1,0 +1,453 @@
+{
+  "competition_list": [
+    {
+      "competition_name": "KernelSwift算子优化挑战赛",
+      "highlight": true,
+      "upcoming_competition": false,
+      "tracks": [
+        "Triton算子优化赛道",
+        "Clike算子优化赛道",
+        "AI4S和新型模型架构算子优化赛道"
+      ],
+      "online_duration_start": "2026-08-01",
+      "online_duration_end": "2026-08-31",
+      "registration_deadline": "2026-08-21"
+    },
+    {
+      "competition_name": "KernelSwift黑客松挑战赛",
+      "highlight": false,
+      "upcoming_competition": true,
+      "status_text": "敬请期待"
+    }
+  ],
+  "competition_overview": "KernelSwift算子创新大赛面向开发者和高校学生及技术爱好者开放，聚焦国产芯片环境下的算子生成、迁移与性能优化。\n\n参赛者将基于KernelSwift平台完成算子开发、调优、验证和提交，通过持续优化获得更高性能表现。大赛旨在推动国产模型、国产芯片与统一算子平台生态协同，沉淀高性能算子作品，并为优秀参赛者提供奖金激励、官方认证、开源展示、实习内推及论文合作机会。",
+  "competition_tags": [
+    "算子生成",
+    "算子迁移",
+    "性能调优",
+    "正确性验证",
+    "生态协同"
+  ],
+  "overview_image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/overview-platform.png",
+  "track_list": [
+    {
+      "name": "Triton算子优化赛道",
+      "label": "赛道一",
+      "description": "本赛道聚焦大模型与科学计算核心算子，基于 Triton 开展高性能算子优化挑战。参赛者将围绕 Attention、MoE、Normalization 等核心算子，通过 GPU 并行优化、计算加速和内存优化，提升 AI 模型计算效率。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/track-triton.png"
+    },
+    {
+      "name": "Clike算子优化赛道",
+      "label": "赛道二",
+      "description": "本赛道聚焦大模型核心算子优化，覆盖 Attention、Indexer 等关键计算任务。参赛者将基于 Clike 开发高性能算子，通过性能优化提升 AI 推理效率。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/track-clike.png"
+    },
+    {
+      "name": "AI4S和新型模型架构算子优化赛道",
+      "label": "赛道三",
+      "description": "本赛道聚焦 AI4S 科学智能与新型模型架构优化场景，覆盖太初与启元两大合作赛道。参赛者将面向前沿科研 AI 模型和新型计算架构开展算子优化与国产算力适配，探索 AI 驱动科学计算与智能计算发展的新路径。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/track-ai4s.png"
+    }
+  ],
+  "timeline_list": [
+    {
+      "name": "参赛报名",
+      "start_date": "2026-07-19",
+      "end_date": "2026-08-21"
+    },
+    {
+      "name": "线上长时赛",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-31"
+    },
+    {
+      "name": "评审期",
+      "start_date": "2026-08-21",
+      "end_date": "2026-09-30",
+      "original_date_text": "2026.08.21 — 2026.09.15"
+    },
+    {
+      "name": "公布结果",
+      "date_text": "2026年10月中旬",
+      "start_date": "2026-10-11",
+      "original_date_text": "2026年9月中下旬"
+    }
+  ],
+  "timeline_note": "注：赛程如有变化，以实际安排为准。",
+  "highlight_list": [
+    {
+      "title": "国产芯片适配",
+      "description": "面向多款国产芯片环境，推动算子在真实硬件生态中的适配与验证。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/highlight-chip-adaptation.png"
+    },
+    {
+      "title": "算子迁移实战",
+      "description": "围绕算子生成、迁移和优化任务，提升开发者实际工程能力。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/highlight-operator-migration.png"
+    },
+    {
+      "title": "性能调优挑战",
+      "description": "以正确性和性能表现为核心，鼓励参赛者持续优化提交结果。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/highlight-performance-tuning.png"
+    },
+    {
+      "title": "生态贡献机会",
+      "description": "优秀作品有机会获得官方认证、开源展示、实习内推和论文合作机会。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/highlight-ecosystem-contribution.png"
+    }
+  ],
+  "prize": {
+    "amount": 40,
+    "unit": "万元",
+    "description": "覆盖名次奖、专项奖与多重生态权益",
+    "background_image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/prize-benefits.png",
+    "note": "补充说明：具体奖金分配、奖项数量及评选规则以赛事最终公告为准。\n\n参赛资格与领奖规则补充说明：参赛、答题及奖金申领均以完成赛事报名为前置条件，仅完成报名的选手，其作答成绩方可生效并参与奖项评选；\n\n"
+  },
+  "benefit_list": [
+    {
+      "title": "丰厚实习内推",
+      "type": "权益"
+    },
+    {
+      "title": "官方贡献认证",
+      "type": "权益"
+    },
+    {
+      "title": "开源展示机会",
+      "type": "权益"
+    },
+    {
+      "title": "论文合作机会",
+      "type": "权益"
+    }
+  ],
+  "chip_count": 10,
+  "chip_vendor_list": [
+    {
+      "name": "Ascend 昇腾",
+      "logo": "https://static.openxlab.org.cn/deeplink/images/kernelswift/logo-ascend.png"
+    },
+    {
+      "name": "壁仞科技 Biren Technology",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%9B%BE%E7%89%874-mrkp91lifn7oa.png"
+    },
+    {
+      "name": "寒武纪",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%AF%92%E6%AD%A6-mrodkxt8ug9ku.png"
+    },
+    {
+      "name": "海光 Hygon",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E4%B8%AD%E7%A7%91-mrodnh5kb4ipk.png"
+    },
+    {
+      "name": "摩尔线程",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/1%E6%91%A9%E5%B0%94-mrod1u1t54qey.png"
+    },
+    {
+      "name": "沐曦",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/2%E6%B2%90%E6%9B%A6-mrod31da00iqb.png"
+    },
+    {
+      "name": "平头哥",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/3.%E5%B9%B3%E5%A4%B4%E5%93%A5-mrod3t3aj26ep.png"
+    },
+    {
+      "name": "燧原科技 Enflame",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/4.%E7%87%A7%E5%8E%9F-mrod45onud41a.png"
+    },
+    {
+      "name": "天数",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%A4%A9%E6%95%B0-mrod5her32i58.png"
+    },
+    {
+      "name": "太初",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/img_v3_0213b_9f8327cb-3252-48aa-a9bb-1e267024075g-mrkpm2s91ixai.png"
+    }
+  ],
+  "sponsor_list": [
+    {
+      "name": "思朗科技 Smart Logic",
+      "logo": "https://static.openxlab.org.cn/deeplink/images/kernelswift/logo-smart-logic.png"
+    },
+    {
+      "name": "太初元碁 Tecorigin",
+      "logo": "https://static.openxlab.org.cn/deeplink/images/kernelswift/logo-tecorigin.png"
+    },
+    {
+      "name": "天数",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%9B%BE%E7%89%876-mrkqtu5y4uueq.png"
+    },
+    {
+      "name": "毕昇",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%9B%BE%E7%89%874-mrm3hxjrrop6g.png"
+    },
+    {
+      "name": "毕昇",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/bbss-mrm57nca08gdg.png"
+    }
+  ],
+  "special_thanks_list": [
+    {
+      "name": "九原",
+      "logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/9sss-mrm55so9oje1x.png"
+    }
+  ],
+  "chip_note": "芯片厂商展示：昇腾、沐曦、平头哥、壁仞科技、摩尔线程、天数智芯、海光、燧原科技、太初元碁、思朗科技。",
+  "system": {
+    "name": "KernelSwift 算子生成系统",
+    "intro": "本次大赛依托上海人工智能实验室 DeepLink KernelSwift 算子迁移系统，为参赛者提供高效的算子生成、迁移与优化工具支持。参赛者可基于 KernelSwift 平台完成算子开发、跨芯片迁移与性能调优，降低算子优化门槛，加速国产算力环境下高性能算子的构建与应用。",
+    "url": "https://deeplink.org.cn/kernelswift",
+    "image": ""
+  },
+  "contact_list": [
+    {
+      "title": "官方小助手微信联系方式",
+      "description": "扫码添加官网小助手，获取报名、资源申请与赛事咨询支持。",
+      "qr_image": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/vx-mrlqbnnb8yw5i.jpg"
+    },
+    {
+      "title": "欢迎加入KernelSwift交流群",
+      "description": "扫码进群，与开发者交流算子迁移与调优经验。",
+      "qr_image": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/KS2.0-mrt6pda4a58or.jpg"
+    }
+  ],
+  "rule_track_list": [
+    {
+      "name": "Triton算子优化赛道",
+      "label": "赛道一",
+      "format": "个人参赛",
+      "description": "围绕指定赛题完成算子生成、迁移、优化和验证，赛题信息以下方列表为准。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/track-triton.png",
+      "topic_list": [
+        {
+          "title": "赛题方向",
+          "document_url": "https://aicarrier.feishu.cn/wiki/YS3OwsOEGiKz2jkaMh9cyGVvngb",
+          "task_list": [
+            {
+              "task_no": "Task 01",
+              "task_name": "GroupedTopk"
+            },
+            {
+              "task_no": "Task 02",
+              "task_name": "FusedMoE"
+            },
+            {
+              "task_no": "Task 03",
+              "task_name": "FlexAttention"
+            },
+            {
+              "task_no": "Task 04",
+              "task_name": "SPLADESparsePooler"
+            },
+            {
+              "task_no": "Task 05",
+              "task_name": "MusicFlamingoRotaryEmbedding"
+            },
+            {
+              "task_no": "Task 06",
+              "task_name": "MMEncoderAttention"
+            },
+            {
+              "task_no": "Task 07",
+              "task_name": "mhc_post"
+            },
+            {
+              "task_no": "Task 08",
+              "task_name": "hc_split_sinkhorn"
+            },
+            {
+              "task_no": "Task 09",
+              "task_name": "CentreRandomAugmentation"
+            },
+            {
+              "task_no": "Task 10",
+              "task_name": "head_compute_mix_bwd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clike算子优化赛道",
+      "label": "赛道二",
+      "format": "个人参赛或团队参赛，团队人数2-5人",
+      "description": "Clike，全称 C-Like Parallel Language，面向异构加速的类 C 并行编程语言。KernelSwift 2.0版本将开设Clike算子生成渠道，本次比赛也将基于Clike设置赛题。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/track-clike.png",
+      "topic_list": [
+        {
+          "title": "华为赛题",
+          "document_url": "https://aicarrier.feishu.cn/wiki/MLfLwP3pGiBO8kkKhO9cY7mVn3g?from=from_parent_docx",
+          "task_list": [
+            {
+              "task_no": "Task 01",
+              "task_name": "SparseAttention"
+            },
+            {
+              "task_no": "Task 02",
+              "task_name": "Indexer"
+            },
+            {
+              "task_no": "Task 03",
+              "task_name": "sinkhorn"
+            }
+          ]
+        },
+        {
+          "title": "沐曦赛题",
+          "document_url": "https://aicarrier.feishu.cn/wiki/MhDPwApbbi6wlXkEOPWcALJ3n0I",
+          "task_list": [
+            {
+              "task_no": "Task 01",
+              "task_name": "engram_hash"
+            },
+            {
+              "task_no": "Task 02",
+              "task_name": "Indexer"
+            },
+            {
+              "task_no": "Task 03",
+              "task_name": "norm_fn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI4S和新型模型架构算子优化赛道",
+      "label": "赛道三",
+      "format": "团队参赛，团队人数2-5人",
+      "description": "本赛道聚焦 AI for Science（AI4S）科学智能计算场景，覆盖启元与太初两大合作赛道。参赛者将面向科研 AI 模型开展算子优化与国产算力适配，探索 AI 驱动科学计算的新可能。",
+      "image": "https://static.openxlab.org.cn/deeplink/images/kernelswift/track-ai4s.png",
+      "topic_list": [
+        {
+          "title": "太初赛道",
+          "document_url": "https://aicarrier.feishu.cn/wiki/KBe2wc1xZiKvVFkVMoacBX6InPb",
+          "task_list": [
+            {
+              "task_no": "Task ",
+              "task_name": "OneGenomeRice"
+            }
+          ]
+        },
+        {
+          "title": "启元赛道",
+          "document_url": "https://aicarrier.feishu.cn/wiki/RInIwh7kuiaVdukHALKc3I4Ln0f",
+          "note": "启元赛题详情待同步，后续以赛事页面更新为准。",
+          "task_list": [
+            {
+              "task_no": "Task 01",
+              "task_name": "待公布"
+            },
+            {
+              "task_no": "Task 02",
+              "task_name": "待公布"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resource_list": [
+    {
+      "vendor_id": "moore_threads_11111",
+      "vendor_name": "沐曦",
+      "vendor_english_name": "",
+      "vendor_logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%9B%BE%E7%89%872-mrkqjw2cju0ez.png",
+      "resource_type": "芯片资源 / 算力资源 / 平台账号等",
+      "available_quota": "报名选手可获得 100元沐曦模力方舟算力代金券",
+      "application_entry": "点击立即申请，并前往沐曦官网进行申请",
+      "usage_description": "算力资源申请说明-沐曦",
+      "usage_link": "https://aicarrier.feishu.cn/wiki/JAGOwpDnmi8JE0kUDPXc5gQonFe",
+      "open_status": true
+    },
+    {
+      "vendor_id": "moore_threads_2111",
+      "vendor_name": "燧原科技",
+      "vendor_english_name": "",
+      "vendor_logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%9B%BE%E7%89%878-mrkqkps494ral.png",
+      "resource_type": "芯片资源 / 算力资源 / 平台账号等",
+      "available_quota": "报名选手可获得200元燧原算力券",
+      "application_entry": "点击立即申请，等待邮件收取算力券",
+      "usage_description": "算力资源申请说明-燧原科技",
+      "usage_link": "https://aicarrier.feishu.cn/wiki/L5flwe0zJiHUu7kSSETc9WoTn6V?from=from_parent_docx",
+      "open_status": true
+    },
+    {
+      "vendor_id": "moore_threads_31111",
+      "vendor_name": "天数智芯",
+      "vendor_english_name": "",
+      "vendor_logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E5%9B%BE%E7%89%876-mrkqlaq3wnuy7.png",
+      "resource_type": "芯片资源 / 算力资源 / 平台账号等",
+      "available_quota": "参赛选手共用24卡",
+      "application_entry": "点击立即申请，参赛者可在算力资源申请说明文档中获取方式",
+      "usage_description": "算力资源申请说明-天数智芯",
+      "usage_link": "https://aicarrier.feishu.cn/wiki/HiHIwe519i15MJkEiXcccxKinnd?from=from_parent_docx",
+      "open_status": true
+    },
+    {
+      "vendor_id": "moore_threads_3111",
+      "vendor_name": "太初元碁",
+      "vendor_logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/img_v3_0213b_9f8327cb-3252-48aa-a9bb-1e267024075g-mrm6g99679g1x.png",
+      "resource_type": "芯片资源 / 算力资源 / 平台账号等",
+      "available_quota": "报名选手可获得 1-2张算力卡资源",
+      "usage_description": "算力资源申请说明-太初",
+      "application_entry": "点击立即申请，等待邮件收取算力券",
+      "usage_link": "https://aicarrier.feishu.cn/wiki/W8Jawthwni8P99kiBKichYUNn9b?from=from_parent_docx",
+      "open_status": true
+    },
+    {
+      "vendor_id": "huaweu",
+      "vendor_name": "华为昇腾",
+      "vendor_logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/shnegteng-mrojy96ea1gyz.png",
+      "resource_type": "芯片资源 / 算力资源 / 平台账号等",
+      "usage_link": "https://aicarrier.feishu.cn/wiki/GXuwwPanliYdA3ksXL5cHTMgnrh?from=from_parent_docx",
+      "available_quota": "初始可获得100卡时，参赛者可以及时申请续时长。",
+      "usage_description": "算力资源申请说明-昇腾",
+      "application_entry": "点击立即申请，参赛者可在算力资源申请说明文档中获取方式",
+      "open_status": true
+    },
+    {
+      "vendor_id": "haiguang",
+      "vendor_name": "曙光智算",
+      "vendor_logo": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/%E4%B8%AD%E7%A7%91-mrw0x7brycrd0.png",
+      "resource_type": "芯片资源 / 算力资源 / 平台账号等",
+      "application_entry": "点击立即申请，参赛者可在算力资源申请说明文档中获取方式",
+      "usage_description": "算力资源申请说明-曙光智算",
+      "usage_link": "https://aicarrier.feishu.cn/wiki/JGZSwHd59iY9nuk1XNfckRGEnHb?from=from_parent_docx",
+      "available_quota": "报名选手申请可获得100卡时",
+      "open_status": true
+    }
+  ],
+  "resource_helper_list": [
+    {
+      "warning": false,
+      "title": "已报名可领取",
+      "description": "完成报名后即可按对应厂商入口申请资源。"
+    },
+    {
+      "warning": true,
+      "title": "未报名",
+      "description": "您尚未报名比赛，无法领取资源。"
+    }
+  ],
+  "resource_helper_note": "1. 如有其他厂商资源需求，可联系小助手登记，后续如开放资源会在交流群中通知并同步上线申请渠道。\n2. 若报名团队赛，团队队员还需领取资源，可咨询官网小助手领取。",
+  "resource_helper_qr": "https://static.openxlab.org.cn/platform-config-upload/biz-images/deeplink/vx-mrlrb579rt54r.jpg",
+  "registration_form": {
+    "track_descriptions": [
+      "🔥请您先进入KernelSwift系统登录/注册👉https://deeplink.org.cn/kernelswift",
+      "赛道1 仅单人参赛，无队伍",
+      "赛道2 支持个人参赛或组队参赛（团队人数 2—5人）",
+      "赛道3 仅支持团队赛，必须组队报名（团队人数 2—5人）",
+      "每个报名选手可以参加一个个人赛道，作为队长参加一个团队赛道，但不限制作为队员参与团队赛。若需要报名多个赛道，请多次点击报名填写信息。"
+    ],
+    "track_options": [
+      "赛道1: Triton算子优化赛道",
+      "赛道2: Clike算子优化赛道",
+      "赛道3: AI4S和新型模型架构算子优化赛道"
+    ],
+    "agreements": {
+      "rights": "本次大赛的解释权归上海人工智能实验室DeepLink团队所有，参赛者在参赛过程中所提交的算子实现均可贡献至DeepLink社区。",
+      "original": "本人承诺提交的算子实现及相关技术成果均为原创，不存在抄袭、侵权或违反第三方知识产权的行为。"
+    }
+  }
+}

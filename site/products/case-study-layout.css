@@ -1,0 +1,35 @@
+/* Review: restore text on the left and official-site photography on the right. */
+.solutions .solution-customers .linear-carousel .case-slide {
+ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); grid-template-rows:auto 1fr auto;
+ column-gap:0; row-gap:0; min-height:460px; padding:0; overflow:hidden; background:#fff;
+}
+.solutions .solution-customers .linear-carousel .customer-story { display:contents; }
+.solutions .solution-customers .linear-carousel .customer-story>h3 {
+ grid-column:1; grid-row:1; align-self:start; margin:0; padding:40px 36px 20px;
+ color:#243f65; font-size:24px; line-height:1.5; font-weight:600;
+}
+.solutions .solution-customers .linear-carousel .customer-story>.case-copy { grid-column:1; grid-row:2; align-self:start; min-width:0; margin:0; padding:0 36px 32px; }
+.solutions .solution-customers .linear-carousel .case-copy p { margin:0; line-height:1.95; }
+.solutions .solution-customers .linear-carousel .case-illustration {
+ grid-column:2; grid-row:1 / span 3; align-self:stretch; justify-self:stretch; display:block;
+ position:relative; width:100%; max-width:none; min-height:100%; margin:0; padding:0;
+ overflow:hidden; background:#edf2f8; border:0; border-radius:0;
+}
+.solutions .solution-customers .linear-carousel .case-illustration img {
+ position:absolute; inset:0; display:block; width:100%; height:100%; max-height:none;
+ aspect-ratio:auto; object-fit:cover; object-position:50% 60%; mix-blend-mode:normal;
+}
+.solutions .solution-customers .linear-carousel #customer-case-2 .case-illustration img { object-position:44% 50%; }
+.solutions .solution-customers .linear-carousel .solution-case-source { grid-column:1; grid-row:3; align-self:end; justify-self:start; margin:0; padding:0 36px 36px; }
+@media(max-width:1100px) {
+ .solutions .solution-customers .linear-carousel .customer-story>h3 { padding:32px 28px 18px; font-size:22px; }
+ .solutions .solution-customers .linear-carousel .customer-story>.case-copy { padding:0 28px 28px; }
+ .solutions .solution-customers .linear-carousel .solution-case-source { padding:0 28px 32px; }
+}
+@media(max-width:767px) {
+ .solutions .solution-customers .linear-carousel .case-slide { grid-template-columns:1fr; grid-template-rows:auto auto auto auto; min-height:0; }
+ .solutions .solution-customers .linear-carousel .customer-story>h3 { grid-column:1; grid-row:1; padding:28px 24px 16px; }
+ .solutions .solution-customers .linear-carousel .customer-story>.case-copy { grid-column:1; grid-row:2; padding:0 24px 24px; }
+ .solutions .solution-customers .linear-carousel .solution-case-source { grid-column:1; grid-row:3; padding:0 24px 24px; }
+ .solutions .solution-customers .linear-carousel .case-illustration { grid-column:1; grid-row:4; min-height:0; aspect-ratio:4/3; }
+}

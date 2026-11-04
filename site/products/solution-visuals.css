@@ -1,0 +1,44 @@
+/* v18: illustrated solution chapters in the same visual language as product pages. */
+.solutions .solution-hero{background:linear-gradient(90deg,#f0f6ffe6,#f0f6ff8c 42%,transparent 64%),url('assets/solutions-hero-v19.png') center/cover;min-height:530px}
+.solution-hero-copy{max-width:650px}.solution-intro{max-width:620px}
+.solution-module-heading{justify-content:center;text-align:center;margin-bottom:42px;position:relative}
+
+.solution-module-heading h2{font-size:34px;color:#172f52}
+.solution-module-tagline{margin-top:14px;font-size:18px}
+.solution-showcase{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:44px;align-items:center;padding:34px 38px;border-radius:22px;border:1px solid #e2eaf8;background:linear-gradient(120deg,#f5f8ff,#fcfdff);box-shadow:0 18px 50px -42px #3263a570}
+.solution-showcase .solution-summary{background:none;padding:10px 4px;min-width:0}
+.solution-showcase .solution-summary-copy strong{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.solution-showcase .solution-summary-copy em{font-size:21px;line-height:1.85;color:#385a87;font-weight:400}
+.solution-module .solution-showcase .solution-related{border:0;width:auto;margin-top:20px;padding-top:0;gap:16px;font-size:14px}
+.solution-showcase .solution-keywords{border-top:0;margin-top:26px;padding-top:0;gap:8px}
+.solution-showcase .solution-keywords b{background:#fff9;border:1px solid #dee9fa;padding:6px 10px;font-size:12px;color:#6c88ad}
+.solution-illustration{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:3/2;background:#eef5ff;min-width:0}
+.solution-illustration img{width:100%;height:100%;object-fit:contain;display:block}
+.solution-fact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.solution-fact-grid .solution-fact{padding:26px 30px;border:1px solid #e4ebf7;border-radius:14px;background:#fff;position:relative}
+.solution-fact-grid .solution-fact.wide{grid-column:auto}
+.solution-fact-grid .solution-fact:before{content:'';display:block;width:24px;height:3px;border-radius:3px;background:#c5d9f7;margin-bottom:17px}
+.solution-fact-grid .solution-fact strong{font-size:17px;margin-bottom:10px;color:#315780}
+.solution-fact-grid .solution-fact em{font-size:15px;line-height:1.9;color:#7589a5}
+.solution-fact-grid .solution-fact:last-child:nth-child(odd){grid-column:1/-1}
+.solution-module-support{gap:44px;padding:32px 36px;border-radius:18px;background:linear-gradient(120deg,#eaf2ff,#f4f8fe);border:1px solid #dee9f9;margin-top:24px;grid-template-columns:1.15fr 1fr}
+.solution-module-value,.solution-module-features{padding:0;border:0;background:none;border-radius:0}
+.solution-module-support h3{font-size:19px;margin-bottom:16px}
+.solution-module-value .solution-value-copy em{font-size:17px;line-height:1.9;color:#5677a1}
+.solution-module-features ul{margin-bottom:0;gap:12px}
+.solution-module-features li{background:#ffffff96;border:1px solid #e5edf8;border-radius:8px;padding:10px 14px;font-size:14px}
+.solution-module-features li:before{display:none}
+.solution-module-cases{margin-top:42px}
+@media(max-width:1100px){
+ .solution-showcase{gap:28px;padding:28px}.solution-showcase .solution-summary-copy em{font-size:19px}
+ .solution-module-heading h2{font-size:30px}.solution-module-support{gap:28px;padding:28px}
+ .solution-fact-grid .solution-fact{padding:24px}
+}
+@media(max-width:767px){
+ .solutions .solution-hero{min-height:0;background:linear-gradient(90deg,#eff5fff5,#eff5ffe0),url('assets/solutions-hero-v19.png') center/cover}
+ .solution-module-heading{gap:12px;margin-bottom:28px}.solution-module-heading h2{font-size:26px}.solution-module-tagline{font-size:15px;margin-top:10px}
+ .solution-showcase{grid-template-columns:1fr;gap:24px;padding:24px;border-radius:18px}.solution-showcase .solution-summary{padding:0}
+ .solution-showcase .solution-summary-copy em{font-size:18px;line-height:1.8}.solution-showcase .solution-keywords{margin-top:20px}.solution-illustration{border-radius:12px}
+ .solution-fact-grid{grid-template-columns:1fr;gap:14px;margin-top:18px}.solution-fact-grid .solution-fact{padding:22px}.solution-fact-grid .solution-fact strong{font-size:16px}.solution-fact-grid .solution-fact em{font-size:14px}
+ .solution-module-support{grid-template-columns:1fr;padding:24px;gap:28px;margin-top:18px}.solution-module-value .solution-value-copy em{font-size:15px}
+}

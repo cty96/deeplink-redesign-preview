@@ -1,0 +1,21 @@
+/* Current DeepFusion public hero, captured 2026-11-03. */
+.product-card-fusion-live .cube-wrap { position: relative; width: 198px; height: 198px; margin: 48px 32px 40px; }
+.product-card-fusion-live .cube-glow { position: absolute; inset: -40px; background: linear-gradient(to right top, rgba(191, 219, 254, 0.4), rgba(233, 213, 255, 0.3), rgba(165, 243, 252, 0.4)); border-radius: 50%; filter: blur(48px); pointer-events: none; }
+.product-card-fusion-live .scene { perspective: 1200px; position: relative; width: 198px; height: 198px; }
+.product-card-fusion-live .cube { position: relative; width: 198px; height: 198px; transform-style: preserve-3d; animation: 18s linear 0s infinite normal none running dl-home-fusion-spin; }
+.product-card-fusion-live .cube__face { position: absolute; top: 0px; left: 0px; width: 198px; height: 198px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 40px inset; backdrop-filter: blur(4px); }
+.product-card-fusion-live .face-1 { background: linear-gradient(135deg, rgba(99, 102, 241, 0.55), rgba(168, 85, 247, 0.35)); transform: rotateY(0deg) translateZ(99px); }
+.product-card-fusion-live .face-2 { background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(6, 182, 212, 0.35)); transform: rotateY(90deg) translateZ(99px); }
+.product-card-fusion-live .face-3 { background: linear-gradient(135deg, rgba(168, 85, 247, 0.5), rgba(99, 102, 241, 0.35)); transform: rotateY(180deg) translateZ(99px); }
+.product-card-fusion-live .face-4 { background: linear-gradient(135deg, rgba(6, 182, 212, 0.45), rgba(59, 130, 246, 0.4)); transform: rotateY(-90deg) translateZ(99px); }
+.product-card-fusion-live .face-5 { background: linear-gradient(135deg, rgba(129, 140, 248, 0.5), rgba(6, 182, 212, 0.3)); transform: rotateX(90deg) translateZ(99px); }
+.product-card-fusion-live .face-6 { background: linear-gradient(135deg, rgba(59, 130, 246, 0.45), rgba(168, 85, 247, 0.4)); transform: rotateX(-90deg) translateZ(99px); }
+@keyframes dl-home-fusion-spin { 
+  0% { transform: rotateX(-22deg) rotateY(0deg); }
+  100% { transform: rotateX(-22deg) rotateY(360deg); }
+}
+.product-card-fusion-live .float-slow { animation: 7s ease-in-out 0s infinite normal none running dl-home-fusion-float; }
+@keyframes dl-home-fusion-float { 
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+}

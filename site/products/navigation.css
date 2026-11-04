@@ -1,0 +1,74 @@
+/* Homepage-style floating capsule navigation. */
+body.training,body.solutions{--anchor-top:80px;--anchor-clearance:150px}
+body.kernelswift{--anchor-top:136px;--anchor-clearance:208px}
+.section-nav-dock{height:98px;display:flex;align-items:center;justify-content:center;position:relative;z-index:12}
+.section-nav-sentinel{position:absolute;left:0;top:calc(50% - 26px);width:1px;height:1px;pointer-events:none}
+.section-nav{display:flex;align-items:center;gap:4px;max-width:calc(100vw - 40px);width:max-content;padding:5px;border:1px solid #e4e8f0;border-radius:100px;background:rgba(255,255,255,.92);box-shadow:0 4px 20px -8px #193c7638;backdrop-filter:blur(12px);overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav.is-fixed{position:fixed;left:50%;top:var(--anchor-top,80px);transform:translateX(-50%);z-index:12}
+.section-nav a{font-size:14px;line-height:24px;padding:9px 20px;white-space:nowrap;color:#788494;border-radius:100px;transition:color .2s,background-color .2s;flex:none}
+.section-nav a:hover{background:#f5f7fb;color:#254b82}
+.section-nav a.active{background:#f0f4fa;color:#174a9d;font-weight:500}
+.section-nav a:focus-visible{outline:2px solid #4c84d9;outline-offset:-3px}
+.prd-strict .section-nav-dock+.product-story{padding-top:44px}
+.prd-strict #features,.prd-strict main>section.content,.prd-strict #mcp,.prd-strict #skill{scroll-margin-top:0}
+html:has(body.training),html:has(body.solutions){scroll-padding-top:150px}
+html:has(body.kernelswift){scroll-padding-top:208px}
+/* Four products in one dropdown, using PRD overview and highlight text. */
+.prd-strict .product-menu.product-mega{position:fixed;top:63px;left:50%;transform:translateX(-50%);width:min(1280px,calc(100vw - 48px));max-height:calc(100dvh - 88px);overflow:auto;overscroll-behavior:contain;scrollbar-width:none;background:#fff;border:1px solid #e1e8f3;border-radius:0 0 18px 18px;padding:24px;box-shadow:0 24px 60px -20px #17366340;text-align:left}
+.prd-strict .product-mega::-webkit-scrollbar{display:none}
+.product-menu-heading{font-size:13px;font-weight:500;color:#8593a8;padding:0 4px 18px;line-height:22px}
+.product-mega-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:stretch}
+.prd-strict .product-mega .product-mega-card{display:flex;flex-direction:column;align-items:stretch;min-width:0;padding:24px 22px;border:1px solid transparent;border-radius:12px;background:#f8fafd;transition:background .2s,border-color .2s;white-space:normal;text-align:left;color:#284365;margin:0}
+.prd-strict .product-mega .product-mega-card:hover,.prd-strict .product-mega .product-mega-card:focus-visible{background:#f0f5ff;border-color:#c9daf5}
+.prd-strict .product-mega .product-mega-card[aria-current=page]{background:#f2f6fd;border-color:#dce6f7}
+.product-mega-card h3{font-size:17px;line-height:1.65;font-weight:600;color:#244b7d;margin:0 0 16px;min-height:56px;overflow-wrap:anywhere}
+.product-mega-card .product-menu-description{font-size:13px;font-weight:400;line-height:1.9;color:#687d99;margin:0 0 22px;min-height:100px}
+.product-menu-highlights{border-top:1px solid #e3eaf5;padding:20px 0 0 14px;margin:0 0 24px;color:#7c8da4;list-style:disc;flex:1}
+.product-menu-highlights li{font-size:12px;line-height:1.9;padding-left:2px;margin-bottom:10px;white-space:pre-wrap}
+.product-menu-highlights li::marker{color:#a5bcdd;font-size:8px}
+.product-menu-action{font-size:13px;line-height:24px;color:#285eac;display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:6px}
+.product-menu-action i{font-size:18px;font-style:normal;color:#6387b9}
+.prd-strict .nav-product summary{cursor:pointer;list-style:none;white-space:nowrap}
+.prd-strict .nav-product summary::-webkit-details-marker{display:none}
+@media(max-width:1100px){
+ .section-nav a{font-size:13px;padding:8px 16px}
+ .prd-strict .product-menu.product-mega{padding:20px;width:calc(100vw - 40px)}
+ .product-mega-grid{gap:10px}
+ .prd-strict .product-mega .product-mega-card{padding:22px 16px}
+ .product-mega-card h3{font-size:15px}
+ .product-mega-card .product-menu-description{font-size:12px;min-height:116px}
+ .product-menu-highlights li{font-size:11px}
+}
+@media(max-width:900px){
+ .product-mega-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .product-mega-card h3{font-size:17px;min-height:0}
+ .product-mega-card .product-menu-description{min-height:0;font-size:13px}
+ .product-menu-highlights li{font-size:12px}
+}
+@media(max-width:767px){
+ body.training,body.solutions{--anchor-top:76px}
+ body.kernelswift{--anchor-top:128px}
+ html:has(body.training),html:has(body.solutions){scroll-padding-top:140px}
+ html:has(body.kernelswift){scroll-padding-top:194px}
+ .section-nav-dock{height:82px;padding:0 12px;justify-content:flex-start}
+ .section-nav{max-width:calc(100vw - 24px);margin:0 auto;gap:2px;padding:4px;box-shadow:0 4px 15px -8px #193c7638}
+ .section-nav a{font-size:12px;padding:7px 14px;line-height:24px}
+ .prd-strict .section-nav-dock+.product-story{padding-top:32px}
+ .prd-strict .main-nav{max-height:calc(100dvh - 64px);overflow:auto;overscroll-behavior:contain}
+ .prd-strict .product-menu.product-mega{position:static;transform:none;left:auto;top:auto;width:100%;max-height:none;overflow:visible;padding:16px 0 0;margin:0;border:0;border-radius:0;box-shadow:none;background:none}
+ .product-menu-heading{padding-bottom:14px;font-size:12px}
+ .product-mega-grid{grid-template-columns:1fr;gap:12px}
+ .prd-strict .product-mega .product-mega-card{padding:24px;border:1px solid #e2eaf6;border-radius:12px}
+ .product-mega-card h3{font-size:18px;line-height:1.6;margin-bottom:12px}
+ .product-mega-card .product-menu-description{font-size:13px;margin-bottom:18px}
+ .product-menu-highlights{margin-bottom:18px;padding-top:16px}
+ .product-menu-highlights li{font-size:12px;margin-bottom:8px}
+}
+@media(prefers-reduced-transparency:reduce){.section-nav{background:#fff;backdrop-filter:none}}
+@media(prefers-reduced-motion:reduce){.section-nav a,.prd-strict .product-mega .product-mega-card{transition:none}}
+
+@media(max-width:767px){.section-nav-sentinel{top:calc(50% - 23px)}}
+
+/* The dropdown uses only the four user-supplied titles and introductions. */
+.prd-strict .product-mega-card .product-menu-description{min-height:0;flex:1;margin-bottom:26px}

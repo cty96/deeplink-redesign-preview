@@ -1,0 +1,97 @@
+/* Shared surface roles: one light vertical finish across every marketing page.
+   Layout, type, navigation controls and deliberately transparent CTAs stay independent. */
+:root {
+ --dl-card-radius:16px;
+ --dl-card-radius-small:12px;
+ --dl-card-outline:#e3ecf8;
+ --dl-card-tint:linear-gradient(180deg,#fcfdff 0%,#eff5ff 100%);
+ --dl-card-white:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
+ --dl-card-inner:linear-gradient(180deg,#f8fbff 0%,#eaf2ff 100%);
+ --dl-card-shadow:0 8px 24px rgba(42,77,132,.045);
+ --dl-card-highlight:inset 0 1px 0 rgba(255,255,255,.95);
+}
+/* Feature and capability cards share the product pages' quiet blue-white material. */
+:is(.core-feature-card,.revision-product,.prd-strict .product-feature,.prd-strict .scenario-feature,
+ .prd-strict .cap-story,.deployment-description,.solutions .solution-fact,.solutions .solution-showcase,
+ .solutions .solution-module-value,.solutions .solution-module-features,
+ .verification-wrap .working-group-card,.verification-wrap .core-ability-card,
+ .partners-wrap .reason-list>li,.partners-wrap .cards-wrap>.card-item,.partners-wrap .steps-wrap>li,
+ .kernelswift-page .topic-card,.kernelswift-page .hcard,.kernelswift-page .acard) {
+ background:var(--dl-card-tint) !important;
+ border:1px solid var(--dl-card-outline) !important;
+ border-radius:var(--dl-card-radius) !important;
+ box-shadow:var(--dl-card-highlight),var(--dl-card-shadow) !important;
+}
+/* Reading and logo cards use the matching white surface, on either page canvas. */
+:is(.fd-navigation-wrap .case-slide,.prd-strict .case-slide,.prd-strict .access-card,
+ .verification-wrap .skill-card,.kernelswift-page .res-card,.kernelswift-page .qr-card,
+ .kernelswift-page .track-card,.partner-logo-cell,.solution-partner-item .partner-slot,
+ .kernelswift .ecosystem-logo-group>.partner-slot,.training .eco-logo-slot,
+ .training .eco-center-directory) {
+ background:var(--dl-card-white) !important;
+ border:1px solid var(--dl-card-outline) !important;
+ border-radius:var(--dl-card-radius) !important;
+ box-shadow:var(--dl-card-highlight),var(--dl-card-shadow) !important;
+}
+/* Structural diagrams retain compact cells; their finish follows the same material. */
+.framework-container .architecture-layer-title,
+.framework-container :is(.application-scenario,.model-row>div,.fusion-surface,.toolchain-surface,
+ .toolchain-group,.product-surface,.hardware-row>div,.architecture-validation),
+.prd-strict :is(.architecture-board,.arch-panel,.ks-interface-art,.ks-scene-art) {
+ background:var(--dl-card-inner) !important;
+ border-radius:var(--dl-card-radius) !important;
+ box-shadow:var(--dl-card-highlight) !important;
+}
+.framework-container :is(.feature-nodes>span,.product-nodes>span,.quiet-row>div) {
+ background:var(--dl-card-white) !important;
+ border-radius:8px !important;
+}
+.framework-container .toolchain-surface,.framework-container .product-surface {
+ background:var(--dl-card-tint) !important;
+}
+/* The large boards stay white, rather than adding another blue panel behind blue cards. */
+.framework-container .architecture-board,.prd-strict #architecture>.wrap>.architecture-board {
+ background:var(--dl-card-white) !important;
+ border-color:var(--dl-card-outline) !important;
+ border-radius:24px !important;
+ box-shadow:var(--dl-card-shadow) !important;
+}
+@media(max-width:768px){
+ :root { --dl-card-radius:14px;--dl-card-radius-small:10px; }
+ .framework-container .architecture-board { background:transparent !important;box-shadow:none !important; }
+}
+
+/* Card finishes must always include a readable inset, even over legacy padding:0 panels. */
+.solutions .solution-module-support {
+ padding:0; border:0; border-radius:0; background:none; gap:24px;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.solutions :is(.solution-module-value,.solution-module-features) {
+ min-width:0; padding:32px !important; box-sizing:border-box;
+}
+.solutions .solution-module-support h3 { margin:0 0 20px; }
+.solutions .solution-module-features ul { margin:0; gap:12px; }
+.solutions .solution-module-features li { padding:12px 16px; }
+.solutions .solution-module-value .solution-value-copy em { overflow-wrap:anywhere; }
+.jump-chevron { display:inline-block; width:14px; height:14px; flex:0 0 14px; vertical-align:-2px; }
+@media(max-width:767px) {
+ .solutions .solution-module-support { grid-template-columns:minmax(0,1fr); gap:16px; }
+ .solutions :is(.solution-module-value,.solution-module-features) { padding:24px !important; }
+ .solutions .solution-module-support h3 { margin-bottom:16px; }
+}
+
+/* User-selected glass hero art. Imagery edges fade into the existing pale blue canvas. */
+.prd-strict .modern-hero,.solutions .solution-hero.modern-hero { background:#f5f8fd; }
+.modern-hero .hero-dot-field { display:none; }
+.glass-hero { position:relative; width:100%; height:440px; aspect-ratio:auto; background:none; }
+.glass-hero-image { display:block; width:100%; height:100%; object-fit:contain; }
+.glass-hero-wide { overflow:hidden; mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent); }
+.glass-hero-wide .glass-hero-image { position:absolute; right:-3%; width:215%; max-width:none; object-fit:cover; object-position:right center; }
+.solutions .case-illustration img { mix-blend-mode:normal; }
+/* Edge-softening is presentation only; the source illustrations stay unchanged. */
+.training :is(.training-feature-dots,.training-scenario-point) { background:none !important; border:0 !important; box-shadow:none !important; }
+.training :is(.training-feature-dots,.training-scenario-point) img { mix-blend-mode:multiply !important; border:0; border-radius:0; box-shadow:none; mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent),linear-gradient(0deg,transparent,#000 18%,#000 82%,transparent); mask-composite:intersect; }
+@media(max-width:767px) {
+ .glass-hero { height:280px; }
+ .glass-hero-wide .glass-hero-image { width:220%;right:-6%; }
+}

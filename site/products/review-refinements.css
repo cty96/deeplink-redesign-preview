@@ -1,0 +1,55 @@
+/* Fourth review: a readable three-level architecture type scale. */
+.architecture-board{--arch-heading:14px;--arch-body:14px;--arch-detail:12px;--arch-title:#345780;--arch-text:#607590}
+.architecture-board .layer-title,.architecture-board .architecture-solution h4,.architecture-board .framework-group h4{font-size:var(--arch-heading);font-weight:600;line-height:1.6;letter-spacing:0;color:var(--arch-title)}
+#architecture .architecture-board .arch-node{font-size:var(--arch-body);font-weight:400;line-height:1.6;letter-spacing:0;color:var(--arch-text)}
+#architecture .architecture-board .arch-node b{font-size:inherit;font-weight:inherit;color:inherit}
+.architecture-board .architecture-solution p{font-size:var(--arch-detail);font-weight:400;line-height:1.9;color:var(--arch-text)}
+.architecture-board .architecture-solution h4{margin-bottom:12px}
+.architecture-board .layer-title{overflow-wrap:normal;word-break:normal}
+/* Three quiet cards replace the oversized vertical rules. */
+.inference-benefits{gap:18px}
+.inference-benefits article{border:0;padding:24px;border-radius:12px;background:#ffffffd9;box-shadow:0 6px 20px -18px #315b9940}
+.inference-benefits h3{font-size:17px;margin-bottom:12px}
+.inference-benefits p{font-size:14px;line-height:1.9}
+/* Floating region names, with no leader or side-connector lines. */
+.eco-operators:after,.eco-universities:before{display:none}
+.geo-label{background:#ffffffd9;border-color:#e2eaf6;box-shadow:0 4px 14px -9px #37649650}
+/* Native scroll snapping supports touch and trackpad gestures without drag interception. */
+.case-carousel{position:relative}
+.case-viewport{position:relative;display:flex;align-items:stretch;gap:24px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;border-radius:18px}
+.case-viewport::-webkit-scrollbar{display:none}
+.case-slide{flex:0 0 100%;min-width:0;min-height:300px;scroll-snap-align:start;scroll-snap-stop:always;display:grid;grid-template-columns:minmax(180px,.65fr) minmax(0,2fr);gap:52px;align-items:center;padding:48px 52px;border:1px solid #e0e9f7;border-radius:18px;background:linear-gradient(115deg,#eef4ff,#f8faff 75%);box-sizing:border-box}
+.case-slide h3{margin:0;color:#284e83;font-size:28px;font-weight:500;line-height:1.5;overflow-wrap:anywhere}
+.case-copy{max-width:840px}
+.case-copy p{font-size:15px;line-height:2;color:#617997;margin:0;white-space:pre-wrap}
+.case-copy p+p{margin-top:14px}
+.case-controls{position:relative;display:flex;justify-content:center;align-items:center;gap:24px;margin-top:28px;min-height:44px}
+.case-arrow{display:grid;place-items:center;width:44px;height:44px;border:1px solid #dce6f5;border-radius:50%;color:#5980b4;background:#fff;cursor:pointer;transition:color .2s,background .2s,border-color .2s}
+.case-arrow svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.case-arrow:hover{background:#eff5ff;border-color:#b7cef0;color:#0d53de}
+.case-pagination{display:flex;align-items:center;gap:2px}
+.case-dot{display:grid;place-items:center;width:28px;height:40px;padding:0;border:0;background:transparent;cursor:pointer}
+.case-dot:before{content:"";width:6px;height:6px;border-radius:8px;background:#d0ddf0;transition:width .2s,background .2s}
+.case-dot:hover:before{background:#91b2e3}
+.case-dot[aria-current=true]:before{width:22px;background:#0d53de}
+.case-count{position:absolute;right:2px;font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:.12em;color:#8b9db5}
+.case-carousel .case-live{margin:0}
+@media(max-width:1100px){
+ .case-slide{padding:36px;gap:32px;grid-template-columns:180px minmax(0,1fr)}
+ .case-slide h3{font-size:25px}
+ .architecture-board{--arch-body:13px}
+}
+@media(max-width:767px){
+ .architecture-board{--arch-heading:14px;--arch-body:12px;--arch-detail:12px}
+ .inference-benefits{gap:12px}
+ .inference-benefits article{padding:22px;border-radius:10px}
+ .inference-benefits h3{font-size:16px}.inference-benefits p{font-size:13px}
+ .case-slide{grid-template-columns:minmax(0,1fr);align-content:start;gap:22px;padding:28px 24px;min-height:300px;border-radius:14px}
+ .case-slide h3{font-size:23px;line-height:1.5}
+ .case-copy p{font-size:14px;line-height:1.95}
+ .case-controls{gap:12px;margin-top:22px;padding-bottom:24px}
+ .case-arrow{width:38px;height:38px}
+ .case-dot{width:24px}.case-dot[aria-current=true]:before{width:18px}
+ .case-count{left:0;right:0;bottom:0;text-align:center;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.case-arrow,.case-dot:before{transition:none}}

@@ -1,0 +1,65 @@
+[
+  {
+    "channel": "wechat",
+    "kind": "icon",
+    "source": "业务icon/公众号.svg",
+    "asset": "social-assets/icon-wechat.svg",
+    "sha256": "066b7fa2863bd0048c17dc9bb61c7fa2b3b93c4b32afe09dae3cc869eb90abee"
+  },
+  {
+    "channel": "csdn",
+    "kind": "icon",
+    "source": "业务icon/CSDNFilled.svg",
+    "asset": "social-assets/icon-csdn.svg",
+    "sha256": "a464013f9dabea898df82213da4f96630141c890c2cddff7eef20653e7d96155"
+  },
+  {
+    "channel": "xiaohongshu",
+    "kind": "icon",
+    "source": "业务icon/小红书.svg",
+    "asset": "social-assets/icon-xiaohongshu.svg",
+    "sha256": "292f59bb965e53c277319f74b7b4a2ed4c89184a67c40aa9bd2ab70ed54bef37"
+  },
+  {
+    "channel": "zhihu",
+    "kind": "icon",
+    "source": "业务icon/ZhihuFilled.svg",
+    "asset": "social-assets/icon-zhihu.svg",
+    "sha256": "b5e645192c6791535b405f8ad17e76c8e10955796e7be30e019cce234e68065b"
+  },
+  {
+    "channel": "bilibili",
+    "kind": "icon",
+    "source": "业务icon/BilibiliOutlined.svg",
+    "asset": "social-assets/icon-bilibili.svg",
+    "sha256": "fb2396018620ed70c64e6e30e782dfa1c8cff43ac77324056606c7b96ac8ac66"
+  },
+  {
+    "channel": "wechat",
+    "kind": "qr",
+    "source": "二维码/微信公众号.png",
+    "asset": "social-assets/qr-wechat-20261104.png",
+    "sha256": "3c85c47a5469b6c0f65f5b225e8d0705f7b87ead23be0f162be874e8fc2a0aea"
+  },
+  {
+    "channel": "csdn",
+    "kind": "qr",
+    "source": "二维码/CSDN.png",
+    "asset": "social-assets/qr-csdn-20261104.png",
+    "sha256": "8396aa4703af46d6a960948672747ad4e1ccb166f4358278b1d7ba91a5a365e7"
+  },
+  {
+    "channel": "xiaohongshu",
+    "kind": "qr",
+    "source": "二维码/小红书.png",
+    "asset": "social-assets/qr-xiaohongshu-20261104.png",
+    "sha256": "fd2f808af316e88daf1acb58f1cac03a3706704ff2f91c654bed658951cc8261"
+  },
+  {
+    "channel": "zhihu",
+    "kind": "qr",
+    "source": "二维码/知乎.png",
+    "asset": "social-assets/qr-zhihu-20261104.png",
+    "sha256": "29819c6b3a349a13fb95b15f5c3f8ff94707af85e8f8a00181d2b08207b4c8ac"
+  }
+]

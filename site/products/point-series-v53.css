@@ -1,0 +1,7 @@
+/* Approved pale-blue point-field family; keep the existing responsive media frames. */
+.training .product-feature .approved-point-field{opacity:1}
+.training .approved-point-field img{width:100%;height:100%;object-fit:contain;mix-blend-mode:darken;filter:none;opacity:1}
+.prd-strict.kernelswift #scenarios .point-field-art,
+.solutions .solution-illustration{background:#f7f9fd}
+.kernelswift #scenarios .point-field-art img,
+.solutions .solution-illustration img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:darken;filter:none;opacity:1;box-shadow:none}

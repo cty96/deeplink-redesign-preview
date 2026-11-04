@@ -1,0 +1,180 @@
+[
+  {
+    "key": "home",
+    "name": {
+      "CN": "首页",
+      "EN": "Home"
+    },
+    "path": "/deeplink-redesign-preview/home",
+    "isNew": false,
+    "children": [
+      {
+        "key": "home0",
+        "name": {
+          "CN": "体系架构",
+          "EN": "Architecture"
+        },
+        "path": "/deeplink-redesign-preview/home#framework",
+        "type": "self"
+      },
+      {
+        "key": "home1",
+        "name": {
+          "CN": "标准建设",
+          "EN": "Standards"
+        },
+        "path": "/deeplink-redesign-preview/home#standards",
+        "type": "self"
+      },
+      {
+        "key": "home2",
+        "name": {
+          "CN": "学术成果",
+          "EN": "Research"
+        },
+        "path": "/deeplink-redesign-preview/home#academic",
+        "type": "self"
+      },
+      {
+        "key": "home3",
+        "name": {
+          "CN": "生态伙伴",
+          "EN": "Ecosystem"
+        },
+        "path": "/deeplink-redesign-preview/home#ecosystem",
+        "type": "self"
+      },
+      {
+        "key": "home4",
+        "name": {
+          "CN": "新闻资讯",
+          "EN": "News"
+        },
+        "path": "/deeplink-redesign-preview/home#news",
+        "type": "self"
+      }
+    ]
+  },
+  {
+    "key": "tools",
+    "name": {
+      "CN": "产品",
+      "EN": "Products"
+    },
+    "path": "/deeplink-redesign-preview/products/training.html",
+    "isNew": true,
+    "children": [
+      {
+        "key": "tools0",
+        "name": {
+          "CN": "混合训推一体工具链",
+          "EN": "Training & Inference"
+        },
+        "path": "/deeplink-redesign-preview/products/training.html",
+        "type": "self",
+        "summary": "能适配当前主流模型、支持NV和国产多芯片异构、跨域的训推一体化工具链，打通释放异构计算潜能。",
+        "menuName": "混合训推一体工具链"
+      },
+      {
+        "key": "tools1",
+        "name": {
+          "CN": "智能算子迁移系统",
+          "EN": "KernelSwift"
+        },
+        "path": "/deeplink-redesign-preview/products/kernelswift.html",
+        "type": "self",
+        "summary": "自动生成和优化高性能算子，降低多元芯片适配成本；",
+        "menuName": "KernelSwift智能算子迁移系统："
+      },
+      {
+        "key": "tools2",
+        "name": {
+          "CN": "超智融合平台",
+          "EN": "DeepFusion"
+        },
+        "path": "https://deepfusion.deeplink.org.cn/#/login",
+        "type": "self",
+        "summary": "打通跨域算力资源，提升资源调度与科研任务执行效率；",
+        "menuName": "超智融合平台："
+      },
+      {
+        "key": "tools3",
+        "name": {
+          "CN": "全环节软硬件验证平台",
+          "EN": "DeepEval"
+        },
+        "path": "/deeplink-redesign-preview/deepeval",
+        "type": "self",
+        "summary": "对芯片、算子、框架、模型、集群与应用进行可信验证，沉淀可复用的验证结果和产业成果。",
+        "menuName": "AI全环节软硬件验证平台："
+      }
+    ]
+  },
+  {
+    "key": "solutions",
+    "name": {
+      "CN": "解决方案",
+      "EN": "Solutions"
+    },
+    "path": "/deeplink-redesign-preview/products/solutions.html",
+    "isNew": true,
+    "children": [
+      {
+        "key": "solutions0",
+        "name": {
+          "CN": "方案介绍",
+          "EN": "Overview"
+        },
+        "path": "/deeplink-redesign-preview/products/solutions.html",
+        "type": "self"
+      },
+      {
+        "key": "solutions1",
+        "name": {
+          "CN": "合作案例",
+          "EN": "Cases"
+        },
+        "path": "/deeplink-redesign-preview/home#case",
+        "type": "self"
+      }
+    ]
+  },
+  {
+    "key": "partner",
+    "name": {
+      "CN": "生态合作",
+      "EN": "Ecosystem"
+    },
+    "path": "/deeplink-redesign-preview/partner",
+    "isNew": false,
+    "children": [
+      {
+        "key": "partner0",
+        "name": {
+          "CN": "合作伙伴计划",
+          "EN": "Partner Program"
+        },
+        "path": "/deeplink-redesign-preview/partner",
+        "type": "self"
+      },
+      {
+        "key": "partner1",
+        "name": {
+          "CN": "工作组",
+          "EN": "Working Group"
+        },
+        "path": "/deeplink-redesign-preview/home#working-group",
+        "type": "self"
+      },
+      {
+        "key": "partner2",
+        "name": {
+          "CN": "产业生态成果",
+          "EN": "Ecosystem Outcomes"
+        },
+        "path": "/deeplink-redesign-preview/home#ecosystem",
+        "type": "self"
+      }
+    ]
+  }
+]

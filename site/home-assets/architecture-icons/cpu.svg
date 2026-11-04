@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 100" width="96" height="100"><defs>
+<linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#dbe8ff"/><stop offset="1" stop-color="#91a2ff"/></linearGradient>
+<linearGradient id="left" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#d5e5ff" stop-opacity=".95"/><stop offset=".45" stop-color="#9eb2ff" stop-opacity=".84"/><stop offset="1" stop-color="#a1aced"/></linearGradient>
+<linearGradient id="right" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a6b5ff" stop-opacity=".9"/><stop offset=".55" stop-color="#adbaf2"/><stop offset="1" stop-color="#9aa5ed"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fbffff"/><stop offset=".35" stop-color="#c3d7ff" stop-opacity=".9"/><stop offset=".7" stop-color="#8595ff" stop-opacity=".88"/><stop offset="1" stop-color="#9ea7ed"/></linearGradient>
+<radialGradient id="orb" cx=".32" cy=".24" r=".78"><stop stop-color="#f7ffff"/><stop offset=".18" stop-color="#b6d7ff"/><stop offset=".5" stop-color="#7193fa"/><stop offset=".8" stop-color="#919fef"/><stop offset="1" stop-color="#a8b1f2"/></radialGradient>
+<linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fcff" stop-opacity=".85"/><stop offset="1" stop-color="#a3b1fd" stop-opacity=".6"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="3"/></filter>
+</defs><ellipse cx="48" cy="81" rx="23" ry="4" fill="#8ea0ed" opacity=".10" filter="url(#blur)"/><g fill="none" stroke="#8d9cf7" stroke-width="2.3" stroke-linecap="round"><path d="M25 34.0l-7-4M26 48.0l-7 4M71 34.0l7-4M70 48.0l7 4"/><path d="M30 31.35l-7-4M31 50.65l-7 4M66 31.35l7-4M65 50.65l7 4"/><path d="M35 28.7l-7-4M36 53.3l-7 4M61 28.7l7-4M60 53.3l7 4"/><path d="M40 26.05l-7-4M41 55.95l-7 4M56 26.05l7-4M55 55.95l7 4"/><path d="M45 23.4l-7-4M46 58.6l-7 4M51 23.4l7-4M50 58.6l7 4"/></g>
+<path d="M23 34 48 20 73 34V49L48 64 23 49Z" fill="url(#right)" stroke="#d4e0ff"/>
+<path d="M23 34 48 20 73 34 48 48Z" fill="url(#top)" stroke="#fff"/>
+<path d="M31 34 48 25 65 34 48 44Z" fill="url(#glass)" stroke="#d7e4ff"/>
+<path d="M37 34 48 28 59 34 48 40Z" fill="#94a3ef" opacity=".75"/>
+<path d="M25 37 48 50V61" fill="none" stroke="#e9f1ff" stroke-width="1.1"/></svg>

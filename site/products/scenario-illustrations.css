@@ -1,0 +1,42 @@
+/* Each PRD scene pairs its full original copy with a dedicated generated illustration. */
+.prd-strict.kernelswift #scenarios .ks-scene-panel{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.1fr);gap:44px;align-items:center;min-height:400px;padding:40px 40px 40px 48px;background:linear-gradient(110deg,#fcfdff,#f3f7fe);border:1px solid #e2eaf7;border-radius:20px;overflow:hidden}
+.prd-strict.kernelswift #scenarios .ks-scene-panel[hidden]{display:none}
+.ks-scene-copy{min-width:0}
+.ks-scene-copy .feature-title{display:block;font-size:25px;line-height:1.55;font-weight:500;color:#234a81;margin:0 0 22px;letter-spacing:0}
+.ks-scene-copy .feature-description{display:block;font-size:16px;font-style:normal;font-weight:400;line-height:2;color:#647e9f;max-width:32em}
+.ks-scene-art{margin:0;min-width:0;border-radius:14px;overflow:hidden;background:#f1f6ff;aspect-ratio:3/2}
+.ks-scene-art img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:1100px){
+ .prd-strict.kernelswift #scenarios .ks-scene-panel{gap:28px;padding:30px;min-height:340px}
+ .ks-scene-copy .feature-title{font-size:22px;margin-bottom:16px}
+ .ks-scene-copy .feature-description{font-size:15px;line-height:1.9}
+}
+@media(max-width:767px){
+ .prd-strict.kernelswift #scenarios .ks-scene-panel{grid-template-columns:1fr;gap:24px;padding:24px;min-height:0;border-radius:16px}
+ .ks-scene-copy .feature-title{font-size:20px;margin-bottom:14px}
+ .ks-scene-copy .feature-description{font-size:14px;line-height:1.9}
+ .ks-scene-art{border-radius:10px}
+}
+/* v18: selector column on the left, the selected illustrated scene on the right. */
+.ks-scene-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:26px;align-items:start}
+.prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs{display:flex;flex-direction:column;gap:12px;border:0;margin:0;overflow:visible;align-items:stretch}
+.prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs .tab{flex:none;text-align:left;white-space:normal;border:1px solid transparent;border-radius:12px;background:#f7f9fc;color:#7085a2;padding:23px 20px;line-height:1.75;font-size:16px;min-height:92px;transition:background .2s,border-color .2s,color .2s}
+.prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs .tab:after{display:none}
+.prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs .tab[aria-selected=true]{color:#1555c8;background:#edf3ff;border-color:#cfdef7;box-shadow:0 8px 20px -16px #356cb450}
+.ks-scene-panels{min-width:0}
+.prd-strict.kernelswift #scenarios .ks-scene-layout .ks-scene-panel{padding:30px;gap:26px;min-height:420px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.ks-scene-layout .ks-scene-copy .feature-title{font-size:23px}
+.ks-scene-layout .ks-scene-copy .feature-description{font-size:15px}
+@media(max-width:1100px){
+ .ks-scene-layout{grid-template-columns:190px minmax(0,1fr);gap:20px}
+ .prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs .tab{font-size:14px;padding:20px 16px;min-height:88px}
+ .prd-strict.kernelswift #scenarios .ks-scene-layout .ks-scene-panel{grid-template-columns:1fr;gap:24px;padding:28px;min-height:0}
+ .ks-scene-layout .ks-scene-art{max-width:500px;width:100%;justify-self:center}
+}
+@media(max-width:767px){
+ .ks-scene-layout{grid-template-columns:1fr;gap:20px}
+ .prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs{flex-direction:row;overflow-x:auto;overflow-y:hidden;gap:8px;scrollbar-width:none}
+ .prd-strict.kernelswift #scenarios .ks-scene-layout>.tabs .tab{width:190px;min-height:76px;padding:16px;font-size:13px}
+ .prd-strict.kernelswift #scenarios .ks-scene-layout .ks-scene-panel{padding:24px}
+ .ks-scene-layout .ks-scene-copy .feature-title{font-size:21px}.ks-scene-layout .ks-scene-copy .feature-description{font-size:14px}
+}

@@ -1,0 +1,1402 @@
+{
+  "code": 200,
+  "success": true,
+  "message": "成功",
+  "data": {
+    "P0": [
+      {
+        "bzfl": "Convolution",
+        "bzmm": "convolution",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.conv2d.html?highlight=conv2d#torch.nn.functional.conv2d"
+      },
+      {
+        "bzfl": "Convolution",
+        "bzmm": "conv_transpose",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.conv_transpose2d.html?highlight=conv_transpose2d"
+      },
+      {
+        "bzfl": "Convolution",
+        "bzmm": "unfold",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.unfold.html?highlight=fold#torch.nn.functional.unfold"
+      },
+      {
+        "bzfl": "Linear",
+        "bzmm": "linear",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.linear.html?highlight=linear#torch.nn.functional.linear"
+      },
+      {
+        "bzfl": "Pooling",
+        "bzmm": "adaptive_avg_pool",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.adaptive_avg_pool2d.html?highlight=adaptive_avg_pool2d#torch.nn.functional.adaptive_avg_pool2d"
+      },
+      {
+        "bzfl": "Pooling",
+        "bzmm": "adaptive_max_pool",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.adaptive_max_pool3d.html?highlight=adaptive_max_pool3d#torch.nn.functional.adaptive_max_pool3d"
+      },
+      {
+        "bzfl": "Pooling",
+        "bzmm": "max_pool",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.max_pool2d.html?highlight=max_pool2d#torch.nn.functional.max_pool2d"
+      },
+      {
+        "bzfl": "Pad",
+        "bzmm": "pad",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.pad.html?highlight=pad#torch.nn.functional.pad"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "binary_cross_entropy",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.binary_cross_entropy.html?highlight=binary_cross_entropy#torch.nn.functional.binary_cross_entropy"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "cross_entropy",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.cross_entropy.html?highlight=cross_entropy#torch.nn.functional.cross_entropy"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "mse_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.mse_loss.html?highlight=mse_loss#torch.nn.functional.mse_loss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "ctc_loss",
+        "bzflRowSpan": 0,
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.ctc_loss.html?highlight=ctc_loss#torch.nn.functional.ctc_loss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "nll_loss",
+        "bzflRowSpan": 0,
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html#torch.nn.NLLLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "smooth_l1_loss",
+        "bzflRowSpan": 0,
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.smooth_l1_loss.html?highlight=smooth_l1_loss#torch.nn.functional.smooth_l1_loss"
+      },
+      {
+        "bzfl": "Norm",
+        "bzmm": "batch_norm",
+        "bzflRowSpan": 2,
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.batch_norm.html?highlight=batch_norm#torch.nn.functional.batch_norm"
+      },
+      {
+        "bzfl": "Norm",
+        "bzmm": "layer_norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.layer_norm.html?highlight=layer_norm"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "relu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.relu.html?highlight=relu#torch.nn.functional.relu"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "gelu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.gelu.html?highlight=gelu#torch.nn.functional.gelu"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "leaky_relu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.leaky_relu.html?highlight=leaky_relu#torch.nn.functional.leaky_relu"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "hardtanh",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.hardtanh.html?highlight=hardtanh#torch.nn.functional.hardtanh"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "hardshrink",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.hardshrink.html?highlight=hardshrink#torch.nn.functional.hardshrink"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "glu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.glu.html?highlight=glu#torch.nn.functional.glu"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "sigmoid",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.sigmoid.html?highlight=sigmoid#torch.nn.functional.sigmoid"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "softmax",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.softmax.html?highlight=softmax#torch.nn.functional.softmax"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "log_softmax",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.log_softmax.html?highlight=log_softmax#torch.nn.functional.log_softmax"
+      },
+      {
+        "bzfl": "Dropout",
+        "bzmm": "dropout",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html?highlight=dropout#torch.nn.Dropout"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "mm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.mm.html?highlight=torch%20mm#torch.mm"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "bmm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.bmm.html#torch.bmm"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "matmul",
+        "link": "https://pytorch.org/docs/stable/generated/torch.matmul.html#torch.matmul"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "addmm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.addmm.html"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.norm.html?highlight=norm#torch.norm"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "transpose",
+        "link": "https://pytorch.org/docs/stable/generated/torch.transpose.html#torch.transpose"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "stack",
+        "link": "https://pytorch.org/docs/stable/generated/torch.stack.html?highlight=stack#torch.stack"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "cat",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cat.html?highlight=cat"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "view",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.view.html?highlight=view#torch.Tensor.view"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "resize",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.resize_.html?highlight=resize"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "narrow",
+        "link": "https://pytorch.org/docs/stable/generated/torch.narrow.html?highlight=narrow#torch.narrow"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "reshape",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.reshape.html?highlight=reshape#torch.reshape"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "flatten",
+        "link": "https://pytorch.org/docs/stable/generated/torch.flatten.html?highlight=flatten#torch.flatten"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "squeeze",
+        "link": "https://pytorch.org/docs/stable/generated/torch.squeeze.html?highlight=squeeze#torch.squeeze"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "unsqueeze",
+        "link": "https://pytorch.org/docs/stable/generated/torch.unsqueeze.html#torch.unsqueeze"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "chunk",
+        "link": "https://pytorch.org/docs/stable/generated/torch.chunk.html?highlight=chunk#torch.chunk"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "split",
+        "link": "https://pytorch.org/docs/stable/generated/torch.split.html?highlight=split#torch.split"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "unbind",
+        "link": "https://pytorch.org/docs/stable/generated/torch.unbind.html?highlight=bind#torch.unbind"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "expand",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.expand.html?highlight=expand#torch.Tensor.expand"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "select",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.select.html?highlight=select#torch.select"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "gather",
+        "link": "https://pytorch.org/docs/stable/generated/torch.gather.html?highlight=gather#torch.gather"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "scatter",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.scatter.html?highlight=scatter#torch.scatter"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "index_put",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.index_put.html?highlight=index_put"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "index_select",
+        "link": "https://pytorch.org/docs/stable/generated/torch.index_select.html?highlight=index_select"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "masked_fill",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.masked_fill.html?highlight=masked_fill#torch.Tensor.masked_fill"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "masked_select",
+        "link": "https://pytorch.org/docs/stable/generated/torch.masked_select.html?highlight=masked_select#torch.masked_select"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "randperm",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.randperm.html?highlight=randperm#torch.randperm"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "bernoulli",
+        "link": "https://pytorch.org/docs/stable/generated/torch.bernoulli.html?highlight=bernoulli#torch.bernoulli"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "one_hot",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.one_hot.html?highlight=one_hot#torch.nn.functional.one_hot"
+      },
+      {
+        "bzfl": "Sort",
+        "bzmm": "topk",
+        "link": "https://pytorch.org/docs/stable/generated/torch.topk.html?highlight=topk#torch.topk"
+      },
+      {
+        "bzfl": "Sort",
+        "bzmm": "sort",
+        "link": "https://pytorch.org/docs/stable/generated/torch.sort.html?highlight=sort#torch.sort"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "abs",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.abs.html?highlight=abs#torch.abs"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "exp",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.exp.html?highlight=exp#torch.exp"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "floor",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.floor.html?highlight=floor#torch.floor"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "log",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.log.html?highlight=log#torch.log"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "log2",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.log2.html?highlight=log2#torch.log2"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "pow",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.pow.html?highlight=pow#torch.pow"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "reciprocal",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.reciprocal.html?highlight=reciprocal#torch.reciprocal"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "sqrt",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.sqrt.html?highlight=sqrt#torch.sqrt"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "tanh",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.nn.functional.tanh.html?highlight=tanh#torch.nn.functional.tanh"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "neg",
+        "link": "https://pytorch.org/docs/stable/generated/torch.neg.html?highlight=neg#torch.neg"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "sign",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.sign.html?highlight=sign#torch.sign"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "isinf",
+        "link": "https://pytorch.org/docs/stable/generated/torch.isinf.html?highlight=isinf#torch.isinf"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "isnan",
+        "link": "https://pytorch.org/docs/stable/generated/torch.isnan.html?highlight=isnan#torch.isnan"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "threshold",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.threshold.html#torch.nn.functional.threshold"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "clamp",
+        "link": "https://pytorch.org/docs/stable/generated/torch.clamp.html?highlight=clamp#torch.clamp"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "maximum",
+        "link": "https://pytorch.org/docs/stable/generated/torch.maximum.html#torch.maximum"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "minimum",
+        "link": "https://pytorch.org/docs/stable/generated/torch.minimum.html?highlight=minimum#torch.minimum"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "eq",
+        "link": "https://pytorch.org/docs/stable/generated/torch.eq.html?highlight=eq#torch.eq"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "ge",
+        "link": "https://pytorch.org/docs/stable/generated/torch.ge.html?highlight=ge#torch.ge"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "gt",
+        "link": "https://pytorch.org/docs/stable/generated/torch.gt.html?highlight=gt#torch.gt"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "le",
+        "link": "https://pytorch.org/docs/stable/generated/torch.le.html?highlight=le#torch.le"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "ne",
+        "link": "https://pytorch.org/docs/stable/generated/torch.ne.html?highlight=ne#torch.ne"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "add",
+        "link": "https://pytorch.org/docs/stable/generated/torch.add.html?highlight=add#torch.add"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "div",
+        "link": "https://pytorch.org/docs/stable/generated/torch.div.html?highlight=div#torch.div"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "mul",
+        "link": "https://pytorch.org/docs/stable/generated/torch.mul.html?highlight=mul"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "sub",
+        "link": "https://pytorch.org/docs/stable/generated/torch.sub.html?highlight=sub#torch.sub"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "remainder",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.remainder.html?highlight=remainder#torch.remainder"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "addcdiv",
+        "link": "https://pytorch.org/docs/stable/generated/torch.addcdiv.html#torch.addcdiv"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "addcmul",
+        "link": "https://pytorch.org/docs/stable/generated/torch.addcmul.html#torch.addcmul"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "fill",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.fill_.html?highlight=fill_#torch.Tensor.fill_"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "zero",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.zero_.html#torch.Tensor.zero_"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "empty",
+        "link": "https://pytorch.org/docs/stable/generated/torch.empty.html?highlight=empty#torch.empty"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "full",
+        "link": "https://pytorch.org/docs/stable/generated/torch.full.html?highlight=full#torch.full"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "ones",
+        "link": "https://pytorch.org/docs/stable/generated/torch.ones.html?highlight=ones#torch.ones"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "zeros",
+        "link": "https://pytorch.org/docs/stable/generated/torch.zeros.html?highlight=zeros#torch.zeros"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "arange",
+        "link": "https://pytorch.org/docs/stable/generated/torch.arange.html?highlight=arange#torch.arange"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "repeat",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.repeat.html?highlight=repeat#torch.Tensor.repeat"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "broadcast_tensors",
+        "link": "https://pytorch.org/docs/stable/generated/torch.broadcast_tensors.html?highlight=broadcast_tensors"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "all",
+        "link": "https://pytorch.org/docs/stable/generated/torch.all.html?highlight=all#torch.all"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "any",
+        "link": "https://pytorch.org/docs/stable/generated/torch.any.html?highlight=any#torch.any"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "max",
+        "link": "https://pytorch.org/docs/stable/generated/torch.max.html?highlight=max#torch.max"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "mean",
+        "link": "https://pytorch.org/docs/stable/generated/torch.mean.html"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "min",
+        "link": "https://pytorch.org/docs/stable/generated/torch.min.html?highlight=torch%20min#torch.min"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "sum",
+        "link": "https://pytorch.org/docs/stable/generated/torch.sum.html?highlight=sum#torch.sum"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "nonzero",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nonzero.html?highlight=nonzero#torch.nonzero"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "unique",
+        "link": "https://pytorch.org/docs/stable/generated/torch.unique.html?highlight=unique#torch.unique"
+      }
+    ],
+    "P1": [
+      {
+        "bzfl": "Convolution",
+        "bzmm": "fold",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.Fold.html?highlight=fold#torch.nn.Fold"
+      },
+      {
+        "bzfl": "Pooling",
+        "bzmm": "avg_pool",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.avg_pool2d.html?highlight=avg_pool2#torch.nn.functional.avg_pool2d"
+      },
+      {
+        "bzfl": "Pooling",
+        "bzmm": "max_unpool",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.max_unpool2d.html?highlight=max_unpool2d#torch.nn.functional.max_unpool2d"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "l1_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.l1_loss.html?highlight=l1_loss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "kl_div",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.kl_div.html?highlight=kl_div"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "margin_ranking_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.margin_ranking_loss.html?highlight=margin_ranking_loss#torch.nn.functional.margin_ranking_loss"
+      },
+      {
+        "bzfl": "Norm",
+        "bzmm": "group_norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.group_norm.html?highlight=group_norm#torch.nn.functional.group_norm"
+      },
+      {
+        "bzfl": "Norm",
+        "bzmm": "instance_norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.instance_norm.html?highlight=instance_norm"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "elu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.ELU.html#torch.nn.ELU"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "softplus",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.softplus.html?highlight=softplus#torch.nn.functional.softplus"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "prelu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.prelu.html?highlight=prelu#torch.nn.functional.prelu"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "silu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.silu.html?highlight=silu#torch.nn.functional.silu"
+      },
+      {
+        "bzfl": "Interpolate",
+        "bzmm": "meshgrid",
+        "link": "https://pytorch.org/docs/stable/generated/torch.meshgrid.html?highlight=meshgrid#torch.meshgrid"
+      },
+      {
+        "bzfl": "Interpolate",
+        "bzmm": "grid_sample",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.grid_sample.html?highlight=grid_sample#torch.nn.functional.grid_sample"
+      },
+      {
+        "bzfl": "Interpolate",
+        "bzmm": "lerp",
+        "link": "https://pytorch.org/docs/stable/generated/torch.lerp.html?highlight=lerp#torch.lerp"
+      },
+      {
+        "bzfl": "Interpolate",
+        "bzmm": "affine_grid",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.affine_grid.html?highlight=affine_grid#torch.nn.functional.affine_grid"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "baddbmm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.baddbmm.html?highlight=baddbmm#torch.baddbmm"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "ger",
+        "link": "https://pytorch.org/docs/stable/generated/torch.ger.html?highlight=ger#torch.ger"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "mv",
+        "link": "https://pytorch.org/docs/stable/generated/torch.mv.html?highlight=mv#torch.mv"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "dot",
+        "link": "https://pytorch.org/docs/stable/generated/torch.dot.html?highlight=dot#torch.dot"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cdist",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cdist.html?highlight=cdist"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cumsum",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cumsum.html?highlight=cumsum#torch.cumsum"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "einsum",
+        "link": "https://pytorch.org/docs/stable/generated/torch.einsum.html?highlight=einsum#torch.einsum"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "normalize",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.normalize.html?highlight=normalize#torch.nn.functional.normalize"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "diag",
+        "link": "https://pytorch.org/docs/stable/generated/torch.diag.html?highlight=diag#torch.diag"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "diagflat",
+        "link": "https://pytorch.org/docs/stable/generated/torch.diagflat.html?highlight=diagflat#torch.diagflat"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cholesky",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cholesky.html?highlight=cholesky"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "triangular_solve",
+        "link": "https://pytorch.org/docs/stable/generated/torch.triangular_solve.html#torch.triangular_solve"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "diagonal",
+        "link": "https://pytorch.org/docs/stable/generated/torch.diagonal.html?highlight=diagonal#torch.diagonal"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "qr",
+        "link": "https://pytorch.org/docs/stable/generated/torch.qr.html?highlight=qr#torch.qr"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "tril",
+        "link": "https://pytorch.org/docs/stable/generated/torch.tril.html#torch.tril"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "triu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.triu.html?highlight=triu#torch.triu"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "roll",
+        "link": "https://pytorch.org/docs/stable/generated/torch.roll.html?highlight=roll#torch.roll"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "pixel_shuffle",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.pixel_shuffle.html?highlight=pixel_shuffle#torch.nn.functional.pixel_shuffle"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "index_add ",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.index_add.html?highlight=index_add#torch.Tensor.index_add"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "rand",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.rand.html?highlight=rand#torch.rand"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "randn",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.randn.html?highlight=randn#torch.randn"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "multinomial",
+        "link": "https://pytorch.org/docs/stable/generated/torch.multinomial.html?highlight=multinomial#torch.multinomial"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "randint",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.randint.html?highlight=randint#torch.randint"
+      },
+      {
+        "bzfl": "Sort",
+        "bzmm": "argsort",
+        "link": "https://pytorch.org/docs/stable/generated/torch.argsort.html?highlight=argsort#torch.argsort"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "cos",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cos.html?highlight=cos#torch.cos\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "sin",
+        "link": "https://pytorch.org/docs/stable/generated/torch.sin.html?highlight=sin#torch.sin\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "logical_and",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logical_and.html?highlight=logical_#torch.logical_and"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "ceil",
+        "link": "https://pytorch.org/docs/stable/generated/torch.ceil.html?highlight=ceil#torch.ceil"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "equal",
+        "link": "https://pytorch.org/docs/stable/generated/torch.equal.html?highlight=equal#torch.equal"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "logical_xor",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logical_xor.html?highlight=logical_xor#torch.logical_xor"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "rsqrt",
+        "link": "https://pytorch.org/docs/stable/generated/torch.rsqrt.html?highlight=rsqrt#torch.rsqrt\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "round",
+        "link": "https://pytorch.org/docs/stable/generated/torch.round.html?highlight=round#torch.round\n"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "linspace",
+        "link": "https://pytorch.org/docs/stable/generated/torch.linspace.html?highlight=linspace"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "eye",
+        "link": "https://pytorch.org/docs/stable/generated/torch.eye.html?highlight=eye#torch.eye"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "repeat_interleave",
+        "link": "https://pytorch.org/docs/stable/generated/torch.repeat_interleave.html?highlight=repeat_interleave#torch.repeat_interleave\n"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "std",
+        "link": "https://pytorch.org/docs/stable/generated/torch.std.html?highlight=std#torch.std"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "argmax",
+        "link": "https://pytorch.org/docs/stable/generated/torch.argmax.html?highlight=argmax#torch.argmax"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "prod",
+        "link": "https://pytorch.org/docs/stable/generated/torch.prod.html?highlight=prod#torch.prod"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "argmin",
+        "link": "https://pytorch.org/docs/stable/generated/torch.argmin.html?highlight=argmin#torch.argmin"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "var",
+        "link": "https://pytorch.org/docs/stable/generated/torch.var.html#torch.var"
+      },
+      {
+        "bzfl": "Composite",
+        "bzmm": "logsumexp",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logsumexp.html?highlight=logsumexp#torch.logsumexp"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "where",
+        "link": "https://pytorch.org/docs/stable/generated/torch.where.html#torch.where"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "embedding",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.embedding.html?highlight=embedding#torch.nn.functional.embedding"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "histc",
+        "link": "https://pytorch.org/docs/stable/generated/torch.histc.html?highlight=histc#torch.histc"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "unique_consecutive",
+        "link": "https://pytorch.org/docs/stable/generated/torch.unique_consecutive.html#torch.unique_consecutive"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "kthvalue",
+        "link": "https://pytorch.org/docs/stable/generated/torch.kthvalue.html?highlight=kthvalue#torch.kthvalue"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "bincount",
+        "link": "https://pytorch.org/docs/stable/generated/torch.bincount.html#torch.bincount"
+      }
+    ],
+    "P2":[
+      {
+        "bzfl": "Convolution",
+        "bzmm": "conv_tbc",
+        "link": "https://pytorch.org/docs/stable/jit_builtin_functions.html?highlight=tbc"
+      },
+      {
+        "bzfl": "Pooling",
+        "bzmm": "fractional_max_pool2d",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.fractional_max_pool2d.html?highlight=fractional_max_pool2d#torch.nn.functional.fractional_max_pool2d"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "poisson_nll_loss ",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.PoissonNLLLoss.html#torch.nn.PoissonNLLLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "cosine_embedding_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.CosineEmbeddingLoss.html#torch.nn.CosineEmbeddingLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "hinge_embedding_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.HingeEmbeddingLoss.html#torch.nn.HingeEmbeddingLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "multi_margin_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.MultiMarginLoss.html#torch.nn.MultiMarginLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "multilabel_margin_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.MultiLabelMarginLoss.html#torch.nn.MultiLabelMarginLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "soft_margin_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.SoftMarginLoss.html#torch.nn.SoftMarginLoss"
+      },
+      {
+        "bzfl": "Loss",
+        "bzmm": "triplet_margin_loss",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.TripletMarginWithDistanceLoss.html#torch.nn.TripletMarginWithDistanceLoss"
+      },
+      {
+        "bzfl": "Norm",
+        "bzmm": "local_response_norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.local_response_norm.html?highlight=local_response_norm#torch.nn.functional.local_response_norm"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "celu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.CELU.html#torch.nn.CELU"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "rrelu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.rrelu.html?highlight=rrelu#torch.nn.functional.rrelu\n"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "selu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.selu.html?highlight=selu#torch.nn.functional.selu\n"
+      },
+      {
+        "bzfl": "Activation",
+        "bzmm": "softshrink",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.softshrink.html?highlight=softshrink#torch.nn.functional.softshrink\n"
+      },
+      {
+        "bzfl": "Dropout",
+        "bzmm": "alpha_dropout",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.alpha_dropout.html?highlight=alpha_dropout#torch.nn.functional.alpha_dropout"
+      },
+      {
+        "bzfl": "Dropout",
+        "bzmm": "feature_alpha_dropout",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.feature_alpha_dropout.html?highlight=feature_alpha_dropout#torch.nn.functional.feature_alpha_dropout"
+      },
+      {
+        "bzfl": "Interpolate",
+        "bzmm": "interpolate",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.interpolate.html?highlight=interpolate#torch.nn.functional.interpolate"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "bilinear",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.bilinear.html?highlight=bilinear#torch.nn.functional.bilinear"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "tensordot",
+        "link": "https://pytorch.org/docs/stable/generated/torch.tensordot.html?highlight=tensordot#torch.tensordot"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "chain_matmul",
+        "link": "https://pytorch.org/docs/stable/generated/torch.chain_matmul.html?highlight=chain_matmul"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "addmv",
+        "link": "https://pytorch.org/docs/stable/generated/torch.addmv.html?highlight=addmv#torch.addmv"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "addbmm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.addbmm.html?highlight=addbmm#torch.addbmm"
+      },
+      {
+        "bzfl": "BLAS",
+        "bzmm": "addr",
+        "link": "https://pytorch.org/docs/stable/generated/torch.addr.html#torch.addr"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "renorm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.renorm.html?highlight=renorm#torch.renorm\n"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "vector_norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.linalg.vector_norm.html?highlight=matrix_norm"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "matrix_norm",
+        "link": "https://pytorch.org/docs/stable/generated/torch.linalg.matrix_norm.html?highlight=matrix_norm#torch.linalg.matrix_norm"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cumprod",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cumprod.html?highlight=cumprod#torch.cumprod"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "pairwise_distance",
+        "link": "https://pytorch.org/docs/1.11/generated/torch.nn.PairwiseDistance.html#torch.nn.PairwiseDistance"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "dist",
+        "link": "https://pytorch.org/docs/stable/generated/torch.dist.html?highlight=dist#torch.dist"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cosine_similarity",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.cosine_similarity.html?highlight=cosine_similarity#torch.nn.functional.cosine_similarity"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cross",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cross.html?highlight=cross#torch.cross"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "matrix_power",
+        "link": "https://pytorch.org/docs/stable/generated/torch.linalg.matrix_power.html#torch.linalg.matrix_power"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cartesian_prod",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cartesian_prod.html?highlight=cartesian_prod"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "diag_embed",
+        "link": "https://pytorch.org/docs/stable/generated/torch.diag_embed.html?highlight=diag_embed#torch.diag_embed"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "trace",
+        "link": "https://pytorch.org/docs/stable/generated/torch.trace.html?highlight=trace#torch.trace"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "det",
+        "link": "https://pytorch.org/docs/stable/generated/torch.linalg.det.html#torch.linalg.det"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "logdet",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logdet.html?highlight=logdet#torch.logdet"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "tril_indices",
+        "link": "https://pytorch.org/docs/stable/generated/torch.tril_indices.html?highlight=tril_indices#torch.tril_indices"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "triu_indices",
+        "link": "https://pytorch.org/docs/stable/generated/torch.triu_indices.html?highlight=triu_indices#torch.triu_indices"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "eig",
+        "link": "https://pytorch.org/docs/stable/generated/torch.eig.html?highlight=eig#torch.eig"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "svd",
+        "link": "https://pytorch.org/docs/stable/generated/torch.svd.html?highlight=svd#torch.svd"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "symeig",
+        "link": "https://pytorch.org/docs/stable/generated/torch.symeig.html?highlight=symeig#torch.symeig"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "orgqr",
+        "link": "https://pytorch.org/docs/stable/generated/torch.orgqr.html?highlight=orgqr#torch.orgqr"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "ormqr",
+        "link": "https://pytorch.org/docs/stable/generated/torch.ormqr.html?highlight=ormqr#torch.ormqr"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "geqrf",
+        "link": "https://pytorch.org/docs/stable/generated/torch.geqrf.html?highlight=geqrf#torch.geqrf"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "slogdet",
+        "link": "https://pytorch.org/docs/stable/generated/torch.linalg.slogdet.html?highlight=slogdet#torch.linalg.slogdet\n"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cholesky_inverse",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cholesky_inverse.html?highlight=cholesky_inverse#torch.cholesky_inverse"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "cholesky_solve",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cholesky_solve.html?highlight=cholesky_solve#torch.cholesky_solve"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "lu",
+        "link": "https://pytorch.org/docs/stable/generated/torch.lu.html#torch.lu"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "lu_solve",
+        "link": "https://pytorch.org/docs/stable/generated/torch.lu_solve.html?highlight=lu_solve#torch.lu_solve"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "solve",
+        "link": "https://pytorch.org/docs/stable/generated/torch.solve.html?highlight=solve#torch.solve"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "matrix_rank",
+        "link": "https://pytorch.org/docs/stable/generated/torch.matrix_rank.html?highlight=matrix_rank#torch.matrix_rank"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "inverse",
+        "link": "https://pytorch.org/docs/stable/generated/torch.inverse.html#torch.inverse"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "pinverse",
+        "link": "https://pytorch.org/docs/1.11/generated/torch.pinverse.html?highlight=pinvers#torch.pinverse"
+      },
+      {
+        "bzfl": "Linalg",
+        "bzmm": "pdist",
+        "link": "https://pytorch.org/docs/1.11/generated/torch.nn.functional.pdist.html?highlight=pdist#torch.nn.functional.pdist"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "flip",
+        "link": "https://pytorch.org/docs/stable/generated/torch.flip.html?highlight=flip#torch.flip"
+      },
+      {
+        "bzfl": "Permute",
+        "bzmm": "rot90",
+        "link": "https://pytorch.org/docs/stable/generated/torch.rot90.html?highlight=rot90#torch.rot90\n"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "take",
+        "link": "https://pytorch.org/docs/stable/generated/torch.take.html?highlight=take#torch.take"
+      },
+      {
+        "bzfl": "View",
+        "bzmm": "tensor_split",
+        "link": "https://pytorch.org/docs/stable/generated/torch.tensor_split.html#torch.tensor_split"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "scatter_add",
+        "link": "https://pytorch.org/docs/1.12/generated/torch.scatter_add.html?highlight=scatter_add#torch.scatter_add\n"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "slice_scatter",
+        "link": "https://pytorch.org/docs/stable/generated/torch.slice_scatter.html?highlight=slice_scatter#torch.slice_scatter"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "index_copy",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.index_copy.html?highlight=index_copy#torch.Tensor.index_copy"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "index_fill",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.index_fill.html?highlight=index_fill"
+      },
+      {
+        "bzfl": "Advanced Indexing",
+        "bzmm": "masked_scatter",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.masked_scatter.html?highlight=masked_scatter#torch.Tensor.masked_scatter"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "normal",
+        "link": "https://pytorch.org/docs/stable/generated/torch.normal.html?highlight=normal#torch.normal"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "poisson",
+        "link": "https://pytorch.org/docs/stable/generated/torch.poisson.html?highlight=poisson#torch.poisson"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "cauchy",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.cauchy_.html?highlight=cauchy#torch.Tensor.cauchy_"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "exponential",
+        "link": "https://pytorch.org/docs/stable/generated/torch.Tensor.exponential_.html?highlight=exponential#torch.Tensor.exponential_"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "get_rng_state",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.get_rng_state.html#torch.cuda.get_rng_state"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "set_rng_state",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.set_rng_state.html#torch.cuda.set_rng_state"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "get_rng_state_all",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.get_rng_state_all.html#torch.cuda.get_rng_state_all"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "set_rng_state_all",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.set_rng_state_all.html#torch.cuda.set_rng_state_all"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "manual_seed",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.manual_seed.html#torch.cuda.manual_seed"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "manual_seed_all",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.manual_seed_all.html#torch.cuda.manual_seed_all"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "seed",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.seed.html#torch.cuda.seed"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "seed_all",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.seed_all.html#torch.cuda.seed_all"
+      },
+      {
+        "bzfl": "Distribution",
+        "bzmm": "initial_seed",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cuda.initial_seed.html#torch.cuda.initial_seed"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "acos",
+        "link": "https://pytorch.org/docs/stable/generated/torch.acos.html?highlight=acos#torch.acos"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "acosh",
+        "link": "https://pytorch.org/docs/stable/generated/torch.acosh.html?highlight=acosh#torch.acosh\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "asin",
+        "link": "https://pytorch.org/docs/stable/generated/torch.asin.html?highlight=asin#torch.asin\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "asinh",
+        "link": "https://pytorch.org/docs/stable/generated/torch.asinh.html?highlight=asinh#torch.asinh\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "atan",
+        "link": "https://pytorch.org/docs/stable/generated/torch.atan.html?highlight=atan#torch.atan\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "atan2",
+        "link": "https://pytorch.org/docs/stable/generated/torch.atan2.html?highlight=atan2#torch.atan2\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "atanh",
+        "link": "https://pytorch.org/docs/stable/generated/torch.atanh.html?highlight=atanh#torch.atanh\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "cosh",
+        "link": "https://pytorch.org/docs/stable/generated/torch.cosh.html?highlight=cosh#torch.cosh\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "erf",
+        "link": "https://pytorch.org/docs/stable/generated/torch.erf.html?highlight=erf#torch.erf\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "erfc",
+        "link": "https://pytorch.org/docs/stable/generated/torch.erfc.html?highlight=erfc#torch.erfc\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "erfinv",
+        "link": "https://pytorch.org/docs/stable/generated/torch.erfinv.html?highlight=erfinv#torch.erfinv\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "expm1",
+        "link": "https://pytorch.org/docs/stable/generated/torch.expm1.html?highlight=expm1#torch.expm1\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "fmod",
+        "link": "https://pytorch.org/docs/stable/generated/torch.fmod.html?highlight=fmod#torch.fmod\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "log10",
+        "link": "https://pytorch.org/docs/stable/generated/torch.log10.html?highlight=log10#torch.log10\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "log1p",
+        "link": "https://pytorch.org/docs/stable/generated/torch.log1p.html?highlight=log1p#torch.log1p\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "sinh",
+        "link": "https://pytorch.org/docs/stable/generated/torch.sinh.html?highlight=sinh#torch.sinh\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "tan",
+        "link": "https://pytorch.org/docs/stable/generated/torch.tan.html?highlight=tan#torch.tan\n"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "frac",
+        "link": "https://pytorch.org/docs/stable/generated/torch.frac.html?highlight=frac#torch.frac"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "trunc",
+        "link": "https://pytorch.org/docs/stable/generated/torch.trunc.html#torch.trunc"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "lgamma",
+        "link": "https://pytorch.org/docs/stable/generated/torch.lgamma.html?highlight=lgamma#torch.lgamma"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "mvlgamma",
+        "link": "https://pytorch.org/docs/stable/generated/torch.mvlgamma.html?highlight=mvlgamma#torch.mvlgamma"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "digamma",
+        "link": "https://pytorch.org/docs/stable/special.html#torch.special.digamma"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "polygamma",
+        "link": "https://pytorch.org/docs/stable/special.html#torch.special.polygamma"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "lt",
+        "link": "https://pytorch.org/docs/stable/generated/torch.lt.html?highlight=lt#torch.lt"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "logical_or",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logical_or.html?highlight=logical_#torch.logical_or"
+      },
+      {
+        "bzfl": "Element-wise",
+        "bzmm": "logical_not",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logical_not.html#torch.logical_not"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "range",
+        "link": "https://pytorch.org/docs/stable/generated/torch.range.html?highlight=range#torch.range\n"
+      },
+      {
+        "bzfl": "Broadcast",
+        "bzmm": "logspace",
+        "link": "https://pytorch.org/docs/stable/generated/torch.logspace.html?highlight=logspace#torch.logspace"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "median",
+        "link": "https://pytorch.org/docs/stable/generated/torch.median.html?highlight=median#torch.median"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "std_mean",
+        "link": "https://pytorch.org/docs/stable/generated/torch.std_mean.html?highlight=std_mean#torch.std_mean"
+      },
+      {
+        "bzfl": "Reduce",
+        "bzmm": "var_mean",
+        "link": "https://pytorch.org/docs/stable/generated/torch.var_mean.html?highlight=var_mean#torch.var_mean"
+      },
+      {
+        "bzfl": "Composite",
+        "bzmm": "allclose",
+        "link": "https://pytorch.org/docs/stable/generated/torch.allclose.html?highlight=allclose#torch.allclose"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "mode",
+        "link": "https://pytorch.org/docs/stable/generated/torch.mode.html?highlight=torch%20mode#torch.mode"
+      },
+      {
+        "bzfl": "Misc",
+        "bzmm": "embedding_bag",
+        "link": "https://pytorch.org/docs/stable/generated/torch.nn.functional.embedding_bag.html?highlight=embedding_bag#torch.nn.functional.embedding_bag"
+      }
+    ]
+  }
+}

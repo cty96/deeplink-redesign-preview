@@ -1,0 +1,29 @@
+/* User-selected staggered grid; the chapter introduction banner stays intact. */
+.prd-strict.solutions .solution-module>.wrap { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; align-items:stretch; }
+.prd-strict.solutions .solution-module .solution-module-heading { grid-column:1/-1; grid-row:1; margin-bottom:16px; }
+.prd-strict.solutions .solution-module .solution-showcase { grid-column:1/-1; grid-row:2; margin-bottom:4px; }
+.prd-strict.solutions .solution-module .solution-fact-grid,.prd-strict.solutions .solution-module .solution-module-support { display:contents; }
+.prd-strict.solutions .solution-module .solution-fact,.prd-strict.solutions .solution-module .solution-module-value,.prd-strict.solutions .solution-module .solution-module-features { min-width:0; min-height:240px; padding:32px 28px; margin:0; background:#f3f6fb !important; border:1px solid #e6edf6 !important; border-radius:24px !important; box-shadow:none !important; }
+.prd-strict.solutions .solution-module .solution-fact::before { display:none; }
+.prd-strict.solutions .solution-module .solution-fact>strong { margin:0 0 24px; color:#1c365b; font-size:20px !important; line-height:1.5; }
+.prd-strict.solutions .solution-module .solution-fact>em { font-size:14px; line-height:1.9; }
+.prd-strict.solutions .solution-module .solution-module-value { grid-column:1/span 2; grid-row:3; background:#e7f0ff !important; }
+.prd-strict.solutions .solution-module .solution-module-value h3,.prd-strict.solutions .solution-module .solution-module-features h3 { margin:0 0 24px; font-size:24px !important; line-height:1.5; }
+.prd-strict.solutions .solution-module .solution-module-value .solution-value-copy em { font-size:16px; line-height:1.9; }
+.prd-strict.solutions .solution-module .solution-fact:nth-child(1) { grid-column:3; grid-row:3; }
+.prd-strict.solutions .solution-module .solution-fact:nth-child(2) { grid-column:4; grid-row:3; }
+.prd-strict.solutions .solution-module .solution-fact:nth-child(3) { grid-column:1; grid-row:4; }
+.prd-strict.solutions .solution-module .solution-fact:nth-child(4) { grid-column:2; grid-row:4; }
+.prd-strict.solutions .solution-module .solution-module-features { grid-column:3/span 2; grid-row:4; background:#eaf2ff !important; }
+.prd-strict.solutions .solution-module .solution-module-features ul { gap:12px; margin:0; }
+.prd-strict.solutions .solution-module .solution-module-features li { background:none; border:0; border-radius:0; padding:0 0 0 16px; font-size:15px; }
+.prd-strict.solutions #mixed-training.solution-module>.wrap { grid-template-columns:repeat(6,minmax(0,1fr)); }
+.prd-strict.solutions #mixed-training.solution-module .solution-module-value { grid-column:1/span 3; grid-row:3; }
+.prd-strict.solutions #mixed-training.solution-module .solution-fact:nth-child(1) { grid-column:4/span 3; grid-row:3; }
+.prd-strict.solutions #mixed-training.solution-module .solution-fact:nth-child(2) { grid-column:1/span 2; grid-row:4; }
+.prd-strict.solutions #mixed-training.solution-module .solution-fact:nth-child(3) { grid-column:3/span 2; grid-row:4; }
+.prd-strict.solutions #mixed-training.solution-module .solution-fact:nth-child(4) { grid-column:5/span 2; grid-row:4; }
+.prd-strict.solutions #mixed-training.solution-module .solution-fact:nth-child(5) { grid-column:1/span 3; grid-row:5; }
+.prd-strict.solutions #mixed-training.solution-module .solution-module-features { grid-column:4/span 3; grid-row:5; }
+@media(max-width:1000px) { .prd-strict.solutions .solution-module>.wrap,.prd-strict.solutions #mixed-training.solution-module>.wrap { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .prd-strict.solutions .solution-module .solution-fact,.prd-strict.solutions #mixed-training.solution-module .solution-fact { grid-column:auto; grid-row:auto; min-height:220px; padding:28px; } .prd-strict.solutions .solution-module .solution-module-value,.prd-strict.solutions .solution-module .solution-module-features,.prd-strict.solutions #mixed-training.solution-module .solution-module-value,.prd-strict.solutions #mixed-training.solution-module .solution-module-features { grid-column:1/-1; grid-row:auto; min-height:220px; } }
+@media(max-width:600px) { .prd-strict.solutions .solution-module>.wrap,.prd-strict.solutions #mixed-training.solution-module>.wrap { grid-template-columns:minmax(0,1fr); } .prd-strict.solutions .solution-module .solution-fact,.prd-strict.solutions .solution-module .solution-module-value,.prd-strict.solutions .solution-module .solution-module-features { min-height:0; padding:28px 24px; border-radius:20px !important; } }

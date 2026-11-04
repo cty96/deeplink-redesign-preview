@@ -1,0 +1,102 @@
+/* Reference lock: Twain's airy, large-type hero and softly moving glass depth.
+   All hero visuals are native animated glass layers; no raster artwork is used. */
+:root { --dl-hero-height:700px; --dl-type-hero:56px; }
+:is(.revision-brand,.prd-strict .modern-hero,.solutions .solution-hero.modern-hero,
+ .partners-wrap>.banner,.verification-wrap>.banner,.kernelswift-page .hero) {
+ position:relative; isolation:isolate; overflow:hidden; box-sizing:border-box;
+ min-height:var(--dl-hero-height); background:#fcfdff !important; border:0;
+}
+/* One canvas, one content width, with all artwork below the text. */
+.prd-strict .modern-hero>.wrap,.solutions .solution-hero.modern-hero>.wrap {
+ position:static; width:min(1200px,calc(100% - 64px)); max-width:none; margin:auto;
+}
+.prd-strict .modern-hero .hero-grid,.prd-strict .modern-hero.ks .hero-grid,
+.solutions .solution-hero.modern-hero>.wrap {
+ display:flex; align-items:center; position:static; gap:0;
+ min-height:var(--dl-hero-height); padding:80px 0; box-sizing:border-box;
+}
+.prd-strict .modern-hero .hero-copy,.solutions .modern-hero .solution-hero-copy {
+ position:relative; z-index:3; width:50%; max-width:600px; padding:0; background:none;
+}
+:is(.revision-brand h1,.prd-strict .modern-hero h1,.solutions .modern-hero h1,
+ .partners-wrap .partners-plan,.verification-wrap .partners-plan,.kernelswift-page .h-title) {
+ color:#142337 !important; font-weight:600 !important; line-height:1.25 !important;
+ letter-spacing:-.025em !important; text-wrap:balance;
+}
+.modern-hero h1 .hero-name,.revision-brand .revision-eyebrow {
+ font-size:14px !important; font-weight:500 !important; color:#60738e !important;
+ letter-spacing:.02em; margin-bottom:24px;
+}
+.prd-strict .modern-hero .lead,.solutions .modern-hero .solution-lead { margin:26px 0 18px; color:#345474; }
+.prd-strict .modern-hero .intro,.solutions .modern-hero .solution-intro { color:#65758c; max-width:535px; }
+.modern-hero:before { inset:0; z-index:2; background:linear-gradient(90deg,#fcfdff 0%,#fcfdfff5 24%,#fcfdffb3 45%,#fcfdff00 68%),linear-gradient(0deg,#fcfdff,transparent 20%,transparent 86%,#fcfdff80); }
+.modern-hero .hero-dot-field { display:none; }
+.modern-hero .hero-backdrop {
+ position:absolute; inset:0; z-index:0; width:100%; max-width:none; height:100%; min-height:0;
+ aspect-ratio:auto; margin:0; pointer-events:none; mask-image:linear-gradient(90deg,#000 85%,transparent);
+}
+.hero-backdrop-image { display:block; width:100%; height:100%; max-width:none; object-fit:cover; object-position:center; opacity:.86; animation:hero-scene-breathe 18s ease-in-out infinite alternate; }
+/* Legacy image sizing is superseded by site-hero-motion.css on marketing heroes. */
+.system-kernelswift.hero-backdrop img { object-fit:contain; width:72%; margin-left:36%; opacity:.74; }
+.revision-brand { padding:80px 0 !important; display:flex; align-items:center; }
+.revision-brand-inner { position:relative; z-index:3; width:min(1200px,calc(100% - 64px)); margin:auto; }
+.revision-brand-copy { width:76%; max-width:920px; }
+.revision-brand h1 { max-width:920px; margin-bottom:30px; }
+.revision-brand h1 span { white-space:normal; }
+.revision-brand-copy>p:not(.revision-eyebrow) { max-width:650px; color:#65758c; }
+.revision-brand::after { width:100% !important; left:0 !important; transform:none !important; background-size:cover !important; opacity:.72; z-index:0 !important; animation:hero-scene-breathe 18s ease-in-out infinite alternate; }
+.revision-brand::before { inset:0 !important; width:100% !important; transform:none !important; z-index:2 !important; background:linear-gradient(90deg,#fcfdff 0%,#fcfdfff2 24%,#fcfdff94 48%,transparent 72%),linear-gradient(0deg,#fcfdff,transparent 18%); }
+.hero-atmosphere { position:absolute; inset:0; z-index:1; pointer-events:none; overflow:hidden; mask-image:linear-gradient(0deg,transparent,#000 25%,#000 75%,transparent); }
+.hero-atmosphere i { position:absolute; left:62%; top:26%; width:31%; height:9%; border-radius:22px; transform:skewX(25deg) rotate(-5deg); background:linear-gradient(180deg,#eaf0ff18,#becdf45c 55%,#f9fcff8a); border-top:1px solid #ffffffbd; box-shadow:0 20px 36px #a4b8e42b; filter:blur(2px); opacity:.36; animation:hero-glass-drift 12s ease-in-out infinite alternate; }
+.hero-atmosphere i:nth-child(2) { top:57%; left:59%; animation-delay:-6s; opacity:.24; }
+@keyframes hero-scene-breathe { from { scale:1; } to { scale:1.025; } }
+@keyframes hero-glass-drift { from { translate:0 -12px; } to { translate:12px 16px; } }
+/* Partners and verification use the same left aligned editorial content and glass atmosphere. */
+.partners-wrap>.banner,.verification-wrap>.banner {
+ display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+ padding:80px max(32px,calc((100% - 1200px)/2)) !important; height:auto;
+}
+.partners-wrap>.banner>:not(.hero-atmosphere):not(.hero-live),.verification-wrap>.banner>:not(.hero-atmosphere):not(.hero-live) { position:relative; z-index:3; max-width:650px; }
+.partners-wrap>.banner>.deeplink-text { background:none; border:0; padding:0; color:#60738e; font-size:14px !important; margin:0 0 24px; }
+.partners-wrap>.banner .partners-plan,.verification-wrap>.banner .partners-plan { margin:0 0 26px; }
+.partners-wrap>.banner>.start,.verification-wrap>.banner>.slogan { color:#345474; margin:0 0 18px; }
+.partners-wrap>.banner>.slogan,.verification-wrap>.banner>.start { color:#65758c; line-height:1.85; margin-bottom:28px; }
+.partners-wrap .be-partner-btn,.verification-wrap .banner>.deeplink-text { border-radius:10px; font-size:14px !important; }
+.kernelswift-page .hero { padding:72px 0; }
+.kernelswift-page .hero>.wrap { width:min(1200px,calc(100% - 64px)); margin:auto; }
+.kernelswift-page .hero-art { opacity:.74; mask-image:radial-gradient(ellipse,#000 45%,transparent 74%); }
+/* Reuse the operator page's existing illustration primitives for training's three features. */
+.training .training-interface-art { height:220px; display:grid; place-items:center; margin:24px 24px 12px; border-radius:16px; background:var(--dl-card-inner); overflow:hidden; }
+.training .training-interface-art img { display:block; width:100%; height:100%; object-fit:contain; }
+@media(max-width:1000px) and (min-width:769px) { .revision-brand-copy { width:86%; } .modern-hero:before { background:linear-gradient(90deg,#fcfdff 0%,#fcfdfff0 28%,#fcfdff5c 70%,transparent); } }
+@media(max-width:768px) {
+ :root { --dl-type-hero:32px; --dl-hero-height:700px; }
+ .revision-brand,.prd-strict .modern-hero,.solutions .solution-hero.modern-hero { min-height:var(--dl-hero-height); }
+ .revision-brand { padding:64px 0 230px !important; align-items:flex-start; }
+ .revision-brand-inner,.prd-strict .modern-hero>.wrap,.solutions .solution-hero.modern-hero>.wrap { width:calc(100% - 48px); }
+ .revision-brand-copy { width:100%; }
+ .prd-strict .modern-hero .hero-grid,.prd-strict .modern-hero.ks .hero-grid,.prd-strict .modern-hero:not(.ks) .hero-grid,.solutions .solution-hero.modern-hero>.wrap { min-height:var(--dl-hero-height); padding:56px 0 230px; align-items:flex-start; }
+ .prd-strict .modern-hero .hero-copy,.solutions .modern-hero .solution-hero-copy { width:100%; }
+ .hero-backdrop-image { object-fit:cover; object-position:72% bottom; opacity:.7; }
+ .modern-hero .hero-backdrop { top:auto; height:310px; mask-image:linear-gradient(180deg,transparent,#000 26%); }
+ .modern-hero:before { background:linear-gradient(180deg,#fcfdff 0%,#fcfdfff5 45%,transparent 82%); }
+ .system-kernelswift.hero-backdrop img { width:100%; margin:0; }
+ .revision-brand::after { top:auto; height:310px; background-position:70% center !important; }
+ .revision-brand::before { background:linear-gradient(180deg,#fcfdff 0%,#fcfdfff2 58%,transparent 90%); }
+ .hero-atmosphere i { left:35%; top:70%; width:65%; height:7%; }
+ .hero-atmosphere i:nth-child(2) { left:30%; top:85%; }
+ .partners-wrap>.banner-mobile,.verification-wrap>.banner-mobile { position:relative; isolation:isolate; overflow:hidden; box-sizing:border-box; display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start; min-height:700px; height:auto; padding:64px 24px 200px !important; margin-top:0; background:#fcfdff !important; }
+ .partners-wrap>.banner-mobile>:not(.hero-atmosphere):not(.hero-live),.verification-wrap>.banner-mobile>:not(.hero-atmosphere):not(.hero-live) { position:relative; z-index:3; max-width:100%; text-align:left; }
+ .partners-wrap>.banner-mobile .partners-plan,.verification-wrap>.banner-mobile .partners-plan { margin:20px 0; }
+ .partners-wrap>.banner-mobile>.deeplink-text { padding:0; background:none; color:#60738e; border:0; }
+ .kernelswift-page .hero { padding:56px 0; }
+ .kernelswift-page .hero>.wrap { width:calc(100% - 48px); }
+ .training .training-interface-art { height:200px; margin:20px 20px 12px; }
+}
+@media(prefers-reduced-motion:reduce) { .hero-backdrop-image,.revision-brand::after,.hero-atmosphere i { animation:none; } }
+
+/* Align the legacy Vue banners with the same 700px canvas below the header. */
+.revision-brand { margin-top:64px; }
+.partners-wrap>.banner,.verification-wrap>.banner { height:700px !important; align-items:flex-start !important; justify-content:center !important; margin-top:64px; }
+.partners-wrap>.banner>.deeplink-text { background:none !important; color:#60738e !important; padding:0 !important; border-radius:0 !important; }
+.partners-wrap>.banner-mobile,.verification-wrap>.banner-mobile { align-items:flex-start !important; }

@@ -1,0 +1,28 @@
+/* Shared planar case carousel. Cards stay on one baseline without depth or scaling. */
+.flat-carousel{--case-blue:#0d53de;position:relative;width:100%;color:#365273}
+.flat-carousel *{box-sizing:border-box}
+.flat-carousel .case-viewport{position:relative;display:grid;grid-template-columns:minmax(0,1fr);padding:12px 0 24px;overflow:hidden;touch-action:pan-y;cursor:grab;isolation:isolate}
+.flat-carousel .case-viewport:active{cursor:grabbing}
+.flat-carousel .case-slide{grid-column:1;grid-row:1;justify-self:center;align-self:stretch;display:flex;flex-direction:column;align-items:stretch;width:calc((100% - 48px)/3);min-height:370px;margin:0;padding:30px 28px;border:1px solid #e0e8f5;border-radius:16px;background:#fff;box-shadow:0 8px 18px -16px #365d9550;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(0);transition:transform .45s ease,opacity .3s ease;user-select:none}
+.flat-carousel .case-slide[data-position=active]{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(0);user-select:text;z-index:2}
+.flat-carousel .case-slide[data-position=previous]{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(calc(-100% - 24px));cursor:pointer;z-index:1}
+.flat-carousel .case-slide[data-position=next]{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(calc(100% + 24px));cursor:pointer;z-index:1}
+.flat-carousel .case-slide[data-position$=far],.flat-carousel .case-slide[data-position$=back],.flat-carousel .case-slide[data-position=hidden]{visibility:hidden;opacity:0;pointer-events:none}
+.flat-carousel h3{display:flex;align-items:center;min-height:70px;margin:0 0 24px;font-size:23px;line-height:1.5;font-weight:600;color:#284e83}
+.flat-carousel h3 img{display:block;max-width:174px;width:auto;height:70px;object-fit:contain;object-position:left center}
+.flat-carousel .case-copy,.flat-carousel .case-copy p{font-size:14px;line-height:1.95;color:#617690;text-align:left;white-space:pre-line;margin:0}
+.flat-carousel .case-copy p+p{margin-top:14px}
+.flat-carousel .case-controls{display:flex;align-items:center;justify-content:center;gap:22px;margin:12px 0 0}
+.flat-carousel .case-arrow{display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid #dae5f7;border-radius:50%;color:#2863c5;background:white;cursor:pointer;flex-shrink:0}
+.flat-carousel .case-arrow:hover{border-color:#9ebdeb;background:#f1f6ff}
+.flat-carousel .case-arrow svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.flat-carousel .case-pagination{display:flex;align-items:center;gap:4px}
+.flat-carousel .case-dot{display:grid;place-items:center;width:24px;height:32px;padding:0;border:0;background:none;cursor:pointer}
+.flat-carousel .case-dot:before{content:'';display:block;width:5px;height:5px;background:#cbdaf1;border-radius:3px;transition:width .2s,background .2s}
+.flat-carousel .case-dot[aria-current=true]:before{width:22px;background:#0d53de}
+.flat-carousel .case-live{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0}
+.flat-carousel .case-viewport:focus-visible,.flat-carousel button:focus-visible{outline:2px solid #85a8dd;outline-offset:3px}
+.flat-carousel .case-copy a{color:#275fae}
+@media(max-width:1000px){.flat-carousel .case-slide{width:calc((100% - 24px)/2);padding:26px 24px}.flat-carousel h3{font-size:22px}}
+@media(max-width:767px){.flat-carousel .case-slide{width:90%;min-height:340px;padding:24px}.flat-carousel h3{font-size:21px;min-height:60px;margin-bottom:20px}.flat-carousel h3 img{max-width:160px;height:60px}.flat-carousel .case-copy,.flat-carousel .case-copy p{font-size:13px}.flat-carousel .case-slide[data-position=previous]{transform:translateX(calc(-100% - 16px))}.flat-carousel .case-slide[data-position=next]{transform:translateX(calc(100% + 16px))}.flat-carousel .case-controls{gap:10px}.flat-carousel .case-arrow{width:38px;height:38px}.flat-carousel .case-dot{width:22px}}
+@media(prefers-reduced-motion:reduce){.flat-carousel .case-slide,.flat-carousel .case-dot:before{transition:none}}

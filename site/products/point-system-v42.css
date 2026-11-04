@@ -1,0 +1,48 @@
+/* Reference lock: existing white/pale-blue system, crisp dot surfaces, no illustration shadows. */
+/* Two wide feature panels: dot artwork and copy share the row instead of stacking in square cards. */
+.kernelswift .product-story .feature-rail .product-features{grid-auto-columns:calc((100% - 24px)/2);gap:24px;padding:0 0 16px;align-items:stretch}
+.kernelswift .product-story .feature-rail .product-feature{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;min-height:290px;background:#f7f9fd;border:1px solid #e2eaf8;border-radius:16px;padding:28px 26px 28px 14px;gap:10px;box-shadow:none;transform:none;overflow:hidden}
+.kernelswift .product-story .feature-rail .product-feature:hover{transform:none;border-color:#e2eaf8;box-shadow:none}
+.kernelswift .product-story .feature-rail .ks-point-art{position:relative;width:100%;min-width:0;height:210px;display:grid;place-items:center;pointer-events:none}
+.kernelswift .product-story .feature-rail .ks-point-art img{display:block;width:135%;max-width:none;height:100%;object-fit:contain;opacity:.9;filter:none;box-shadow:none}
+.kernelswift .product-story .feature-rail .feature-copy{order:initial;min-height:0;position:relative;width:auto;padding:0;flex:initial}
+.kernelswift .product-story .feature-rail .feature-title{font-size:24px;font-weight:500;line-height:1.45;margin:0 0 16px;color:#193c6c}
+.kernelswift .product-story .feature-rail .feature-description{font-size:14px;line-height:1.9;color:#657c9c}
+.kernelswift .feature-rail-controls{margin-top:8px}
+/* Scenario navigation becomes a ruled text list, with no selected card surface. */
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab,
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab[aria-selected=true],
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab:hover{background:transparent;border:0;border-bottom:1px solid #e2eaf6;border-radius:0;box-shadow:none;padding:24px 0;transform:none}
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab:first-child{border-top:1px solid #e2eaf6}
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab[aria-selected=true]{border-bottom-color:#9eb9ec}
+.prd-strict.kernelswift #scenarios .scene-integrated .feature-title{margin-bottom:0;line-height:1.6;font-size:19px;font-weight:500}
+.prd-strict.kernelswift #scenarios .scene-integrated .tab[aria-selected=true] .feature-title{color:#0d53de;margin-bottom:12px}
+.prd-strict.kernelswift #scenarios .scene-integrated .feature-description{color:#657c9c}
+.prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab:focus-visible{outline:2px solid #0d53de;outline-offset:6px}
+/* Four complementary point forms replace the rendered glass/3D illustrations. */
+.solutions .solution-showcase{background:#f7f9fd;border-color:#e2eaf8;border-radius:18px;box-shadow:none}
+.solutions .solution-illustration{background:transparent;border:0;border-radius:0;box-shadow:none;aspect-ratio:3/2}
+.solutions .solution-illustration img{width:100%;height:100%;object-fit:contain;opacity:.9;filter:none;box-shadow:none}
+@media(max-width:1100px){
+ .kernelswift .product-story .feature-rail .product-feature{min-height:265px;padding:22px 22px 22px 10px;gap:8px}
+ .kernelswift .product-story .feature-rail .feature-title{font-size:21px}
+ .kernelswift .product-story .feature-rail .ks-point-art{height:190px}
+ .kernelswift .product-story .feature-rail .feature-description{font-size:13px}
+}
+@media(max-width:767px){
+ .kernelswift .product-story .feature-rail .product-features{grid-auto-columns:88%;gap:16px;padding-bottom:12px}
+ .kernelswift .product-story .feature-rail .product-feature{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:240px;padding:24px 24px 24px 10px;border-radius:14px;gap:8px}
+ .kernelswift .product-story .feature-rail .ks-point-art{height:180px}
+ .kernelswift .product-story .feature-rail .feature-copy{padding:0;min-height:0}
+ .kernelswift .product-story .feature-rail .feature-title{font-size:21px;margin-bottom:12px}
+ .prd-strict.kernelswift #scenarios .scene-integrated>.tabs{order:-1}
+ .prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab,
+ .prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab[aria-selected=true],
+ .prd-strict.kernelswift #scenarios .scene-integrated>.tabs .tab:hover{padding:20px 0}
+ .prd-strict.kernelswift #scenarios .scene-integrated .feature-title{font-size:17px}
+}
+@media(max-width:380px){
+ .kernelswift .product-story .feature-rail .product-feature{grid-template-columns:1fr;padding:20px;gap:0}
+ .kernelswift .product-story .feature-rail .ks-point-art{height:145px}
+ .kernelswift .product-story .feature-rail .ks-point-art img{width:100%}
+}

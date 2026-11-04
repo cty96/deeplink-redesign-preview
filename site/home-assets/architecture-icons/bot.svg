@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 100" width="96" height="100"><defs>
+<linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#dbe8ff"/><stop offset="1" stop-color="#91a2ff"/></linearGradient>
+<linearGradient id="left" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#d5e5ff" stop-opacity=".95"/><stop offset=".45" stop-color="#9eb2ff" stop-opacity=".84"/><stop offset="1" stop-color="#a1aced"/></linearGradient>
+<linearGradient id="right" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a6b5ff" stop-opacity=".9"/><stop offset=".55" stop-color="#adbaf2"/><stop offset="1" stop-color="#9aa5ed"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fbffff"/><stop offset=".35" stop-color="#c3d7ff" stop-opacity=".9"/><stop offset=".7" stop-color="#8595ff" stop-opacity=".88"/><stop offset="1" stop-color="#9ea7ed"/></linearGradient>
+<radialGradient id="orb" cx=".32" cy=".24" r=".78"><stop stop-color="#f7ffff"/><stop offset=".18" stop-color="#b6d7ff"/><stop offset=".5" stop-color="#7193fa"/><stop offset=".8" stop-color="#919fef"/><stop offset="1" stop-color="#a8b1f2"/></radialGradient>
+<linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fcff" stop-opacity=".85"/><stop offset="1" stop-color="#a3b1fd" stop-opacity=".6"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="3"/></filter>
+</defs><ellipse cx="48" cy="81" rx="23" ry="4" fill="#8ea0ed" opacity=".10" filter="url(#blur)"/><g transform="translate(0 0) scale(1)">
+ <path d="M24 29 48 16 72 29 48 43Z" fill="url(#top)" stroke="#fff" stroke-width="1"/>
+ <path d="M24 29 48 43V71L24 57Z" fill="url(#left)" stroke="#d4e2ff" stroke-width=".8"/>
+ <path d="M48 43 72 29V57L48 71Z" fill="url(#right)" stroke="#d4e2ff" stroke-width=".8"/>
+ <path d="M29 31 48 21 66 31 48 41Z" fill="#fff" opacity=".25"/>
+ <path d="M25 30 48 43 71 30M48 44V70" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.1"/>
+ <path d="M27 35V54L44 64V45Z" fill="#fff" opacity=".16"/>
+ <g transform="matrix(.72 .40 0 .80 28 34)" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="18" height="13" rx="3"/><path d="M11 6V2M8 2h6M0 11v4M22 11v4M7 11v4M15 11v4"/></g></g></svg>

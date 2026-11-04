@@ -1,0 +1,32 @@
+/* Supplied brand assets retain their native colors and aspect ratios. */
+.partner-logo{display:block;width:126px;height:48px;max-width:100%;object-fit:contain;flex:0 1 auto}
+.partner-slot{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;min-height:72px;padding:12px 18px;border:1px solid #e2eaf5;border-radius:10px;background:#fff;font-style:normal;font-weight:400;color:#6681a7}
+.partner-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}
+.training .eco-logo-slot{position:relative}
+.training .eco-logo-slot .partner-logo{width:120px;height:56px;max-height:56px}
+.training .eco-logo-slot:has(.partner-logo){padding-top:10px;padding-bottom:10px}
+#architecture .architecture-chips .arch-node .partner-logo{width:96px;height:30.4px}
+#architecture .architecture-chips .arch-node{min-height:54px}
+.flow-chips>span{position:relative}
+.flow-chips .partner-logo{width:118px;height:36px}
+.kernelswift .flow-chips>span{padding:8px 12px}
+.kernelswift .flow-chips .partner-logo{width:126px;height:42px;max-width:100%;transform:scale(.8)}
+.kernelswift .ecosystem-logo-group .partner-logo{width:170px;height:58px;max-width:100%}
+.coverflow-carousel .case-slide h3{min-height:60px;display:flex;align-items:center;position:relative}
+.coverflow-carousel .case-slide h3 .partner-logo{width:156px;height:68px;object-position:left center}
+.coverflow-carousel .case-slide h3 .logo-china-unicom,.coverflow-carousel .case-slide h3 .logo-china-telecom,.coverflow-carousel .case-slide h3 .logo-ixp{width:82px;height:82px}
+.solution-partners>b{display:flex;align-items:center;justify-content:center;min-height:78px;flex:0 1 170px;background:#fff}
+.solution-partners .partner-logo{width:126px;height:52px}
+.solution-partners .logo-china-unicom,.solution-partners .logo-china-telecom,.solution-partners .logo-ixp{height:62px}
+@media(max-width:767px){
+ .partner-row{gap:8px}.partner-slot{padding:8px;min-height:62px;font-size:13px}
+ .partner-logo{height:40px}
+ .training .eco-logo-slot .partner-logo{height:42px;max-height:42px}
+ .flow-chips .partner-logo{height:30px;width:100px}
+ .kernelswift .flow-chips>span{padding:8px}
+ .kernelswift .flow-chips .partner-logo{width:100%;height:32px}
+ .kernelswift .ecosystem-logo-group .partner-logo{width:142px;height:48px}
+ .coverflow-carousel .case-slide h3 .partner-logo{height:60px}
+ .solution-partners>b{flex-basis:calc(50% - 5px);min-height:76px}
+ .solution-partners .partner-logo{height:48px}
+}

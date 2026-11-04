@@ -1,0 +1,821 @@
+{
+    "$id": "https://example.com/schemas/kernelswift-config",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "KernelSwift算子创新大赛配置",
+    "description": "用于配置KernelSwift算子创新大赛页面中可运营维护的内容。页面固定视觉文案不放入配置。",
+    "type": "object",
+    "properties": {
+        "competition_list": {
+            "title": "赛事卡片列表",
+            "description": "配置首页赛事卡片，例如算子优化挑战赛、黑客松挑战赛。",
+            "type": "array",
+            "items": {
+                "title": "赛事卡片",
+                "description": "单个赛事卡片配置",
+                "type": "object",
+                "properties": {
+                    "competition_name": {
+                        "title": "赛事名称",
+                        "description": "赛事卡片上展示的名称，如 KernelSwift算子优化挑战赛。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 100
+                    },
+                    "highlight": {
+                        "title": "是否重点展示",
+                        "description": "是否作为当前重点赛事突出展示。",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "upcoming_competition": {
+                        "title": "是否即将上线",
+                        "description": "为 true 时表示该赛事暂未开放。",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "status_text": {
+                        "title": "状态提示文字",
+                        "description": "即将上线赛事的状态提示，如 敬请期待。",
+                        "type": "string",
+                        "maxLength": 30
+                    },
+                    "tracks": {
+                        "title": "赛道名称列表",
+                        "description": "该赛事包含的赛道名称。没有赛道时可不填写。",
+                        "type": "array",
+                        "items": {
+                            "title": "赛道名称",
+                            "description": "赛道名称，如 Triton算子优化赛。",
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 100
+                        },
+                        "maxItems": 10,
+                        "minItems": 0
+                    },
+                    "online_duration_start": {
+                        "title": "线上长时赛开始时间",
+                        "description": "线上长时赛开始日期。",
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "online_duration_end": {
+                        "title": "线上长时赛结束时间",
+                        "description": "线上长时赛结束日期。",
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "registration_deadline": {
+                        "title": "报名截止时间",
+                        "description": "参赛报名截止日期。",
+                        "type": "string",
+                        "format": "date"
+                    }
+                },
+                "required": [
+                    "competition_name",
+                    "upcoming_competition"
+                ]
+            },
+            "minItems": 1,
+            "maxItems": 10
+        },
+        "competition_overview": {
+            "title": "大赛简介",
+            "description": "填写大赛整体介绍内容，包括目标、面向人群和核心价值。",
+            "type": "string",
+            "format": "textarea"
+        },
+        "competition_tags": {
+            "title": "大赛简介关键词标签",
+            "description": "大赛简介下方展示的胶囊关键词标签，如 算子生成、性能调优、生态协同；不需要展示时可留空。",
+            "type": "array",
+            "items": {
+                "title": "关键词标签",
+                "description": "大赛简介下方的单个关键词标签。",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 30
+            },
+            "maxItems": 10
+        },
+        "overview_image": {
+            "title": "大赛介绍图片",
+            "description": "大赛介绍区域右侧图片。",
+            "type": "upload",
+            "format": "image",
+            "maxFiles": 1
+        },
+        "track_list": {
+            "title": "赛程安排",
+            "description": "配置各赛道介绍卡片，支持多条赛道配置。",
+            "type": "array",
+            "items": {
+                "title": "赛道配置",
+                "description": "单个赛道介绍配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "赛道名称",
+                        "description": "赛道中文名称，如 Triton算子优化赛。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 100
+                    },
+                    "label": {
+                        "title": "赛道标识",
+                        "description": "赛道序号或标识，如 赛道一。",
+                        "type": "string",
+                        "maxLength": 20
+                    },
+                    "description": {
+                        "title": "赛道描述",
+                        "description": "对赛道的详细介绍，包括聚焦方向、技术栈和参赛要求。",
+                        "type": "string",
+                        "format": "textarea"
+                    },
+                    "image": {
+                        "title": "赛道图片",
+                        "description": "上传该赛道的宣传图或示意图。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                },
+                "required": [
+                    "name",
+                    "description"
+                ]
+            },
+            "minItems": 1,
+            "maxItems": 10
+        },
+        "timeline_list": {
+            "title": "比赛时间",
+            "description": "配置比赛阶段时间线。",
+            "type": "array",
+            "items": {
+                "title": "时间阶段",
+                "description": "单个比赛阶段配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "阶段名称",
+                        "description": "如 参赛报名、线上长时赛、评审期。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 50
+                    },
+                    "start_date": {
+                        "title": "开始时间",
+                        "description": "阶段开始日期。",
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "end_date": {
+                        "title": "结束时间",
+                        "description": "阶段结束日期。",
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "date_text": {
+                        "title": "时间说明",
+                        "description": "无法用标准日期表达时填写，如 2026年9月中下旬。",
+                        "type": "string",
+                        "maxLength": 50
+                    },
+                    "original_date_text": {
+                        "title": "原定时间",
+                        "description": "阶段时间调整后填写，原定时间会以删除线展示在调整后时间上方。",
+                        "type": "string",
+                        "maxLength": 50
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            },
+            "minItems": 1,
+            "maxItems": 10
+        },
+        "timeline_note": {
+            "title": "比赛时间备注",
+            "description": "比赛时间区域下方的补充说明。",
+            "type": "string",
+            "maxLength": 120
+        },
+        "highlight_list": {
+            "title": "赛事亮点",
+            "description": "配置赛事亮点卡片。",
+            "type": "array",
+            "items": {
+                "title": "亮点配置",
+                "description": "单个赛事亮点配置",
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "title": "亮点标题",
+                        "description": "亮点标题。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 50
+                    },
+                    "description": {
+                        "title": "亮点描述",
+                        "description": "亮点说明文案。",
+                        "type": "string",
+                        "format": "textarea",
+                        "maxLength": 300
+                    },
+                    "image": {
+                        "title": "亮点图片",
+                        "description": "亮点配图。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                },
+                "required": [
+                    "title",
+                    "description"
+                ]
+            },
+            "maxItems": 8
+        },
+        "prize": {
+            "title": "奖金信息",
+            "description": "配置奖金池与补充说明。",
+            "type": "object",
+            "properties": {
+                "amount": {
+                    "title": "奖金金额",
+                    "description": "奖金数字金额。",
+                    "type": "number"
+                },
+                "unit": {
+                    "title": "奖金单位",
+                    "description": "奖金单位，如 万元。",
+                    "type": "string",
+                    "maxLength": 20
+                },
+                "description": {
+                    "title": "奖金说明",
+                    "description": "奖金池说明文案。",
+                    "type": "string",
+                    "maxLength": 120
+                },
+                "background_image": {
+                    "title": "背景图片",
+                    "description": "奖金区域背景图。",
+                    "type": "upload",
+                    "format": "image",
+                    "maxFiles": 1
+                },
+                "note": {
+                    "title": "补充说明",
+                    "description": "奖金规则补充说明。",
+                    "type": "string",
+                    "format": "textarea"
+                }
+            }
+        },
+        "benefit_list": {
+            "title": "赛事福利",
+            "description": "配置奖金之外的权益福利。",
+            "type": "array",
+            "items": {
+                "title": "福利配置",
+                "description": "单个福利配置",
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "title": "福利名称",
+                        "description": "如 丰厚实习内推。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 50
+                    },
+                    "type": {
+                        "title": "福利类型",
+                        "description": "福利分类或类型。",
+                        "type": "string",
+                        "maxLength": 30
+                    }
+                },
+                "required": [
+                    "title"
+                ]
+            },
+            "maxItems": 10
+        },
+        "chip_count": {
+            "title": "芯片厂商数量",
+            "description": "页面展示的芯片厂商数量。",
+            "type": "number"
+        },
+        "chip_vendor_list": {
+            "title": "芯片厂商列表",
+            "description": "配置芯片厂商名称和Logo。",
+            "type": "array",
+            "items": {
+                "title": "芯片厂商",
+                "description": "单个芯片厂商配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "厂商名称",
+                        "description": "芯片厂商展示名称。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                    },
+                    "logo": {
+                        "title": "厂商Logo",
+                        "description": "芯片厂商Logo。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                },
+                "required": [
+                    "name",
+                    "logo"
+                ]
+            },
+            "maxItems": 30
+        },
+        "co_organizer_list": {
+            "title": "协办单位列表",
+            "description": "配置协办单位名称和Logo。",
+            "type": "array",
+            "items": {
+                "title": "协办单位",
+                "description": "单个协办单位配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "单位名称",
+                        "description": "协办单位展示名称。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                    },
+                    "logo": {
+                        "title": "单位Logo",
+                        "description": "协办单位Logo。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                },
+                "required": [
+                    "name",
+                    "logo"
+                ]
+            },
+            "maxItems": 20
+        },
+        "sponsor_list": {
+            "title": "赞助方列表",
+            "description": "配置赞助方名称和Logo。",
+            "type": "array",
+            "items": {
+                "title": "赞助方",
+                "description": "单个赞助方配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "单位名称",
+                        "description": "赞助方展示名称。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                    },
+                    "logo": {
+                        "title": "单位Logo",
+                        "description": "赞助方Logo。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                },
+                "required": [
+                    "name",
+                    "logo"
+                ]
+            },
+            "maxItems": 20
+        },
+        "special_thanks_list": {
+            "title": "特别鸣谢列表",
+            "description": "配置特别鸣谢单位。",
+            "type": "array",
+            "items": {
+                "title": "鸣谢单位",
+                "description": "单个鸣谢单位配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "单位名称",
+                        "description": "鸣谢单位名称。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                    },
+                    "logo": {
+                        "title": "单位Logo",
+                        "description": "鸣谢单位Logo。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                }
+            },
+            "maxItems": 20
+        },
+        "chip_note": {
+            "title": "芯片厂商备注",
+            "description": "芯片厂商区域补充说明。",
+            "type": "string",
+            "format": "textarea"
+        },
+        "system": {
+            "title": "推荐系统",
+            "description": "配置推荐使用的系统信息。",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "系统名称",
+                    "description": "系统名称。",
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                },
+                "intro": {
+                    "title": "系统介绍",
+                    "description": "KernelSwift 官方系统介绍文案。",
+                    "type": "string",
+                    "format": "textarea"
+                },
+                "url": {
+                    "title": "系统链接",
+                    "description": "系统访问链接。",
+                    "type": "string"
+                },
+                "image": {
+                    "title": "系统介绍图片",
+                    "description": "KernelSwift 官方系统介绍区域展示的系统界面图片。",
+                    "type": "upload",
+                    "format": "image",
+                    "maxFiles": 1
+                }
+            }
+        },
+        "contact_list": {
+            "title": "联系方式",
+            "description": "配置二维码联系方式。",
+            "type": "array",
+            "items": {
+                "title": "联系方式",
+                "description": "单个联系方式配置",
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "title": "联系标题",
+                        "description": "联系方式标题。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 60
+                    },
+                    "description": {
+                        "title": "联系说明",
+                        "description": "联系方式说明文案。",
+                        "type": "string",
+                        "format": "textarea"
+                    },
+                    "qr_image": {
+                        "title": "二维码图片",
+                        "description": "上传该联系方式对应的二维码图片。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    }
+                },
+                "required": [
+                    "title",
+                    "description"
+                ]
+            },
+            "maxItems": 10
+        },
+        "rule_track_list": {
+            "title": "赛制规则",
+            "description": "配置赛制、赛题、资源申请与提交规则中的赛道详情。",
+            "type": "array",
+            "items": {
+                "title": "赛道规则",
+                "description": "单个赛道规则配置",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "赛道名称",
+                        "description": "赛道名称。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 100
+                    },
+                    "label": {
+                        "title": "赛道标识",
+                        "description": "赛道序号或标识。",
+                        "type": "string",
+                        "maxLength": 20
+                    },
+                    "format": {
+                        "title": "参赛形式",
+                        "description": "如 个人参赛。",
+                        "type": "string",
+                        "maxLength": 50
+                    },
+                    "description": {
+                        "title": "赛道说明",
+                        "description": "赛制规则中的赛道说明。",
+                        "type": "string",
+                        "format": "textarea"
+                    },
+                    "image": {
+                        "title": "赛道图片",
+                        "description": "赛道规则区域图片。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    },
+                    "topic_list": {
+                        "title": "赛题列表",
+                        "description": "配置该赛道下的赛题分组。",
+                        "type": "array",
+                        "items": {
+                            "title": "赛题分组",
+                            "description": "单个赛题分组配置",
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "title": "赛题标题",
+                                    "description": "如 华为赛题、沐曦赛题。",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 80
+                                },
+                                "document_url": {
+                                    "title": "查看详情链接",
+                                    "description": "该赛题分组的详情文档链接，用于“查看详情”按钮和“查看文档”文字链接。为空时前端可展示为待同步状态。",
+                                    "type": "string"
+                                },
+                                "note": {
+                                    "title": "备注",
+                                    "description": "赛题补充说明。",
+                                    "type": "string",
+                                    "format": "textarea"
+                                },
+                                "task_list": {
+                                    "title": "任务列表",
+                                    "description": "配置赛题任务列表。",
+                                    "type": "array",
+                                    "items": {
+                                        "title": "任务",
+                                        "description": "单个任务配置",
+                                        "type": "object",
+                                        "properties": {
+                                            "task_no": {
+                                                "title": "任务编号",
+                                                "description": "如 Task 01。",
+                                                "type": "string",
+                                                "maxLength": 30
+                                            },
+                                            "task_name": {
+                                                "title": "任务名称",
+                                                "description": "任务名称。",
+                                                "type": "string",
+                                                "minLength": 1,
+                                                "maxLength": 100
+                                            }
+                                        },
+                                        "required": [
+                                            "task_name"
+                                        ]
+                                    },
+                                    "maxItems": 30
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "task_list"
+                            ]
+                        },
+                        "maxItems": 10
+                    }
+                },
+                "required": [
+                    "name",
+                    "topic_list"
+                ]
+            },
+            "maxItems": 10
+        },
+        "resource_list": {
+            "title": "资源申请列表",
+            "description": "配置各厂商资源申请信息。",
+            "type": "array",
+            "items": {
+                "title": "资源申请",
+                "description": "单个资源申请配置",
+                "type": "object",
+                "properties": {
+                    "vendor_id": {
+                        "title": "厂商ID",
+                        "description": "厂商资源的唯一标识，用于前端识别、接口关联或跳转逻辑，例如 moore_threads。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                    },
+                    "vendor_name": {
+                        "title": "厂商名称",
+                        "description": "厂商中文名称。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                    },
+                    "vendor_english_name": {
+                        "title": "厂商英文名称",
+                        "description": "厂商英文名称。",
+                        "type": "string",
+                        "maxLength": 100
+                    },
+                    "vendor_logo": {
+                        "title": "厂商Logo",
+                        "description": "资源申请卡片展示Logo。",
+                        "type": "upload",
+                        "format": "image",
+                        "maxFiles": 1
+                    },
+                    "resource_type": {
+                        "title": "资源类型",
+                        "description": "如 芯片资源 / 算力资源 / 平台账号等。",
+                        "type": "string",
+                        "maxLength": 120
+                    },
+                    "available_quota": {
+                        "title": "可用名额",
+                        "description": "资源可用名额说明。",
+                        "type": "string",
+                        "maxLength": 80
+                    },
+                    "application_entry": {
+                        "title": "领用方式",
+                        "description": "资源申请领用方式说明。",
+                        "type": "string"
+                    },
+                    "usage_description": {
+                        "title": "使用说明",
+                        "description": "资源使用说明。",
+                        "type": "string",
+                        "format": "textarea"
+                    },
+                    "usage_link": {
+                        "title": "使用说明链接",
+                        "description": "使用说明文字需要跳转时填写链接，留空则只展示普通文本。",
+                        "type": "string"
+                    },
+                    "open_status": {
+                        "title": "是否开放申请",
+                        "description": "是否开放该资源申请。",
+                        "type": "boolean",
+                        "default": false
+                    }
+                },
+                "required": [
+                    "vendor_name"
+                ]
+            },
+            "maxItems": 30
+        },
+        "resource_helper_list": {
+            "title": "资源领取说明列表",
+            "description": "配置如何申请领取资源区域的步骤或警告提示，可继续添加多条内容。",
+            "type": "array",
+            "items": {
+                "title": "资源领取说明",
+                "description": "单条资源领取步骤或警告提示。",
+                "type": "object",
+                "properties": {
+                    "warning": {
+                        "title": "是否为警告提示",
+                        "description": "开启后使用警告图标样式展示该条内容。",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "title": {
+                        "title": "提示标题",
+                        "description": "提示中加粗展示的标题。",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 60
+                    },
+                    "description": {
+                        "title": "提示内容",
+                        "description": "标题后的详细说明内容。",
+                        "type": "string",
+                        "format": "textarea"
+                    }
+                },
+                "required": [
+                    "title",
+                    "description"
+                ]
+            },
+            "maxItems": 20
+        },
+        "resource_helper_note": {
+            "title": "资源咨询提示",
+            "description": "如何申请领取资源区域展示的补充提示文案。",
+            "type": "string",
+            "format": "textarea",
+            "maxLength": 200
+        },
+        "resource_helper_qr": {
+            "title": "资源咨询二维码",
+            "description": "资源咨询小助手二维码。",
+            "type": "upload",
+            "format": "image",
+            "maxFiles": 1
+        },
+        "registration_form": {
+            "title": "报名页文案配置",
+            "description": "配置报名页的赛道说明、赛道选项文字和底部协议。赛道 ID 固定由前端按顺序映射为 1、2、3，不在配置中维护。",
+            "type": "object",
+            "properties": {
+                "track_descriptions": {
+                    "title": "报名赛道说明",
+                    "description": "报名赛道标题下方逐行展示的说明文案。",
+                    "type": "array",
+                    "items": {
+                        "title": "说明文案",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200
+                    },
+                    "minItems": 1,
+                    "maxItems": 10
+                },
+                "track_options": {
+                    "title": "报名赛道选项",
+                    "description": "报名页展示的三条赛道单选项文字，顺序分别对应后端赛道 ID 1、2、3。",
+                    "type": "array",
+                    "items": {
+                        "title": "赛道选项文字",
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200
+                    },
+                    "minItems": 3,
+                    "maxItems": 3
+                },
+                "agreements": {
+                    "title": "报名协议",
+                    "description": "报名页底部必须勾选的两条协议文案。",
+                    "type": "object",
+                    "properties": {
+                        "rights": {
+                            "title": "大赛解释权及社区贡献协议",
+                            "type": "string",
+                            "format": "textarea",
+                            "minLength": 1,
+                            "maxLength": 1000
+                        },
+                        "original": {
+                            "title": "原创及知识产权承诺",
+                            "type": "string",
+                            "format": "textarea",
+                            "minLength": 1,
+                            "maxLength": 1000
+                        }
+                    },
+                    "required": [
+                        "rights",
+                        "original"
+                    ]
+                }
+            },
+            "required": [
+                "track_descriptions",
+                "track_options",
+                "agreements"
+            ]
+        }
+    },
+    "required": [
+        "competition_list",
+        "competition_overview",
+        "track_list",
+        "timeline_list"
+    ]
+}

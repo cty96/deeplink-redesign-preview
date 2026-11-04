@@ -1,0 +1,101 @@
+/* Reference lock: Figma DeepLink / 5502:6115. Native artwork and masks, both states.
+   Desktop masters: 285 x 320 (rest), 544 x 320 (expanded), radius 16.
+   Existing copy and accordion behavior are retained; artwork follows its semantic title. */
+html body .fd-navigation-wrap .home-core-features .fd-title-sy { margin:0 0 64px !important; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion { height:320px; margin-top:0; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card,
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion.has-expanded .core-feature-card.is-expanded {
+ isolation:isolate; border:0; border-radius:16px;
+ background:linear-gradient(180deg,#6c9dff 0%,#356aff 100%) !important;
+ box-shadow:none !important;
+}
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card::before,
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card::after { display:none; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-copy { justify-content:flex-start; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-header h3 { margin:0; text-align:left; color:#fff !important; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-tagline {
+ opacity:1; visibility:visible; max-height:none; margin:12px 0 0; padding:0; transform:none;
+ color:#f4f7ff !important; background:none; font-size:14px !important; line-height:1.65; font-weight:400 !important;
+}
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card.is-expanded .core-feature-header h3 { margin-bottom:0; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card.is-expanded .core-feature-tagline { margin:12px 0 0; padding:0; border-radius:0; background:none !important; color:#f4f7ff !important; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card.is-expanded .core-feature-description { flex:none; margin:18px 0 0; padding:0; border-radius:0; background:none !important; color:#f4f7ff !important; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card .core-feature-media {
+ display:block !important; position:absolute; z-index:0; inset:0; width:100%; height:100%;
+ aspect-ratio:auto; transform:none; border:0; border-radius:0; background:none; box-shadow:none; opacity:1;
+ filter:none; mix-blend-mode:normal; -webkit-mask-image:none; mask-image:none;
+}
+html body .fd-navigation-wrap .core-feature-accordion .core-feature-figure {
+ position:absolute; pointer-events:none; width:var(--art-width); height:var(--art-height);
+ top:var(--art-top); right:var(--art-right); filter:none;
+ -webkit-mask-image:var(--art-mask); mask-image:var(--art-mask);
+ -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+ -webkit-mask-position:var(--mask-position); mask-position:var(--mask-position);
+ -webkit-mask-size:var(--mask-size); mask-size:var(--mask-size);
+ transition:opacity .3s;
+}
+html body .fd-navigation-wrap .core-feature-accordion .core-feature-figure-rest { opacity:1; }
+html body .fd-navigation-wrap .core-feature-accordion .core-feature-figure-expanded { opacity:0; }
+html body .fd-navigation-wrap .core-feature-accordion .is-expanded .core-feature-figure-rest { opacity:0; }
+html body .fd-navigation-wrap .core-feature-accordion .is-expanded .core-feature-figure-expanded { opacity:.5; }
+html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-art {
+ display:block; position:absolute; inset:0; width:100%; height:100%; max-width:none;
+ object-fit:cover; opacity:1; pointer-events:none;
+}
+/* Chip — Figma 5500:6031 / 5502:6092. */
+html body .fd-navigation-wrap .core-feature-card:nth-child(1) .core-feature-figure-rest {
+ --art-width:513.667px; --art-height:385.25px; --art-top:84.13px; --art-right:-141px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/87f65.svg'); --mask-position:76.507px -4.632px; --mask-size:352.143px 264.507px;
+}
+html body .fd-navigation-wrap .core-feature-card:nth-child(1) .core-feature-figure-expanded {
+ --art-width:729.737px; --art-height:547.302px; --art-top:6.58px; --art-right:-190.42px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/57ce2.svg'); --mask-position:108.689px -6.581px; --mask-size:500.27px 375.77px;
+}
+/* Integration blocks — Figma 5501:6039 / 5502:6107. */
+html body .fd-navigation-wrap .core-feature-card:nth-child(2) .core-feature-figure-rest {
+ --art-width:670.176px; --art-height:502.632px; --art-top:38.68px; --art-right:-241px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/3e61e.svg'); --mask-position:144.176px 56.809px; --mask-size:352.143px 280.975px;
+}
+html body .fd-navigation-wrap .core-feature-card:nth-child(2) .core-feature-figure-expanded {
+ --art-width:859.538px; --art-height:644.654px; --art-top:-17.37px; --art-right:-292.62px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/882cb.svg'); --mask-position:184.914px 72.861px; --mask-size:451.643px 360.366px;
+}
+/* Linked servers — Figma 5501:6047 / 5502:6114. */
+html body .fd-navigation-wrap .core-feature-card:nth-child(3) .core-feature-figure-rest {
+ --art-width:822px; --art-height:616.5px; --art-top:-58.27px; --art-right:-491px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/9cef2.svg'); --mask-position:32.84px 141.762px; --mask-size:352.143px 280.975px;
+}
+html body .fd-navigation-wrap .core-feature-card:nth-child(3) .core-feature-figure-expanded {
+ --art-width:752.515px; --art-height:564.386px; --art-top:-50.21px; --art-right:-200px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/a89e3.svg'); --mask-position:-12.485px 115.706px; --mask-size:565px 280.975px;
+}
+/* Infinity — Figma 5501:6043 / 5502:6111. */
+html body .fd-navigation-wrap .core-feature-card:nth-child(4) .core-feature-figure-rest {
+ --art-width:704px; --art-height:528px; --art-top:0px; --art-right:-289px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/9cef2.svg'); --mask-position:116.84px 99.493px; --mask-size:352.143px 280.975px;
+}
+html body .fd-navigation-wrap .core-feature-card:nth-child(4) .core-feature-figure-expanded {
+ --art-width:903.632px; --art-height:677.724px; --art-top:-72.05px; --art-right:-301.66px;
+ --art-mask:url('/deeplink-redesign-preview/home-assets/core-feature-figma/14694.svg'); --mask-position:149.972px 127.706px; --mask-size:452px 360.651px;
+}
+@media(min-width:1001px) {
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion.has-expanded .core-feature-card.is-expanded { flex:0 0 calc((100% - 60px) * .4771929825); }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion.has-expanded .core-feature-card:not(.is-expanded) { flex:1 1 0; }
+}
+@media(min-width:769px) and (max-width:1000px) { html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion { height:350px; } }
+@media(max-width:768px) {
+ html body .fd-navigation-wrap .home-core-features .fd-title-sy { margin-bottom:32px !important; }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion { height:auto; }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card { height:150px; min-height:150px; }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-header { max-width:60%; }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card.is-expanded { height:auto; min-height:320px; }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card.is-expanded .core-feature-header { max-width:none; }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card .core-feature-media {
+  inset:auto; right:-20px; bottom:-50px; width:285px; height:320px;
+  transform:scale(.65); transform-origin:right bottom;
+ }
+ html body .fd-navigation-wrap .core-feature-grid.core-feature-accordion .core-feature-card.is-expanded .core-feature-media {
+  right:-20px; bottom:-20px; width:544px; height:320px; transform:scale(.8);
+ }
+}
+@media(prefers-reduced-motion:reduce) { html body .fd-navigation-wrap .core-feature-accordion .core-feature-figure { transition:none; } }

@@ -1,0 +1,53 @@
+/* User-selected reference restoration, 2026-10-29. Keep later page content and shared navigation. */
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero {
+ min-height:0; background:#fafcfe !important; border-bottom:1px solid #eef2f7;
+}
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero:before {
+ z-index:-1 !important; background:radial-gradient(ellipse at 86% 38%,#e9f1ff85,transparent 48%) !important;
+}
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero>.wrap { width:min(1200px,75vw); position:relative; }
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-grid {
+ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.08fr); gap:64px;
+ min-height:660px; padding:68px 0 72px; position:relative; align-items:center;
+}
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-copy { width:100%; max-width:600px; padding:0; }
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero h1 { color:#12283e !important; }
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-name { font-size:18px !important; font-weight:500 !important; margin:0 0 20px; color:#647991 !important; }
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .lead { margin:26px 0 16px; color:#31557b; }
+.prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .intro { color:#7a899a; }
+.training .modern-hero .hero-dot-field { display:block; z-index:-1; opacity:.6; }
+.prd-strict:is(.training,.kernelswift,.solutions) .reference-hero { display:block; position:relative; width:100%; aspect-ratio:640/480; min-height:0 !important; }
+.training .reference-hero .orbital-core { width:40%; padding:0; background:none; box-shadow:none; border-radius:50%; }
+.training .reference-hero .orbital-core-face { width:100%; height:100%; border:1px solid #d4e0f8; border-radius:50%; background:linear-gradient(125deg,#edf3ff,#e8efff); box-shadow:0 18px 50px -28px #275edb66,inset 0 1px 0 #fff; gap:20px; }
+.training .reference-hero .orbital-core-face img { filter:none; width:68%; }
+.training .reference-hero .orbital-core-face span { color:#8191a8; }
+.training .reference-hero .orbital-scene:before { opacity:.35; }
+.training .reference-hero .orbital-line { opacity:.18; }
+.system-kernelswift.reference-hero .operator-sheet { inset:13% 6% 19%; animation:none; }
+.system-kernelswift.reference-hero .system-mist { opacity:.55; }
+.system-kernelswift.reference-hero .system-chip-strip .partner-logo { width:120px; height:40px; object-fit:contain; }
+/* Only replace artwork inside the existing homepage product banner. */
+.product-live-preview>.prd-strict { position:absolute; width:54%; aspect-ratio:640/480; right:1%; top:50%; transform:translateY(-50%); }
+.product-live-preview .reference-hero { width:100%; height:100%; aspect-ratio:640/480; }
+@media(max-width:1100px) {
+ .prd-strict:is(.training,.kernelswift,.solutions) .modern-hero>.wrap { width:calc(100% - 64px); }
+ .prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-grid { gap:32px; min-height:610px; padding:56px 0; }
+}
+@media(max-width:768px) {
+ .prd-strict:is(.training,.kernelswift,.solutions) .modern-hero>.wrap { width:calc(100% - 48px); }
+ .prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-grid { grid-template-columns:minmax(0,1fr); min-height:0; padding:40px 0 32px; gap:32px; }
+ .prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-copy { width:100%; }
+ .prd-strict:is(.training,.kernelswift,.solutions) .reference-hero { max-width:520px; margin:auto; }
+ .prd-strict:is(.training,.kernelswift,.solutions) .modern-hero .hero-name { margin-bottom:15px; }
+ .product-live-preview>.prd-strict { width:100%; max-width:420px; right:0; top:auto; bottom:0; transform:none; }
+}
+
+/* Solution overview: only the first screen returns to the original four-card hub. */
+.prd-strict.solutions .solution-hero.modern-hero>.wrap { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.08fr); gap:64px; align-items:center; min-height:660px; padding:68px 0 72px; }
+.prd-strict.solutions .solution-hero.modern-hero .solution-hero-copy { width:100%; max-width:600px; }
+@media(max-width:1100px) { .prd-strict.solutions .solution-hero.modern-hero>.wrap { gap:32px; min-height:610px; padding:56px 0; } }
+@media(max-width:768px) { .prd-strict.solutions .solution-hero.modern-hero>.wrap { grid-template-columns:minmax(0,1fr); min-height:0; gap:32px; padding:40px 0 32px; } }
+
+/* Homepage: retain the original illustration. */
+.revision-brand > .hero-live { display:none !important; }
+.revision-brand::after { display:block !important; background-image:url('/deeplink-redesign-preview/products/assets/official-home-banner.jpg') !important; opacity:1; animation:none !important; }

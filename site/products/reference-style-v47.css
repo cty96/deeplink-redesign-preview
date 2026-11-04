@@ -1,0 +1,8 @@
+/* Blur only the illustration backdrop; all foreground UI and lettering stay crisp. */
+.kernelswift .product-story .ks-feature-overview .ks-interface-art{position:relative;background:transparent;border-color:transparent;overflow:visible;isolation:isolate}
+.kernelswift .product-story .ks-feature-overview .ks-interface-art:before{content:"";position:absolute;inset:4px;border-radius:15px;background:linear-gradient(145deg,#e2ebff,#edf3ff);filter:blur(7px);z-index:-1;pointer-events:none}
+.kernelswift .product-story .ks-feature-overview .ks-interface-art img{position:relative;z-index:1;filter:none}
+/* The seven new illustrations share a quiet powder-blue ground and the same crop. */
+.prd-strict.kernelswift #scenarios .ks-scene-art,.solutions .solution-illustration{background:#eef2ff;border-radius:14px}
+.solutions .solution-illustration img{opacity:1;object-fit:contain}
+@media(max-width:540px){.kernelswift .product-story .ks-feature-overview .ks-interface-art:before{inset:5px;filter:blur(5px);border-radius:11px}}

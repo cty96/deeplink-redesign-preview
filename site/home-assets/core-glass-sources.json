@@ -1,0 +1,30 @@
+[
+  {
+    "card": "synergy",
+    "source": "/Users/ctyy/Downloads/export (15)/图片 7.png",
+    "asset": "core-synergy-cutout-20261104.png",
+    "sha256": "5a1a3f76c4d15d2dd88323395e1399f8945b5d2bb6d9806a3ab1774343cdfbc0",
+    "alpha": "original transparency preserved"
+  },
+  {
+    "card": "integration",
+    "source": "/Users/ctyy/Downloads/export (15)/图片 8.png",
+    "asset": "core-integration-cutout-20261104.png",
+    "sha256": "dc56c679487fc0efdb7b6e41ea1f3ed9a7aaff0ce2b61bc8afddbd0f0904f8f8",
+    "alpha": "original transparency preserved"
+  },
+  {
+    "card": "heterogeneous",
+    "source": "/Users/ctyy/Downloads/export (15)/图片 10.png",
+    "asset": "core-heterogeneous-cutout-20261104.png",
+    "sha256": "e5c2e0b83ab04b72379ebad649afcb6ed479b89bd9e626fa49c5de580f65d1c8",
+    "alpha": "original transparency preserved"
+  },
+  {
+    "card": "fusion",
+    "source": "/Users/ctyy/Downloads/export (15)/图片 9.png",
+    "asset": "core-fusion-cutout-20261104.png",
+    "sha256": "b27ca57c1f6c32bc0d0b5b4d3ad0069ac60e23fee5115f046bca95516ef55002",
+    "alpha": "original transparency preserved"
+  }
+]
