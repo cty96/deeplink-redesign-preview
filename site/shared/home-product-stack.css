@@ -71,3 +71,6 @@ html body .fd-navigation-wrap .product-stack-showcase .product-card-art>svg.prod
 @media(max-width:768px) {
  html body .fd-navigation-wrap .product-stack-showcase .product-card-art { inset:46px 18px 84px; }
 }
+
+/* Browser review: center each product name across the card, in every stack state. */
+html body .fd-navigation-wrap .product-stack-showcase .product-card-title { display:block; width:100%; text-align:center; text-wrap:balance; }

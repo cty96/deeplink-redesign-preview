@@ -1,0 +1,29 @@
+[
+  {
+    "scene": "research",
+    "title": "企业内部研发提效场景",
+    "file": "ks-scenario-research-supplied-20261104.png",
+    "original_filename": "图片 12.png",
+    "width": 4730,
+    "height": 3547,
+    "sha256": "80dcb8163e20511fea26f08b078f44476f4c70906701f7481db159f3e986627d"
+  },
+  {
+    "scene": "industry",
+    "title": "行业 AI 应用落地加速",
+    "file": "ks-scenario-industry-supplied-20261104.png",
+    "original_filename": "图片 13.png",
+    "width": 4730,
+    "height": 3547,
+    "sha256": "c7b74adf6e7ed123104bc480df736687797bf88704845313552c960fca80b6ff"
+  },
+  {
+    "scene": "university",
+    "title": "高校算子优化前沿技术研究",
+    "file": "ks-scenario-university-supplied-20261104.png",
+    "original_filename": "图片 14.png",
+    "width": 4730,
+    "height": 3547,
+    "sha256": "234e915e430ed707b640d5d537f02e8b1aa234e27864a5f7900ee3ad52b4e1c7"
+  }
+]

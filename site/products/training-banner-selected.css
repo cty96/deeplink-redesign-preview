@@ -1,12 +1,13 @@
+/* Feather the actual image bounds, including letterbox edges; preserve the original pixels. */
 /* User-supplied training banner: original PNG, unchanged; retain existing hero copy. */
 html body.prd-strict.training .modern-hero { background:#eaf0f7 !important; min-height:700px; padding:0 !important; }
 html body.prd-strict.training .modern-hero > .wrap { position:relative; z-index:2; }
 html body.prd-strict.training .modern-hero .hero-system, html body.prd-strict.training .modern-hero .hero-dot-field { display:none !important; }
-html body.prd-strict.training .modern-hero::before { content:''; position:absolute; top:0; bottom:0; left:50%; right:auto; width:min(1600px,100vw); height:100%; transform:translateX(-50%); z-index:0 !important; background:url('assets/training-banner-workflow-matched-20261103.png') center / contain no-repeat !important; mask-image:none !important; -webkit-mask-image:none !important; }
+html body.prd-strict.training .modern-hero::before { content:''; position:absolute; top:50%; bottom:auto; left:50%; right:auto; width:min(1243.04px,100vw); height:auto; aspect-ratio:1671 / 941; transform:translate(-50%,-50%); z-index:0 !important; background:url('assets/training-banner-workflow-matched-20261103.png') center / contain no-repeat !important; mask-image:linear-gradient(90deg,transparent,#000 14%,#000 88%,transparent),linear-gradient(180deg,transparent,#000 14%,#000 86%,transparent) !important; mask-composite:intersect; -webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 88%,transparent),linear-gradient(180deg,transparent,#000 14%,#000 86%,transparent) !important; -webkit-mask-composite:source-in; }
 html body.prd-strict.training .modern-hero::after { content:none !important; }
 @media(min-width:769px) { html body.prd-strict.training .modern-hero, html body.prd-strict.training .modern-hero .hero-grid, html body.prd-strict.training .modern-hero > .wrap { min-height:700px !important; } }
 @media(max-width:768px) {
  html body.prd-strict.training .modern-hero { min-height:0; }
- html body.prd-strict.training .modern-hero::before { width:100%; height:310px; left:0; top:auto; bottom:0; transform:none; background-size:auto 100% !important; background-position:right center !important; }
+ html body.prd-strict.training .modern-hero::before { width:100%; height:310px; aspect-ratio:auto; left:0; top:auto; bottom:0; transform:none; background-size:auto 100% !important; background-position:right center !important; }
  html body.prd-strict.training .modern-hero .hero-grid { min-height:0 !important; padding-bottom:330px !important; }
 }

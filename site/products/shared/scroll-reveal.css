@@ -1,0 +1,22 @@
+/* Reference: homepage bottomMoveTop, 100px / 500ms / cubic-bezier(.5,1,.89,1).
+   Only content groups move; hero, sticky navigation and carousel slides retain their own behavior. */
+body.prd-strict {
+  --dl-reveal-duration:500ms;
+  --dl-reveal-ease:cubic-bezier(.5,1,.89,1);
+  --dl-reveal-distance:100px;
+}
+body.prd-strict .dl-scroll-reveal { opacity:0; }
+body.prd-strict .dl-scroll-reveal.is-revealed {
+  animation:dl-page-reveal var(--dl-reveal-duration) var(--dl-reveal-ease) both;
+  animation-delay:var(--dl-reveal-delay,0ms);
+}
+@keyframes dl-page-reveal {
+  from { opacity:0; transform:translateY(var(--dl-reveal-distance)); }
+  to { opacity:1; transform:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body.prd-strict .dl-scroll-reveal { opacity:1 !important; transform:none !important; animation:none !important; }
+}
+@media print {
+  body.prd-strict .dl-scroll-reveal { opacity:1 !important; transform:none !important; animation:none !important; }
+}
