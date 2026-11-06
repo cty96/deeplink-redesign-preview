@@ -5,7 +5,7 @@ html body.prd-strict.kernelswift #introduction .modern-hero{background:var(--dl-
 html body.prd-strict.kernelswift main#main>#features>.introduction-detail{padding-block:0}
 html body.prd-strict.kernelswift #features .ks-metrics{background:transparent}
 html body.prd-strict.kernelswift #compatibility{scroll-margin-top:144px}
-html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{grid-template-columns:26% 32% 26%;min-height:430px;padding:30px 24px;overflow:visible;background:radial-gradient(ellipse at 50% 58%,#edf3ff,transparent 70%);border:0;box-shadow:none}
+html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{grid-template-columns:26% 32% 26%;min-height:430px;padding:30px 24px;overflow:visible;background:transparent;border:0;box-shadow:none}
 html body.prd-strict.kernelswift #compatibility .flow-nodes{gap:18px 14px;align-items:center}
 html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node{--node-stagger:0px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;min-width:0;min-height:64px;padding:10px 12px;border:1px solid var(--dl-card-outline,#e3ecf8);border-radius:12px;background:var(--dl-card-white,linear-gradient(180deg,#fff,#fbfdff));box-shadow:0 9px 20px -12px #315fbd35;transform:translateY(var(--node-stagger));animation:ks-badge-float var(--float-duration) ease-in-out var(--float-delay) infinite;will-change:transform;transition:box-shadow .2s ease-out}
 html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:nth-child(even){--node-stagger:16px}
@@ -29,7 +29,7 @@ html body.prd-strict.kernelswift #compatibility .flow-core>strong{font-size:34px
  html body.prd-strict.kernelswift #compatibility .flow-core>strong{font-size:28px}
 }
 @media(max-width:768px){
- html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{display:flex;flex-direction:column;gap:32px;min-height:0;padding:4px 0 0;overflow:hidden}
+ html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{display:flex;flex-direction:column;gap:32px;min-height:0;padding:4px 0 0;overflow:visible}
  html body.prd-strict.kernelswift #compatibility .flow-nodes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 8px;width:100%;padding-block:4px}
  html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node:nth-child(n){--node-stagger:0px;min-height:62px;gap:6px;padding:8px 6px}
  html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node:last-child{grid-column:2;justify-self:stretch;width:auto}
@@ -39,3 +39,8 @@ html body.prd-strict.kernelswift #compatibility .flow-core>strong{font-size:34px
  html body.prd-strict.kernelswift #compatibility .flow-halo{width:280px;height:280px}
 }
 @media(prefers-reduced-motion:reduce){html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node{animation:none;will-change:auto;transform:translateY(var(--node-stagger))}}
+
+/* Let the compatibility glow fade outside the diagram instead of ending at a panel edge. */
+html body.prd-strict.kernelswift #compatibility .flow-compat:before{content:"";position:absolute;inset:-64px -28px;z-index:-3;pointer-events:none;background:radial-gradient(ellipse at 50% 54%,#eaf1ffb3 0%,#f1f5ff80 32%,transparent 66%);filter:blur(24px)}
+html body.prd-strict.kernelswift #operators .operator-square-showcase{background:linear-gradient(135deg,#f8fbff 0%,#edf4ff 54%,#f2efff 100%)!important}
+@media(max-width:768px){html body.prd-strict.kernelswift #compatibility .flow-compat:before{inset:-24px 0;background:radial-gradient(ellipse at 50% 50%,#eaf1ff99,transparent 66%)}}
