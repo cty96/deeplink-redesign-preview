@@ -19,9 +19,10 @@ html body .fd-navigation-wrap .product-scene-footer { display:grid;grid-template
 .product-scene-brand { display:block;font-size:var(--dl-type-caption);line-height:1.7;color:var(--dl-text-muted);margin-bottom:12px; }
 html body .fd-navigation-wrap .product-scene-title { margin:0 0 12px;font-size:var(--dl-type-subsection);font-weight:600;line-height:1.5;color:var(--dl-text-heading);text-wrap:balance; }
 html body .fd-navigation-wrap .product-scene-description { margin:0 0 16px;min-height:3.7em;font-size:var(--dl-type-body);line-height:1.85;color:var(--dl-text-body);text-wrap:pretty; }
-html body .fd-navigation-wrap .product-scene-cta { display:inline-flex;align-items:center;gap:16px;min-height:48px;box-sizing:border-box;padding-bottom:4px;font-size:var(--dl-type-ui);line-height:1.6;font-weight:500;color:var(--dl-text-brand);text-decoration:none; }
-.product-scene-cta svg { width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;flex:0 0 18px;transition:transform .25s ease; }
-.product-scene-cta:hover svg { transform:translateX(4px); }
+html body .fd-navigation-wrap .product-scene-cta { display:inline-flex;align-items:center;gap:8px;height:32px;min-height:32px;box-sizing:border-box;padding:5px 8px 5px 12px;border-radius:20px;background:#fff;font:400 14px/21px "PingFang SC",var(--dl-font-sans);white-space:nowrap;transition:background-color .2s ease;color:var(--dl-text-brand);text-decoration:none!important; }
+.product-scene-cta svg { display:none; }
+.product-scene-cta::after { content:"";display:block;flex:none;width:16px;height:16px;background-image:url('/deeplink-redesign-preview/products/assets/figma-review-20261106/action-chevron.svg'),url('/deeplink-redesign-preview/products/assets/figma-review-20261106/action-circle.svg');background-size:9.6px 9.6px,16px 16px;background-position:center;background-repeat:no-repeat;transform:rotate(180deg); }
+html body .fd-navigation-wrap .product-scene-cta:hover { background:rgba(255,255,255,.72);text-decoration:none!important; }
 html body .fd-navigation-wrap .product-scene-tabs { position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding-top:0;border:0;border-bottom:1px solid #d9e4f3; }
 .product-scene-indicator { position:absolute;top:auto;bottom:-1px;left:calc(var(--product-active) * 25% + 12px);display:block;width:calc(25% - 24px);height:2px;background:var(--dl-text-brand,#0d53de);box-shadow:none;transform:none;transition:left .32s cubic-bezier(.22,1,.36,1);pointer-events:none; }
 html body .fd-navigation-wrap .product-scene-tab { box-sizing:border-box;display:block;min-width:0;min-height:48px;margin:0;padding:14px 12px 16px;border:0;background:transparent;font:500 var(--dl-type-body)/1.6 var(--dl-font-sans);text-align:left;text-wrap:balance;color:var(--dl-text-body);cursor:pointer;transition:color .25s ease; }
@@ -44,7 +45,7 @@ html body .fd-navigation-wrap :is(.product-scene-arrow,.product-scene-tab,.produ
 @media(prefers-reduced-motion:reduce) {
  html body .fd-navigation-wrap .product-scene-panel { transition:none;filter:none;transform:none; }
  html body .fd-navigation-wrap .product-scene-illustration :is(img,svg) { animation:none; }
- .product-scene-indicator,.product-scene-arrow,.product-scene-tab,.product-scene-cta svg { transition:none !important; }
+ .product-scene-indicator,.product-scene-arrow,.product-scene-tab,.product-scene-cta { transition:none !important; }
 }
 
 #product-scene-panel-3 .product-scene-illustration svg { mix-blend-mode:multiply; }

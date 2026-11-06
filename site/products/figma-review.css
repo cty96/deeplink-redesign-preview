@@ -4,20 +4,31 @@ html body.prd-strict main#main .design-pill .design-action-label,html body.prd-s
 .design-action-icon{position:relative;display:block;flex:none;width:16px;height:16px}
 .design-action-circle{display:block;max-width:none}
 .design-action-chevron{position:absolute;left:3.2px;top:3.2px;max-width:none;transform:rotate(180deg)}
-html body.prd-strict main#main a:hover .design-pill,html body.prd-strict main#main button:not(:disabled):hover .design-pill{background:#f4f8ff}
+html body.prd-strict main#main a:hover .design-pill,html body.prd-strict main#main button:not(:disabled):hover .design-pill{background:rgba(255,255,255,.72)}
 html body.prd-strict main#main a:focus-visible .design-pill{outline:2px solid #0d53de;outline-offset:3px}
 /* Four equal access cards; the original destinations and pending states stay intact. */
 html body.prd-strict.kernelswift main#main #access .access-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-html body.prd-strict.kernelswift main#main #access .access-card{min-height:260px;padding:32px;border:1px solid #e3ecf8;border-radius:16px;background:#629cfd!important;box-shadow:0 8px 24px #2a4d840a!important;position:relative;isolation:isolate;overflow:hidden}
+html body.prd-strict.kernelswift main#main #access .access-card{min-height:260px;padding:32px;border:0;border-radius:16px;background:linear-gradient(180deg,#6c9dff 0%,#356aff 100%)!important;box-shadow:none!important;position:relative;isolation:isolate;overflow:hidden}
 html body.prd-strict.kernelswift main#main #access .access-card h3{margin:0 0 16px!important;font-size:20px;line-height:30px;color:#fff!important}
 html body.prd-strict.kernelswift main#main #access .access-card h3 span,html body.prd-strict.kernelswift main#main #access .access-card p,html body.prd-strict.kernelswift main#main #access .access-card p span{color:#fff!important}
 html body.prd-strict.kernelswift main#main #access .access-card p{font-size:14px;line-height:25.9px;margin:0 0 25px;flex:1}
 html body.prd-strict.kernelswift main#main #access .access-card :is(.text-link,.image-button){display:flex;flex:none;align-items:center;justify-content:flex-start;width:100%;padding:12px 0 0;margin:0;border:0;background:none;font-size:14px;line-height:24px;text-align:left;min-width:0}
 html body.prd-strict.kernelswift main#main #access #private :is(.text-link,.text-link span){color:#fff!important;overflow-wrap:anywhere}
-html body.prd-strict.kernelswift main#main #access .access-art-mask{position:absolute;z-index:0;left:44px;top:114.2px;width:287px;height:182px;margin:0;pointer-events:none;mask-image:url('assets/figma-review-20261106/access-art-mask.svg');mask-repeat:no-repeat;mask-size:287px 182px}
+html body.prd-strict.kernelswift main#main #access .access-art-mask{position:absolute;z-index:0;left:45px;top:115.2px;width:287px;height:182px;margin:0;pointer-events:none;mask-image:url('assets/figma-review-20261106/access-art-mask.svg');mask-repeat:no-repeat;mask-size:287px 182px}
 html body.prd-strict.kernelswift main#main #access .access-art-mask img{position:absolute;left:0;top:-11.46px;width:259.281px;height:194.461px;max-width:none;object-fit:cover;opacity:.3}
 html body.prd-strict.kernelswift main#main #access #skill .access-art-mask img{left:13.859px}
 html body.prd-strict.kernelswift main#main #access #private .access-art-mask img{top:-21.431px}
 html body.prd-strict.kernelswift main#main #access .access-card:hover:before{opacity:.18}
 @media(max-width:1100px){html body.prd-strict.kernelswift main#main #access .access-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){html body.prd-strict.kernelswift main#main #access .access-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Capsule hover changes only the white fill; links never gain an underline. */
+html body.prd-strict main#main :is(a,button):has(.design-pill),html body.prd-strict main#main .design-pill,html body.prd-strict main#main .design-pill *{text-decoration:none!important}
+html body.prd-strict main#main .design-pill{transition:background-color .2s ease}
+html body.prd-strict.kernelswift main#main #access .access-card{transition:box-shadow .28s ease}
+html body.prd-strict.kernelswift main#main #access .access-art-mask img{transform-origin:65% 70%;transition:transform .32s ease}
+@media(hover:hover) and (pointer:fine){
+ html body.prd-strict.kernelswift main#main #access .access-card:hover{box-shadow:0 16px 32px -10px #2356aa47!important}
+ html body.prd-strict.kernelswift main#main #access .access-card:hover .access-art-mask img{transform:scale(1.12)}
+}
+@media(prefers-reduced-motion:reduce){html body.prd-strict main#main .design-pill,html body.prd-strict.kernelswift main#main #access .access-card,html body.prd-strict.kernelswift main#main #access .access-art-mask img{transition:none}html body.prd-strict.kernelswift main#main #access .access-card:hover .access-art-mask img{transform:none}}
