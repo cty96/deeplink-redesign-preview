@@ -1,0 +1,14 @@
+{
+  "version": "2026-11-06-current",
+  "media_release": "preview-media-20261106",
+  "files": {
+    "home/index.html": "c8054560e9e30ae8263e8ab0d120e0671c3117a96c10a67b73dc75c6616e4a8d",
+    "products/training.html": "67a25bdd489c5a98e8de0805a9d0802f6411cadf21e5534a1f9667dad3ac2863",
+    "products/kernelswift.html": "fc358499475021c052282feb1f22395675cbd8b35b0052afd131399f9da68f9a",
+    "products/solutions.html": "f6185bb66053dba39299c907ffa1327d65bd7344a64c69d604334696500068b1",
+    "products/product-presentation.css": "af4f4f1aaf5c1e957631718f850f230d6c6d97383022aedc54889e5fe4e3baae",
+    "products/solution-bento.css": "ff884dc350fdf75ead86c5b21b153b07ba7d658af53d6b3ddababdae6e6e30b9",
+    "shared/site-header.js": "710134e8f77ca9ec0892d6484d774a3f316e92d86046fef1f5479cc4cbf46d00",
+    "shared/site-review.css": "e1ed8ed1624d8284dda3a7110386ce972e64ad70496687317a24425025414940"
+  }
+}

@@ -1,29 +1,23 @@
 [
   {
-    "scene": "research",
-    "title": "企业内部研发提效场景",
-    "file": "ks-scenario-research-supplied-20261104.png",
-    "original_filename": "图片 12.png",
-    "width": 4730,
-    "height": 3547,
-    "sha256": "80dcb8163e20511fea26f08b078f44476f4c70906701f7481db159f3e986627d"
+    "source": "/Users/ctyy/Downloads/export (17)/代码面板配图-蓝紫调-5比2.png",
+    "asset": "ks-scenario-research-wide-20261104.png",
+    "width": 2048,
+    "height": 832,
+    "sha256": "226b02bcea870941b48a948d126ed902d386dffefdffb24491db641921a3359a"
   },
   {
-    "scene": "industry",
-    "title": "行业 AI 应用落地加速",
-    "file": "ks-scenario-industry-supplied-20261104.png",
-    "original_filename": "图片 13.png",
-    "width": 4730,
-    "height": 3547,
-    "sha256": "c7b74adf6e7ed123104bc480df736687797bf88704845313552c960fca80b6ff"
+    "source": "/Users/ctyy/Downloads/export (17)/芯片场景配图-蓝紫调-5比2.png",
+    "asset": "ks-scenario-industry-wide-20261104.png",
+    "width": 2048,
+    "height": 832,
+    "sha256": "79273dd412b52b0051e1cd76357410a2b27d72e4e66dfb91e372e4497f58e11f"
   },
   {
-    "scene": "university",
-    "title": "高校算子优化前沿技术研究",
-    "file": "ks-scenario-university-supplied-20261104.png",
-    "original_filename": "图片 14.png",
-    "width": 4730,
-    "height": 3547,
-    "sha256": "234e915e430ed707b640d5d537f02e8b1aa234e27864a5f7900ee3ad52b4e1c7"
+    "source": "/Users/ctyy/Downloads/export (17)/节点图表配图-蓝紫调-5比2.png",
+    "asset": "ks-scenario-university-wide-20261104.png",
+    "width": 2048,
+    "height": 832,
+    "sha256": "9a3f2acf157b3083c7b2219e3ad04b3777bf6d125c2759e7f1991d09bed6149e"
   }
 ]

@@ -1,6 +1,6 @@
 /* User-supplied scene set, 2026-11-04: preserve original color, proportions and complete composition. */
 html body.prd-strict.kernelswift #scenarios .scene-integrated .ks-scene-art.user-scenario-art {
-  aspect-ratio:4730 / 3547;
+  aspect-ratio:2048 / 832;
   background:transparent;
   overflow:hidden;
 }

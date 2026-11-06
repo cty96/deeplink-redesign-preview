@@ -84,7 +84,7 @@
         "path": "/deeplink-redesign-preview/products/kernelswift.html",
         "type": "self",
         "summary": "自动生成和优化高性能算子，降低多元芯片适配成本；",
-        "menuName": "KernelSwift智能算子迁移系统："
+        "menuName": "KernelSwift智能算子迁移系统"
       },
       {
         "key": "tools2",
@@ -95,7 +95,7 @@
         "path": "https://deepfusion.deeplink.org.cn/#/login",
         "type": "self",
         "summary": "打通跨域算力资源，提升资源调度与科研任务执行效率；",
-        "menuName": "超智融合平台："
+        "menuName": "超智融合平台"
       },
       {
         "key": "tools3",
@@ -106,7 +106,7 @@
         "path": "/deeplink-redesign-preview/deepeval",
         "type": "self",
         "summary": "对芯片、算子、框架、模型、集群与应用进行可信验证，沉淀可复用的验证结果和产业成果。",
-        "menuName": "AI全环节软硬件验证平台："
+        "menuName": "AI全环节软硬件验证平台"
       }
     ]
   },
