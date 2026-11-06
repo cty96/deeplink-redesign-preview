@@ -1,0 +1,16 @@
+/* Low-contrast blue/lilac light fields, echoing the introduction panel. */
+.solution-fluid-card{position:relative;isolation:isolate;overflow:hidden;--fluid-x:24%;--fluid-y:20%;--fluid-duration:200ms;--fluid-ease:cubic-bezier(.2,0,0,1);transition:box-shadow var(--fluid-duration) var(--fluid-ease)}
+.solution-fluid-card>*{position:relative;z-index:1}
+.solution-fluid-card:before,.solution-fluid-card:after{content:"";position:absolute;pointer-events:none;z-index:0;opacity:0;transition:opacity var(--fluid-duration) var(--fluid-ease)}
+.solution-fluid-card:before{inset:-25%;background:radial-gradient(ellipse at var(--fluid-x) var(--fluid-y),#ffffffdb 0%,#c7e5ff80 24%,transparent 56%),radial-gradient(ellipse at calc(100% - var(--fluid-x)) calc(100% - var(--fluid-y)),#ede7ffb3 0%,#d9d5ff66 28%,transparent 56%);filter:blur(24px);transform:translate3d(0,0,0)}
+.solution-fluid-card:after{inset:0;border-radius:inherit;background-image:radial-gradient(#fffffff2 .8px,transparent 1px);background-size:4px 4px;mask-image:radial-gradient(ellipse at var(--fluid-x) var(--fluid-y),#000,transparent 65%),radial-gradient(ellipse at 85% 100%,#000,transparent 60%)}
+@media(hover:hover) and (pointer:fine){
+ .solution-fluid-card:hover{box-shadow:inset 0 0 0 1px #c5d3ef66,0 8px 24px #737cc308}
+ .solution-fluid-card:hover:before{opacity:.8;animation:solution-fluid-drift 8s ease-in-out infinite alternate}
+ .solution-fluid-card:hover:after{opacity:.9}
+}
+@keyframes solution-fluid-drift{0%{transform:translate3d(-3%,-3%,0) rotate(-6deg) scale(1)}50%{transform:translate3d(3%,2%,0) rotate(5deg) scale(1.08,.96)}100%{transform:translate3d(-2%,4%,0) rotate(-3deg) scale(.98,1.06)}}
+@media(prefers-reduced-motion:reduce){.solution-fluid-card,.solution-fluid-card:before,.solution-fluid-card:after{transition:none}.solution-fluid-card:hover:before{animation:none;transform:none}}
+
+/* Shared white access-card surface retains the same hover border feedback. */
+@media(hover:hover) and (pointer:fine){html body.prd-strict .access-card.solution-fluid-card:hover{box-shadow:inset 0 0 0 1px #c5d3ef66,0 8px 24px #737cc308!important}}

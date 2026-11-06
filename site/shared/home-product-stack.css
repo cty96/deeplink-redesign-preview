@@ -22,9 +22,9 @@ html body .fd-navigation-wrap .product-scene-description { margin:0 0 16px;min-h
 html body .fd-navigation-wrap .product-scene-cta { display:inline-flex;align-items:center;gap:16px;min-height:48px;box-sizing:border-box;padding-bottom:4px;font-size:var(--dl-type-ui);line-height:1.6;font-weight:500;color:var(--dl-text-brand);text-decoration:none; }
 .product-scene-cta svg { width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;flex:0 0 18px;transition:transform .25s ease; }
 .product-scene-cta:hover svg { transform:translateX(4px); }
-html body .fd-navigation-wrap .product-scene-tabs { position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding-top:24px;border-top:1px solid #d9e4f3; }
-.product-scene-indicator { position:absolute;top:-1px;left:0;display:block;width:25%;height:2px;background:linear-gradient(90deg,transparent,#4f8cff 35%,#77c8f5 70%,transparent);box-shadow:0 -2px 12px #589df34d;transform:translateX(calc(var(--product-active) * 100%));transition:transform .55s cubic-bezier(.22,1,.36,1);pointer-events:none; }
-html body .fd-navigation-wrap .product-scene-tab { box-sizing:border-box;display:block;min-width:0;min-height:48px;margin:0;padding:0 12px 4px;border:0;background:transparent;font:500 var(--dl-type-body)/1.6 var(--dl-font-sans);text-align:left;text-wrap:balance;color:var(--dl-text-body);cursor:pointer;transition:color .25s ease; }
+html body .fd-navigation-wrap .product-scene-tabs { position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding-top:0;border:0;border-bottom:1px solid #d9e4f3; }
+.product-scene-indicator { position:absolute;top:auto;bottom:-1px;left:calc(var(--product-active) * 25% + 12px);display:block;width:calc(25% - 24px);height:4px;background:var(--dl-text-brand,#0d53de);box-shadow:none;transform:none;transition:left .32s cubic-bezier(.22,1,.36,1);pointer-events:none; }
+html body .fd-navigation-wrap .product-scene-tab { box-sizing:border-box;display:block;min-width:0;min-height:48px;margin:0;padding:14px 12px 16px;border:0;background:transparent;font:500 var(--dl-type-body)/1.6 var(--dl-font-sans);text-align:left;text-wrap:balance;color:var(--dl-text-body);cursor:pointer;transition:color .25s ease; }
 html body .fd-navigation-wrap .product-scene-tab[aria-selected="true"] { color:var(--dl-text-brand);font-weight:600; }
 html body .fd-navigation-wrap .product-scene-tab:hover { color:var(--dl-text-brand); }
 html body .fd-navigation-wrap :is(.product-scene-arrow,.product-scene-tab,.product-scene-cta):focus-visible { outline:2px solid var(--dl-text-brand);outline-offset:4px; }
@@ -38,8 +38,8 @@ html body .fd-navigation-wrap :is(.product-scene-arrow,.product-scene-tab,.produ
  html body .fd-navigation-wrap .product-scene-title { font-size:var(--dl-type-card); }
  html body .fd-navigation-wrap .product-scene-description { min-height:0;margin-bottom:8px; }
  .product-scene-brand { margin-bottom:8px; }
- html body .fd-navigation-wrap .product-scene-tabs { padding-top:16px; }
- html body .fd-navigation-wrap .product-scene-tab { font-size:12px;min-height:60px;padding:0 4px 4px;text-align:center; }
+ html body .fd-navigation-wrap .product-scene-tabs { padding-top:0; }
+ html body .fd-navigation-wrap .product-scene-tab { font-size:12px;min-height:60px;padding:14px 4px 16px;text-align:center; }
 }
 @media(prefers-reduced-motion:reduce) {
  html body .fd-navigation-wrap .product-scene-panel { transition:none;filter:none;transform:none; }
@@ -48,3 +48,9 @@ html body .fd-navigation-wrap :is(.product-scene-arrow,.product-scene-tab,.produ
 }
 
 #product-scene-panel-3 .product-scene-illustration svg { mix-blend-mode:multiply; }
+
+/* White halftone and pale light fade from the center before reaching any edge. */
+html body .fd-navigation-wrap #products .product-scene-panel{isolation:isolate}
+html body .fd-navigation-wrap #products .product-scene-panel::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(#fffffff2 .8px,transparent 1px),radial-gradient(ellipse at 50% 50%,#dceaffb3,transparent 68%);background-size:4px 4px,100% 100%;background-repeat:repeat,no-repeat;mask-image:radial-gradient(ellipse 56% 65% at 50% 50%,#000 12%,#0009 38%,transparent 72%);opacity:.85}
+
+@media(max-width:768px){.product-scene-indicator{left:calc(var(--product-active) * 25% + 4px);width:calc(25% - 8px)}}

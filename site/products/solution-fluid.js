@@ -1,6 +1,6 @@
 /* Track only the active card; the idle page runs no animation loop. */
 (() => {
-  const cards = document.querySelectorAll('.solutions [data-fluid-card]');
+  const cards = document.querySelectorAll('[data-fluid-card]');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let frame = 0;

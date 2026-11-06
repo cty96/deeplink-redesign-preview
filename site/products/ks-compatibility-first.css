@@ -1,41 +1,40 @@
-/* First content module: model and silicon marks on softly floating white badges. */
-html body.prd-strict.kernelswift #introduction>.ks-compatibility-first{padding:64px 0 0;margin-inline:auto;scroll-margin-top:144px}
-html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{grid-template-columns:27% 32% 27%;min-height:520px;padding:40px 28px;overflow:visible;background:radial-gradient(ellipse at 50% 58%,#edf3ff,transparent 70%);border:0;box-shadow:none}
-html body.prd-strict.kernelswift #compatibility .flow-nodes{gap:14px 12px;align-items:center}
-html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node{--node-stagger:0px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-width:0;min-height:94px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;transform:translateY(var(--node-stagger));animation:ks-badge-float var(--float-duration) ease-in-out var(--float-delay) infinite;will-change:transform;transition:none}
-html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:nth-child(even){--node-stagger:20px}
-html body.prd-strict.kernelswift #compatibility .flow-chips>.ks-brand-node:nth-child(odd){--node-stagger:-20px}
-html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:last-child{grid-column:1/-1;justify-self:center;min-width:0;width:50%}
-html body.prd-strict.kernelswift #compatibility .ks-node-badge{display:grid;place-items:center;flex:none;width:72px;height:72px;box-sizing:border-box;border-radius:50%;border:1px solid #e6eefb;background:linear-gradient(145deg,#fff 35%,#f4f8ff);box-shadow:0 9px 20px -10px #315fbd35,inset 0 1px 0 #fff;transition:box-shadow .2s ease-out}
-html body.prd-strict.kernelswift #compatibility .ks-node-badge img{display:block;width:34px;height:34px;max-width:none;object-fit:contain;transform:none;opacity:1}
-html body.prd-strict.kernelswift #compatibility .ks-chip-node .ks-node-badge img{width:58px;height:34px}
-html body.prd-strict.kernelswift #compatibility .ks-chip-node:first-child .ks-node-badge img{width:38px;height:38px}
-html body.prd-strict.kernelswift #compatibility .ks-node-label{font-size:12px;line-height:18px;color:#526f98;font-weight:400;white-space:nowrap;text-align:center}
-html body.prd-strict.kernelswift #compatibility .flow-core{padding:38px 16px;min-height:224px}
+/* KernelSwift uses the shared white / pale-blue canvas roles throughout. */
+html body.prd-strict.kernelswift main#main>:is(#introduction,#features,#scenarios,#access){background:var(--dl-canvas-blue,#f5f8fd)!important}
+html body.prd-strict.kernelswift main#main>:is(#compatibility,#operators,#evolution,#ecosystem){background:var(--dl-canvas-white,#fff)!important}
+html body.prd-strict.kernelswift #introduction .modern-hero{background:var(--dl-canvas-blue,#f5f8fd)!important}
+html body.prd-strict.kernelswift main#main>#features>.introduction-detail{padding-block:0}
+html body.prd-strict.kernelswift #features .ks-metrics{background:transparent}
+html body.prd-strict.kernelswift #compatibility{scroll-margin-top:144px}
+html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{grid-template-columns:26% 32% 26%;min-height:430px;padding:30px 24px;overflow:visible;background:radial-gradient(ellipse at 50% 58%,#edf3ff,transparent 70%);border:0;box-shadow:none}
+html body.prd-strict.kernelswift #compatibility .flow-nodes{gap:18px 14px;align-items:center}
+html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node{--node-stagger:0px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;min-width:0;min-height:64px;padding:10px 12px;border:1px solid var(--dl-card-outline,#e3ecf8);border-radius:12px;background:var(--dl-card-white,linear-gradient(180deg,#fff,#fbfdff));box-shadow:0 9px 20px -12px #315fbd35;transform:translateY(var(--node-stagger));animation:ks-badge-float var(--float-duration) ease-in-out var(--float-delay) infinite;will-change:transform;transition:box-shadow .2s ease-out}
+html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:nth-child(even){--node-stagger:16px}
+html body.prd-strict.kernelswift #compatibility .flow-chips>.ks-brand-node:nth-child(odd){--node-stagger:-16px}
+html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node:last-child{grid-column:1/-1;justify-self:center;min-width:0;width:calc((100% - 14px)/2)}
+html body.prd-strict.kernelswift #compatibility .ks-node-badge{display:grid;place-items:center;flex:none;width:26px;height:30px;box-sizing:border-box;border-radius:0;border:0;background:none;box-shadow:none}
+html body.prd-strict.kernelswift #compatibility .ks-node-badge img{display:block;width:26px;height:26px;max-width:none;object-fit:contain;transform:none;opacity:1}
+html body.prd-strict.kernelswift #compatibility .ks-chip-node .ks-node-badge{width:100%;height:36px}
+html body.prd-strict.kernelswift #compatibility .ks-chip-node .ks-node-badge img{width:96px;max-width:100%;height:34px}
+html body.prd-strict.kernelswift #compatibility .ks-node-label{font-size:13px;line-height:20px;color:#526f98;font-weight:400;white-space:nowrap;text-align:center}
+html body.prd-strict.kernelswift #compatibility .flow-core{padding:36px 16px;min-height:210px}
 html body.prd-strict.kernelswift #compatibility .flow-core>strong{font-size:34px}
-html body.prd-strict.kernelswift #compatibility .flow-core p{font-size:13px}
-html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:nth-child(5) .ks-node-badge img{width:38px;height:38px}
 @keyframes ks-badge-float{0%,100%{transform:translateY(calc(var(--node-stagger) - 3px))}50%{transform:translateY(calc(var(--node-stagger) + 3px))}}
-@media(hover:hover){html body.prd-strict.kernelswift #compatibility .ks-brand-node:hover{animation-play-state:paused}html body.prd-strict.kernelswift #compatibility .ks-brand-node:hover .ks-node-badge{box-shadow:0 11px 24px -10px #315fbd4a,inset 0 1px 0 #fff}}
+@media(hover:hover){html body.prd-strict.kernelswift #compatibility .ks-brand-node:hover{animation-play-state:paused;box-shadow:0 11px 24px -12px #315fbd4a}}
 @media(max-width:1100px){
- html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{padding-inline:12px;grid-template-columns:27% 34% 27%;min-height:480px}
- html body.prd-strict.kernelswift #compatibility .flow-nodes{gap:14px 8px}
- html body.prd-strict.kernelswift #compatibility .ks-node-badge{width:64px;height:64px}
- html body.prd-strict.kernelswift #compatibility .ks-chip-node .ks-node-badge img{width:52px;height:30px}
+ html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{padding-inline:8px;grid-template-columns:27% 32% 27%;min-height:410px}
+ html body.prd-strict.kernelswift #compatibility .flow-nodes{gap:16px 8px}
+ html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node{gap:6px;padding:8px 6px}
+ html body.prd-strict.kernelswift #compatibility .ks-node-label{font-size:12px}
+ html body.prd-strict.kernelswift #compatibility .ks-node-badge,html body.prd-strict.kernelswift #compatibility .ks-node-badge img{width:22px}
  html body.prd-strict.kernelswift #compatibility .flow-core>strong{font-size:28px}
 }
 @media(max-width:768px){
- html body.prd-strict.kernelswift #introduction>.ks-compatibility-first{padding-top:40px}
- html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{display:flex;flex-direction:column;gap:34px;min-height:0;padding:12px 0 0;overflow:hidden}
- html body.prd-strict.kernelswift #compatibility .flow-nodes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 6px;width:100%}
- html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node:nth-child(n){--node-stagger:0px;min-height:86px;gap:8px}
- html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:last-child{grid-column:span 2;justify-self:stretch;width:auto}
- html body.prd-strict.kernelswift #compatibility .ks-node-badge{width:58px;height:58px}
- html body.prd-strict.kernelswift #compatibility .ks-node-badge img{width:28px;height:28px}
- html body.prd-strict.kernelswift #compatibility .ks-chip-node .ks-node-badge img{width:48px;height:28px}
- html body.prd-strict.kernelswift #compatibility .ks-chip-node:first-child .ks-node-badge img{width:30px;height:30px}
+ html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat{display:flex;flex-direction:column;gap:32px;min-height:0;padding:4px 0 0;overflow:hidden}
+ html body.prd-strict.kernelswift #compatibility .flow-nodes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 8px;width:100%;padding-block:4px}
+ html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node:nth-child(n){--node-stagger:0px;min-height:62px;gap:6px;padding:8px 6px}
+ html body.prd-strict.kernelswift #compatibility .flow-nodes>.ks-brand-node:last-child{grid-column:2;justify-self:stretch;width:auto}
  html body.prd-strict.kernelswift #compatibility .ks-node-label{font-size:11px}
- html body.prd-strict.kernelswift #compatibility .flow-core{width:min(100%,320px);min-height:200px;box-sizing:border-box}
+ html body.prd-strict.kernelswift #compatibility .flow-core{width:min(100%,320px);min-height:188px;box-sizing:border-box}
  html body.prd-strict.kernelswift #compatibility .flow-streams{display:none}
  html body.prd-strict.kernelswift #compatibility .flow-halo{width:280px;height:280px}
 }
