@@ -19,6 +19,7 @@ html body.prd-strict.kernelswift main#main #access .access-art-mask img{position
 html body.prd-strict.kernelswift main#main #access #skill .access-art-mask img{left:13.859px}
 html body.prd-strict.kernelswift main#main #access #private .access-art-mask img{top:-21.431px}
 html body.prd-strict.kernelswift main#main #access .access-card:hover:before{opacity:.18}
+html body.prd-strict.kernelswift main#main #access .access-card:hover:after{opacity:.12}
 @media(max-width:1100px){html body.prd-strict.kernelswift main#main #access .access-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){html body.prd-strict.kernelswift main#main #access .access-grid{grid-template-columns:minmax(0,1fr)}}
 
