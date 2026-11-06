@@ -79,6 +79,9 @@
 .metric-1{grid-column:1}.metric-2{grid-column:2}.metric-3{grid-column:3}
 .metric-languages strong{font-size:22px;line-height:1.45;letter-spacing:0;font-weight:500;text-align:left}
 .ks-metrics .metric-value{min-height:110px}
+/* Align all three captions below an equal-height value area. */
+.ks-metrics .metric-value{display:grid;grid-template-rows:minmax(96px,auto) auto;justify-content:stretch;justify-items:center;align-content:start;align-items:center;row-gap:8px;min-height:0}
+.ks-metrics .metric-value em{margin-top:0}
 /* Scenarios are visual stories inside the same intro module. */
 .prd-strict .product-story .prd-intro-scenarios{padding-top:76px}
 .prd-strict .product-story .prd-intro-scenarios>h2{text-align:center;font-size:30px;line-height:1.4;font-weight:600;color:#182c48;margin-bottom:34px}
@@ -133,7 +136,7 @@
  .metric-caption{font-size:12px;padding-top:0}
  .metric-value.metric-2:before,.metric-value.metric-3:before{top:4px;bottom:2px}
  .metric-languages strong{font-size:14px;line-height:1.5}
- .ks-metrics .metric-value{min-height:85px}
+ .ks-metrics .metric-value{min-height:85px;grid-template-rows:minmax(64px,auto) auto}
  .prd-strict .product-story .prd-intro-scenarios{padding-top:48px}
  .prd-strict .product-story .prd-intro-scenarios>h2{font-size:26px;margin-bottom:28px}
  .prd-strict .product-story .feature-pair{grid-template-columns:1fr;gap:18px}

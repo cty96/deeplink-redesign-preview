@@ -4,6 +4,8 @@
 .prd-strict.solutions .solution-module .solution-showcase{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:40px;min-height:338px;padding:40px;border:1px solid #e3ecf8;border-radius:16px;background:linear-gradient(180deg,#fcfdff,#eff5ff);box-shadow:0 8px 24px #2a4d840a;overflow:hidden}
 .solution-showcase-mist{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
 .solution-showcase-mist img{position:absolute;max-width:none}
+.prd-strict.solutions .solution-showcase:after{content:"";position:absolute;inset:0;z-index:0;border-radius:inherit;pointer-events:none;background-image:radial-gradient(#70a3ed66 .7px,transparent .95px);background-size:4px 4px;mask-image:radial-gradient(ellipse at 94% 100%,#000,transparent 56%),radial-gradient(ellipse at 5% 0%,#000,transparent 40%);opacity:.5}
+.prd-strict.solutions .solution-showcase>.solution-summary,.prd-strict.solutions .solution-showcase>.solution-flow{position:relative;z-index:1}
 .solution-mist-one{width:1164.89px;height:915.012px;left:-583.45px;top:-566.01px}
 .solution-mist-two{width:1518.87px;height:1306.41px;left:380.13px;top:33.59px}
 :is(#mixed-training,#validation) .solution-mist-one{top:-61.5px}
@@ -65,12 +67,12 @@ html body.prd-strict.solutions .solution-group-heading h3{font-size:18px;line-he
 .solution-fluid-card{position:relative;isolation:isolate;overflow:hidden;--fluid-x:24%;--fluid-y:20%;--fluid-duration:200ms;--fluid-ease:cubic-bezier(.2,0,0,1);transition:box-shadow var(--fluid-duration) var(--fluid-ease)}
 .solution-fluid-card>div,.solution-fluid-card>ul,.solution-fluid-card>p{position:relative;z-index:1}
 .solution-fluid-card:before,.solution-fluid-card:after{content:"";position:absolute;pointer-events:none;z-index:0;opacity:0;transition:opacity var(--fluid-duration) var(--fluid-ease)}
-.solution-fluid-card:before{inset:-25%;background:radial-gradient(ellipse at var(--fluid-x) var(--fluid-y),#9db9f33d,transparent 52%),radial-gradient(ellipse at calc(100% - var(--fluid-x)) calc(100% - var(--fluid-y)),#b9abef33,transparent 52%);filter:blur(28px);transform:translate3d(0,0,0)}
-.solution-fluid-card:after{inset:0;border-radius:inherit;background-image:radial-gradient(#929ad62e .65px,transparent .85px);background-size:4px 4px;mask-image:radial-gradient(ellipse at var(--fluid-x) var(--fluid-y),#000,transparent 60%)}
+.solution-fluid-card:before{inset:-25%;background:radial-gradient(ellipse at var(--fluid-x) var(--fluid-y),#ffffffdb 0%,#c7e5ff80 24%,transparent 56%),radial-gradient(ellipse at calc(100% - var(--fluid-x)) calc(100% - var(--fluid-y)),#ede7ffb3 0%,#d9d5ff66 28%,transparent 56%);filter:blur(24px);transform:translate3d(0,0,0)}
+.solution-fluid-card:after{inset:0;border-radius:inherit;background-image:radial-gradient(#70a3ed66 .7px,transparent .95px);background-size:4px 4px;mask-image:radial-gradient(ellipse at var(--fluid-x) var(--fluid-y),#000,transparent 65%),radial-gradient(ellipse at 85% 100%,#000,transparent 60%)}
 @media(hover:hover) and (pointer:fine){
  .solution-fluid-card:hover{box-shadow:inset 0 0 0 1px #c5d3ef66,0 8px 24px #737cc308}
  .solution-fluid-card:hover:before{opacity:.8;animation:solution-fluid-drift 8s ease-in-out infinite alternate}
- .solution-fluid-card:hover:after{opacity:.12}
+ .solution-fluid-card:hover:after{opacity:.65}
 }
 @keyframes solution-fluid-drift{0%{transform:translate3d(-3%,-3%,0) rotate(-6deg) scale(1)}50%{transform:translate3d(3%,2%,0) rotate(5deg) scale(1.08,.96)}100%{transform:translate3d(-2%,4%,0) rotate(-3deg) scale(.98,1.06)}}
 @media(max-width:1100px){
