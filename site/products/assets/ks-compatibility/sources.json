@@ -1,0 +1,52 @@
+[
+  {
+    "file": "deepseek-color.svg",
+    "url": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/deepseek-color.svg",
+    "bytes": 2164
+  },
+  {
+    "file": "qwen-color.svg",
+    "url": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/qwen-color.svg",
+    "bytes": 1016
+  },
+  {
+    "file": "openai.svg",
+    "url": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/openai.svg",
+    "bytes": 1687
+  },
+  {
+    "file": "nvidia-color.svg",
+    "url": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/nvidia-color.svg",
+    "bytes": 1025
+  },
+  {
+    "file": "atom.svg",
+    "url": "https://github.com/lucide-icons/lucide/blob/main/icons/atom.svg",
+    "bytes": 523
+  },
+  {
+    "file": "brain-circuit.svg",
+    "url": "https://github.com/lucide-icons/lucide/blob/main/icons/brain-circuit.svg",
+    "bytes": 744
+  },
+  {
+    "file": "scan-eye.svg",
+    "url": "https://github.com/lucide-icons/lucide/blob/main/icons/scan-eye.svg",
+    "bytes": 508
+  },
+  {
+    "file": "lobe-icons-LICENSE",
+    "url": "https://github.com/lobehub/lobe-icons/blob/master/LICENSE",
+    "bytes": 1064
+  },
+  {
+    "file": "lucide-LICENSE",
+    "url": "https://github.com/lucide-icons/lucide/blob/main/LICENSE",
+    "bytes": 3208
+  },
+  {
+    "file": "network.svg",
+    "url": "https://github.com/lucide-icons/lucide/blob/main/icons/network.svg",
+    "treatment": "Blue stroke, matching existing icon system"
+  }
+]
