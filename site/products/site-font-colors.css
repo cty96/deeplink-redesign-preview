@@ -1,0 +1,10 @@
+/* Homepage text roles; no font size, geometry, image or surface changes. */
+html body.prd-strict main#main :where(div,section,article,figure,figcaption,span,p,li,ul,ol,dl,dt,dd,em,i,b,strong,small,code,pre,button,a,h1,h2,h3,h4,h5,label,th,td):not([class*="icon"]){color:var(--dl-text-body,#61738e)!important}
+html body.prd-strict main#main :is(h1,h2,h3,h4,h5,.feature-title,.solution-core-item>strong,.solution-group-heading,.solution-feature-headline,.layer-title,.flow-core>strong,.section-nav a.active),
+html body.prd-strict main#main :is(h1,h2,h3,h4,h5,.feature-title,.solution-core-item>strong,.solution-group-heading,.solution-feature-headline,.layer-title,.flow-core>strong,.section-nav a.active) :where(span,strong,b,i,em){color:var(--dl-text-heading,#1c2f4a)!important}
+html body.prd-strict main#main :is(.solution-highlight-metric,.metric-value,.metric-value strong,.product-metrics>span>b,.product-metrics>span>b strong,.text-link,.hero-name,.solution-intro-link,.solution-cta,.flow-core>strong,.ks-core>strong,.is-spotlight,.geo-label[aria-pressed=true]),
+html body.prd-strict main#main a:not(.section-nav a){color:var(--dl-text-brand,#0d53de)!important}
+html body.prd-strict main#main :is(time,.metric-caption,.product-metrics em,.metric-value em,.section-eyebrow,.title-kicker,.solution-keywords b,.solution-flow-caption,.solution-flow-stage small,.case-live,.prd-pending,.prd-pending span,.image-button:disabled){color:var(--dl-text-muted,#8191a8)!important}
+/* Existing filled controls retain the homepage's inverse text treatment. */
+html body.prd-strict main#main :is(.solution-consult,.solution-contact .button,.btn-primary,.solution-flow-stage.is-engine .solution-flow-icon),
+html body.prd-strict main#main :is(.solution-consult,.solution-contact .button,.btn-primary) :where(span,i,b,strong){color:#fff!important}

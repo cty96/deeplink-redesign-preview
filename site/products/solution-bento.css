@@ -44,7 +44,8 @@ html body.prd-strict.solutions .solution-group-heading h3{font-size:18px;line-he
 .solution-core-points>li,.solution-value-points>li,.solution-prd-features>li{display:flex;align-items:flex-start;justify-content:flex-start;gap:10px;min-width:0;min-height:26px;padding:0;border:0;border-radius:0;background:none;font-size:14px;line-height:26px;font-weight:400;color:#617b9d;text-align:left}
 .solution-bullet{flex:none;width:12px;height:12px;margin-top:7px}
 .solution-point-copy,.solution-value-points>li>span,.solution-prd-features>li>span{min-width:0;overflow-wrap:anywhere}
-.solution-core-points:is(.solution-points-scenes,.solution-points-tech){flex-direction:row;flex-wrap:wrap;gap:10px 12px;margin-top:auto}
+.solution-core-points:is(.solution-points-scenes,.solution-points-tech){flex-direction:row;flex-wrap:wrap;gap:10px 12px;margin-top:0}
+#fusion .solution-core-points:is(.solution-points-scenes,.solution-points-tech){display:grid;grid-template-columns:repeat(2,max-content);gap:12px;align-content:start}
 .solution-core-points:is(.solution-points-scenes,.solution-points-tech)>li{gap:4px}
 .solution-core-points:is(.solution-points-scenes,.solution-points-tech)>li>span{overflow-wrap:normal}
 .prd-strict.solutions .solution-group-value-copy>strong{display:none}
@@ -89,3 +90,4 @@ html body.prd-strict.solutions .solution-group-heading h3{font-size:18px;line-he
  #mixed-training .solution-core-list{gap:16px}
  #mixed-training .solution-points-results{display:flex}
 }
+@media(min-width:769px) and (max-width:900px){#fusion .solution-core-points:is(.solution-points-scenes,.solution-points-tech){grid-template-columns:minmax(0,1fr)}}

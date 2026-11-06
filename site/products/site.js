@@ -79,7 +79,8 @@ document.querySelectorAll('.geo-stage').forEach(stage=>{
  let selected=null,hovered=null,focused=null,index=0,visible=!('IntersectionObserver' in window),timer=null;
  const stop=()=>{if(timer!==null){clearTimeout(timer);timer=null;}};
  const paint=()=>{
-  const name=focused||hovered||selected||(visible&&!reduced.matches?centers[index]:null);
+  const name=focused||hovered||selected||(visible?centers[index]:null);
+  stage.dataset.activeRegion=name||'';
   regions.forEach(region=>region.classList.toggle('is-active',region.dataset.region===name));
   buttons.forEach(button=>button.classList.toggle('is-spotlight',button.dataset.region===name));
  };

@@ -1,0 +1,4 @@
+/* Province shapes share the geographic projection of the original dot map. */
+body.training #ecosystem .geo-region .geo-province{fill:#78aaff;fill-opacity:0;stroke:#4386ed;stroke-opacity:0;stroke-width:1.2;pointer-events:none;transition:fill-opacity .3s,stroke-opacity .3s}
+body.training #ecosystem .geo-region.is-active .geo-province{fill:#78aaff;fill-opacity:.42;stroke:#4386ed;stroke-opacity:.9;filter:drop-shadow(0 0 6px #89b5ff66)}
+@media(prefers-reduced-motion:reduce){body.training #ecosystem .geo-region .geo-province{transition:none}}
