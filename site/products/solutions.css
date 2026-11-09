@@ -142,7 +142,8 @@
 
 /* Contact actions share the existing product button and dotted illustration language. */
 .solution-hero-actions{display:flex;margin-top:28px}
-.solution-consult{background:#1557db;color:#fff;border:1px solid #1557db;border-radius:8px;font-size:15px;padding:12px 24px;display:inline-flex;align-items:center;gap:24px;min-height:46px}
+.solution-consult{width:148px;min-height:48px;padding:12px 24px;display:inline-flex;align-items:center;justify-content:center;gap:24px;background:#1557db;color:#fff;border:1px solid #1557db;border-radius:50px;font-size:15px;font-weight:500;line-height:22px}
+.solution-consult-icon{display:block;width:14px;height:14px;flex:none}
 .solution-consult:hover{background:#104cc6;color:#fff}.solution-consult:focus-visible{outline:2px solid #7199df;outline-offset:5px}.solution-consult i{font-style:normal}
 .solution-contact-box{position:relative;isolation:isolate;overflow:hidden;min-height:160px}
 .solution-contact-box>div,.solution-contact-box>.button{position:relative;z-index:1}
@@ -215,12 +216,15 @@
  .solution-customers .linear-carousel .case-slide{min-height:650px;}
 }
 
-/* Review: consultation content sits directly in its section, without a card. */
-.prd-strict.solutions #contact.solution-contact { position:relative; isolation:isolate; overflow:hidden; padding:96px 0; background:#fff; border:0; border-radius:0; box-shadow:none; }
-.prd-strict.solutions #contact .solution-contact-content { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; gap:40px; min-height:140px; }
-.prd-strict.solutions #contact>.solution-contact-art { position:absolute; top:50%; right:0; bottom:auto; transform:translateY(-50%); width:62%; height:100%; max-height:none; object-fit:cover; object-position:center; border-radius:0; opacity:.62; }
+/* Centered consultation area from Figma 5519:1068. */
+.prd-strict.solutions #contact.solution-contact { position:relative; isolation:isolate; overflow:hidden; padding:96px 0; background:linear-gradient(180deg,#6c9dff,#356aff)!important; border:0; border-radius:0; box-shadow:none; }
+.prd-strict.solutions #contact .solution-contact-content { position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; justify-content:space-between; gap:24px; min-height:140px; text-align:center; }
+.prd-strict.solutions #contact>.solution-contact-art { position:absolute; top:-17.5px; right:-10.234375%; bottom:auto; transform:none; width:82.5%; height:442px; max-height:none; object-fit:cover; object-position:center; border-radius:0; opacity:.5; mix-blend-mode:color-dodge; mask-image:none; }
+html body.prd-strict.solutions main#main #contact h2 { color:#fff!important; }
+html body.prd-strict.solutions main#main #contact .button { min-height:38px; padding:8px 24px; border:0; border-radius:50px; background:#fff; color:var(--dl-text-brand,#0d53de)!important; font-size:15px; font-weight:500; line-height:22px; }
+html body.prd-strict.solutions main#main #contact .button:hover { background:#eff5ff; }
 @media(max-width:767px) {
  .prd-strict.solutions #contact.solution-contact { padding:64px 0; }
- .prd-strict.solutions #contact .solution-contact-content { flex-direction:column; align-items:flex-start; justify-content:center; gap:28px; min-height:200px; }
- .prd-strict.solutions #contact>.solution-contact-art { width:100%; height:100%; right:-28%; opacity:.36; }
+ .prd-strict.solutions #contact .solution-contact-content { justify-content:center; gap:28px; min-height:140px; }
+ .prd-strict.solutions #contact>.solution-contact-art { top:0; right:-28%; width:140%; height:100%; }
 }

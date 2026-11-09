@@ -5,6 +5,7 @@ html body.prd-strict main .section-head { margin-bottom:var(--dl-space-heading);
 html body .fd-navigation-wrap .home-surface .fd-title-sy:not(.academic-title) { margin-bottom:var(--dl-space-heading) !important; }
 html body .fd-navigation-wrap .home-core-features .fd-title-sy { margin-bottom:var(--dl-space-heading) !important; }
 html body .fd-navigation-wrap .fd-title-sy.academic-title { margin-bottom:var(--dl-space-heading) !important; }
+html body .fd-navigation-wrap .sticky-nav .tab-icon { display:none; }
 html body .fd-navigation-wrap .core-feature-card h3 { font-size:var(--dl-type-card) !important;line-height:1.5 !important; }
 html body .fd-navigation-wrap .fd-vision { box-sizing:border-box;position:relative;isolation:isolate;background:#f4f8ff;padding:64px clamp(24px,8vw,128px);border-radius:var(--dl-card-radius); }
 html body .fd-navigation-wrap .fd-vision :is(.fd-bg,.fd-bg-mobile) { display:none; }

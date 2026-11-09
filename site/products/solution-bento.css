@@ -15,7 +15,7 @@
 .prd-strict.solutions .solution-module .solution-summary-copy em{font-size:18px;line-height:1.85;color:#315b94}
 .prd-strict.solutions .solution-module .solution-related{margin:0;padding:20px 0 0;border:0;width:auto;justify-content:flex-start;gap:12px;min-height:64px;font-size:14px}
 .solution-related>img{width:14px;height:14px}
-.prd-strict.solutions .solution-module .solution-keywords{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:20px 0 0;border-top:1px solid #e0e8f5}
+.prd-strict.solutions .solution-module .solution-keywords{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:20px 0 0;border-top:0}
 .prd-strict.solutions #mixed-training .solution-keywords{margin-top:24px}
 .prd-strict.solutions .solution-module .solution-keywords b{padding:4px 8px;border-radius:5px;border:1px solid #dce8fa;background:#ffffff8c;color:#627fa9;font-size:12px;line-height:20.4px;font-weight:400;white-space:nowrap}
 .solution-flow{margin:0;min-width:0;padding:24px;background:#ffffff80;border:1px solid #e3ecfa;border-radius:16px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
@@ -28,7 +28,7 @@
 .solution-flow-stage.is-engine .solution-flow-icon{color:#fff;background:linear-gradient(145deg,#7bafff,#1659db);border-color:#7ca7ee;box-shadow:0 8px 24px -12px #2a65d6}
 .solution-flow-stage>strong{color:#274d82;font-weight:600;font-size:14px;line-height:1.6}
 .solution-flow-stage>div{display:flex;flex-direction:column;gap:4px;color:#6e86a8;font-size:12px;line-height:1.6}
-.solution-flow figcaption{border-top:1px solid #e0e9f8;margin-top:24px;padding-top:16px;font-size:14px;line-height:1.85;color:#617b9d;text-align:center}
+.solution-flow figcaption{border-top:1px solid #e0e9f8;margin-top:18.5px;padding-top:16px;font-size:14px;line-height:1.85;color:#617b9d;text-align:center}
 /* Keep source copy groups while flowing their cards into the Figma rows. */
 .prd-strict.solutions .solution-prd-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 20px;padding:0;margin-top:32px;background:none;border:0;border-radius:0}
 .prd-strict.solutions .solution-group-core,.solution-core-list,.solution-core-row{display:contents}
@@ -64,6 +64,10 @@ html body.prd-strict.solutions .solution-group-heading h3{font-size:18px;line-he
 #mixed-training .solution-points-scenes{flex-direction:column;gap:10px;margin-top:0}
 #mixed-training .solution-group-value,#mixed-training .solution-group-features{min-height:265px}
 #mixed-training .solution-core-row:nth-child(2) .solution-core-points{flex-direction:row;flex-wrap:wrap;gap:10px 12px}
+@media(min-width:1101px){
+ .prd-strict.solutions #validation .solution-prd-groups{grid-template-columns:minmax(0,1fr) minmax(0,1.052632fr) minmax(0,1fr)}
+ #mixed-training .solution-points-pains .solution-point-copy{letter-spacing:-.15px}
+}
 @media(max-width:1100px){
  .prd-strict.solutions .solution-module .solution-showcase{padding:32px;gap:24px}
  .prd-strict.solutions .solution-core-card,.prd-strict.solutions .solution-prd-group:not(.solution-group-core){padding:24px}
