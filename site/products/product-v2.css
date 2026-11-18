@@ -1,6 +1,6 @@
 /* Updated Figma section 5661:3525. Shared chrome and existing module content stay in their own styles. */
 @media(min-width:769px){
- html body.prd-strict.training .modern-hero>.wrap,html body.prd-strict.kernelswift .modern-hero>.wrap,html body.prd-strict.solutions .solution-hero.modern-hero>.wrap{width:min(960px,calc(100% - 80px));max-width:960px;margin:auto;padding:68px 0 72px!important;min-height:700px!important;box-sizing:border-box}
+ html body.prd-strict.training .modern-hero>.wrap,html body.prd-strict.kernelswift .modern-hero>.wrap,html body.prd-strict.solutions .solution-hero.modern-hero>.wrap{width:min(1200px,calc(100% - 80px));max-width:1200px;margin:auto;padding:68px 0 72px!important;min-height:700px!important;box-sizing:border-box}
  html body.prd-strict :is(.hero.modern-hero .hero-grid,.solution-hero.modern-hero>.wrap){grid-template-columns:minmax(0,430.77fr) minmax(0,465.23fr);gap:64px}
  html body.prd-strict .hero.modern-hero .hero-grid{min-height:560px!important;padding:0!important}
  html body.prd-strict :is(.hero.modern-hero .hero-copy,.solution-hero .solution-hero-copy){width:100%;max-width:430.77px}
@@ -65,4 +65,29 @@ html body.prd-strict.solutions .solution-ecosystem-v2 { padding-bottom:24px; }
 @media(max-width:768px){
  html body.prd-strict.solutions #ecosystem .geo-stage { width:100%;height:auto;aspect-ratio:2360 / 660;margin-top:24px; }
  html body.prd-strict.solutions #ecosystem .geo-label { font-size:9px;line-height:14px;padding:1px 2px; }
+}
+
+/* Keep solution tabs at 20px in both active and inactive states. */
+body.solutions .solution-compute-tabs button[role="tab"] {
+  font-size:20px!important;
+}
+
+/* Enlarge the ecosystem globe at desktop sizes, preserving label positions. */
+html body.prd-strict.solutions #ecosystem .geo-stage {
+  width:min(1440px,calc(100vw - 64px));max-width:none;
+  left:50%;transform:translateX(-50%)!important;
+}
+@media(max-width:768px) {
+  html body.prd-strict.solutions #ecosystem .geo-stage {
+    width:100%;left:auto;transform:none!important;
+  }
+}
+
+/* Banner copy uses the same side gutters as the page content on phones. */
+@media(max-width:767px){
+ html body.prd-strict.training .modern-hero>.wrap,
+ html body.prd-strict.kernelswift .modern-hero>.wrap,
+ html body.prd-strict.solutions .solution-hero.modern-hero>.wrap {
+  width:calc(100% - 40px);max-width:1200px;
+ }
 }

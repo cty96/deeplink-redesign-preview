@@ -1,0 +1,8 @@
+/* Shared navigation/footer tokens only; original page content keeps its own styles. */
+deeplink-header, deeplink-footer {
+  --dl-home-text-heading:#1f2329;
+  --dl-home-text-body:#444444;
+  --dl-home-text-muted:#737373;
+  --dl-home-text-brand:#0d53de;
+  --dl-home-text-inverse:#ffffff;
+}

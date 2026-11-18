@@ -23,42 +23,237 @@
 .flow-core-mark{display:flex;gap:5px;height:27px;align-items:center;margin-bottom:20px;transform:rotate(-12deg)}
 .flow-core-mark b{width:5px;border-radius:3px;background:#528ef2;height:16px}.flow-core-mark b:nth-child(2){height:27px;background:#1b62df}.flow-core-mark b:nth-child(3){height:22px;background:#8bb5fc}
 
-/* Only the original image's central process: ecosystem → 1.0 → 2.0 → ecosystem. */
-.evolution-flow{display:grid;grid-template-columns:110px 22px minmax(0,1fr) 22px minmax(0,1fr) 22px 100px;align-items:center;gap:12px;padding:42px 24px;background:linear-gradient(180deg,#fbfdff,#f4f8ff);border:1px solid #e5edf9;border-radius:20px}
-.evo-input{text-align:center}
-.evo-languages{display:grid;gap:8px}
-.evo-languages span{padding:10px 5px;border:1px solid #e1eafa;border-radius:7px;background:#fff;color:#405e89;font-size:14px;font-weight:500}
-.evo-input h3{font-size:14px;font-weight:500;color:#2e66b6;margin:16px 0 0}
-.evo-arrow{position:relative;height:1px;background:#91b6eb}
-.evo-arrow:after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid #719ddc;border-right:1px solid #719ddc;transform:rotate(45deg)}
-.evo-stage{align-self:stretch;display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #d3e1f6;border-radius:14px;overflow:hidden;box-shadow:0 12px 24px -22px #3b62a8}
-.evo-stage>h3{display:flex;align-items:baseline;gap:8px;margin:0;padding:18px 20px;font-size:14px;font-weight:500;color:#6a87b1;background:#f0f5fe;border-bottom:1px solid #e5edf9}
-.evo-stage>h3 span{font-size:27px;line-height:1;font-weight:600;color:#2a63b9}
-.evo-two>h3{background:#e8f0ff}.evo-two>h3 span{color:#1255c2}
-.evo-stage-body{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.8fr) 32px minmax(0,.75fr);align-items:center;gap:7px;flex:1;padding:28px 14px}
-.evo-agents{display:grid;gap:10px;min-width:0}
-.evo-agents span,.evo-bridge{display:flex;align-items:center;justify-content:center;text-align:center;min-height:50px;padding:9px 5px;border-radius:6px;background:#edf3fd;border:1px solid #dfe9f9;font-size:12px;line-height:1.5;color:#3f608e;overflow-wrap:normal}
-.evo-agents .evo-rag{background:#f4f8fc}
-.evo-bridge{align-self:stretch;background:#e4efff;color:#245bab}
-.evo-two .evo-bridge{background:#eaf0ff;border-color:#ccdcf8;color:#1853b3}
-.evo-iteration{position:relative;display:flex;flex-direction:column;gap:15px}
-.evo-iteration span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:10px;font-size:10px;color:#8399b8}
-.evo-iteration i{height:1px;background:#82a7e3;position:relative}
-.evo-iteration i:after{content:"";position:absolute;right:-1px;top:-2px;width:5px;height:5px;border-right:1px solid #82a7e3;border-top:1px solid #82a7e3;transform:rotate(45deg)}
-.evo-iteration i:last-child{transform:rotate(180deg)}
-.evo-output{display:grid;justify-items:center;gap:10px;text-align:center;color:#6481a9;font-size:11px;line-height:1.45;overflow-wrap:anywhere}
-.evo-output svg{width:26px;height:30px;color:#6b8cb9}
-.evo-stage>p{margin:0 14px;padding:15px 0 18px;border-top:1px solid #e8eef8;color:#2a5caa;text-align:center;font-size:14px;font-weight:500}
-.evo-ecosystem{display:grid;justify-items:center;gap:14px;text-align:center;color:#2c63b5}
-.evo-ecosystem strong{font-size:17px;line-height:1.6;font-weight:500}
-.evo-ecosystem>i{width:40px;height:40px;border:1px solid #a9c4ee;border-radius:50%;box-shadow:inset 0 0 0 8px #f4f8ff,inset 0 0 0 9px #bdd2f2,0 0 0 6px #eaf2ff}
+/* KernelSwift conversion and optimization diagram. */
+.evolution-flow {
+  --evo-line:#a2b9d9;
+  --evo-ink:#173356;
+  --evo-blue:#0d53c5;
+  display:grid;
+  grid-template-columns:108px 46px minmax(0,1fr) 46px minmax(0,1fr) 46px 90px;
+  align-items:center;
+  gap:10px;
+  padding:32px 26px;
+  border:1px solid #c9d9ed;
+  border-radius:32px;
+  background:#f7faff;
+  color:var(--evo-ink);
+}
+
+.evo-input h3 {
+  margin:0 0 16px;
+  text-align:center;
+  font-size:14px;
+}
+
+.evo-languages { display:grid;gap:9px; }
+.evo-languages span {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-height:36px;
+  padding:5px 8px;
+  border:1px solid #b8cce8;
+  border-radius:8px;
+  background:#fff;
+  font:500 13px/1.4 ui-monospace,monospace;
+}
+
+.evo-languages i {
+  flex:0 0 18px;
+  display:grid;
+  place-items:center;
+  height:18px;
+  border-radius:5px;
+  background:#e9f2ff;
+  color:var(--evo-blue);
+}
+.evo-languages i::before { content:"";width:8px;height:7px;border:1px solid currentColor;border-radius:2px; }
+.evo-languages span:nth-child(2) i::before { width:6px;height:6px;transform:rotate(45deg); }
+.evo-languages span:nth-child(3) i::before { width:7px;height:7px;border-radius:50%; }
+.evo-languages span:nth-child(4) i::before { height:5px;border-inline:0;border-radius:0; }
+
+.evo-beam {
+  position:relative;
+  display:block;
+  height:16px;
+  overflow:hidden;
+  background:linear-gradient(90deg,#dceeff38,#acd3fb86 45%,#81b9f48f 78%,#afd4fd58);
+}
+.evo-beam b { display:none; }
+
+.evo-stage {
+  align-self:stretch;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  padding:21px 18px 18px;
+  border:1px solid #b7ccee;
+  border-radius:22px;
+  background:linear-gradient(155deg,#fff 15%,#eef5ff 64%,#dceaff 100%);
+}
+.evo-two {
+  border-style:dashed;
+  border-color:#8eaedb;
+  background:#f3f8ff;
+}
+.evo-stage-head {
+  position:relative;
+  padding-right:34px;
+}
+.evo-stage-head::after {
+  content:"";
+  position:absolute;
+  top:2px;
+  right:0;
+  width:31px;
+  height:31px;
+  opacity:.62;
+  background:radial-gradient(circle at center,#7ba6e4 1.5px,transparent 2px) 0 0/8px 8px;
+}
+.evo-version {
+  display:flex;
+  gap:7px;
+  align-items:center;
+  margin-bottom:9px;
+  color:#426187;
+  font-size:12px;
+  font-weight:600;
+}
+.evo-version strong {
+  padding:2px 7px;
+  border:1px solid #b0c8ed;
+  border-radius:6px;
+  background:#e6f0ff;
+  color:var(--evo-blue);
+  font:600 13px/1.4 ui-monospace,monospace;
+}
+.evo-stage h3 {
+  margin:0;
+  font-size:clamp(16px,1.45vw,20px);
+  line-height:1.35;
+  letter-spacing:0;
+}
+
+.evo-stage-body {
+  display:grid;
+  align-content:end;
+  flex:1;
+  padding-top:20px;
+}
+.evo-agents {
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  padding-bottom:15px;
+}
+.evo-agents::before {
+  content:"";
+  position:absolute;
+  inset:auto 25% 6px;
+  height:9px;
+  border:1px solid var(--evo-line);
+  border-top:0;
+  border-radius:0 0 5px 5px;
+}
+.evo-agents::after {
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  width:1px;
+  height:6px;
+  background:var(--evo-line);
+}
+.evo-agents span,.evo-bridge {
+  display:grid;
+  place-items:center;
+  min-height:35px;
+  padding:5px;
+  border:1px solid #b9cdeb;
+  border-radius:8px;
+  background:#fcfdff;
+  color:#264b7c;
+  text-align:center;
+  font-size:13px;
+  font-weight:500;
+  line-height:1.35;
+}
+.evo-bridge {
+  justify-self:center;
+  min-width:55%;
+  padding-inline:10px;
+  border-color:#a6c0e8;
+  background:#e1edff;
+  color:#174f9a;
+}
+.evo-result {
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+  padding:9px;
+  border:1px dashed #9bb7df;
+  border-radius:12px;
+  background:#ffffffa6;
+}
+.evo-iteration {
+  display:grid;
+  justify-items:center;
+  gap:6px;
+  color:#41638c;
+  font-size:12px;
+  line-height:1.4;
+}
+.evo-iteration span { margin-bottom:2px;white-space:nowrap; }
+.evo-iteration .evo-beam {
+  width:clamp(28px,4vw,48px);
+  height:7px;
+}
+.evo-iteration .evo-beam:last-child { transform:rotate(180deg); }
+.evo-output {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  min-width:0;
+  min-height:46px;
+  padding:6px;
+  border:1px solid #bfd1ed;
+  border-radius:7px;
+  background:#fff;
+  color:#264670;
+  font:500 12px/1.25 ui-monospace,monospace;
+  overflow-wrap:anywhere;
+}
+.evo-output svg { flex:0 0 17px;width:17px;height:21px;color:#3068b9; }
+.evo-ecosystem {
+  display:grid;
+  justify-items:center;
+  gap:11px;
+  text-align:center;
+}
+.evo-ecosystem strong { font-size:14px;line-height:1.45;font-weight:600; }
+.evo-ecosystem>i {
+  display:grid;
+  grid-template-columns:repeat(3,8px);
+  gap:4px;
+  padding:9px;
+  border:1px solid #acc6ea;
+  border-radius:12px;
+  background:linear-gradient(150deg,#fff,#e5efff);
+}
+.evo-ecosystem b {
+  width:8px;
+  height:8px;
+  border:1px solid #99bae8;
+  border-radius:2px;
+  background:#d6e6fd;
+}
+.evo-ecosystem b:nth-child(even) { background:#a7c8fa; }
+.evo-ecosystem b:nth-child(5) { border-color:#2864ca;background:#397de3; }
 @media(min-width:761px) and (hover:hover){.flow-nodes>span:hover{transform:translateY(-3px);box-shadow:0 12px 22px -10px #396dcc50}}
 @media(max-width:1100px){
- .evolution-flow{grid-template-columns:85px 14px minmax(0,1fr) 14px minmax(0,1fr) 14px 76px;gap:8px;padding:28px 18px}
- .evo-ecosystem{gap:12px}
- .evo-ecosystem strong{font-size:14px}.evo-ecosystem>i{width:26px;height:26px}
- .evo-stage-body{padding:24px 10px;gap:5px;grid-template-columns:minmax(0,1fr) minmax(0,.8fr) 24px minmax(0,.7fr)}
- .evo-stage>p{font-size:12px}
  .flow-nodes{gap:18px 10px}.flow-nodes>span{font-size:12px;padding:12px 4px}
  .prd-strict .compatibility.flow-compat{padding:50px 12px;grid-template-columns:26% 34% 26%;min-height:450px}
 }
@@ -74,33 +269,61 @@
  .flow-streams{width:660px;height:760px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(90deg)}
 }
 @media(max-width:1000px){
- .evolution-flow{grid-template-columns:minmax(0,1fr);gap:18px;padding:24px 18px}
- .evo-input .evo-languages{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
- .evo-languages span{font-size:12px;padding:10px 2px}.evo-input h3{margin-top:12px}
- .evolution-flow>.evo-arrow,.evolution-flow>.evo-arrow:nth-last-child(2){grid-column:auto;width:24px;justify-self:center;transform:rotate(90deg);margin:5px 0}
- .evo-stage>h3{padding:16px 20px}.evo-stage-body{grid-template-columns:minmax(0,1.15fr) minmax(0,.8fr) 32px minmax(0,.75fr);padding:30px 14px;gap:7px}
- .evo-agents span,.evo-bridge{font-size:12px;min-height:50px}.evo-stage>p{font-size:14px}
- .evo-ecosystem{grid-column:auto;display:flex;justify-content:center;margin-top:8px;padding:10px}.evo-ecosystem strong{font-size:16px}.evo-ecosystem strong br{display:none}
+  .evolution-flow {
+    grid-template-columns:minmax(0,1fr);
+    gap:12px;
+    padding:24px 18px;
+    border-radius:24px;
+  }
+  .evo-input,.evo-stage { width:min(100%,520px);justify-self:center; }
+  .evo-languages { grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .evo-languages span { justify-content:center; }
+  .evo-arrow { width:32px;justify-self:center;transform:rotate(90deg);margin:4px 0; }
+  .evo-ecosystem { display:flex;justify-content:center;text-align:left; }
+  .evo-ecosystem strong br { display:none; }
+}
+@media(max-width:480px){
+  .evo-languages { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .evo-stage { padding:16px 12px 12px; }
 }
 @media(prefers-reduced-motion:reduce){.flow-particle{animation:none;stroke-dashoffset:50}.flow-nodes>span{transition:none}}
 
-/* Gentle process signals follow conversion, optimization and ecosystem output. */
+/* The existing visibility observer and reduced-motion preference control the flow. */
 @media(prefers-reduced-motion:no-preference){
- .evolution-flow .evo-arrow:before,.evolution-flow .evo-iteration i:before{content:'';position:absolute;left:0;top:-1px;width:5px;height:3px;border-radius:3px;background:#5791ed;box-shadow:0 0 6px #84b1f06b;opacity:0;animation:evo-transfer 4s linear infinite;animation-play-state:paused}
- .evolution-flow>.evo-arrow:nth-child(4):before{animation-delay:1.3s}
- .evolution-flow>.evo-arrow:nth-child(6):before{animation-delay:2.6s}
- .evolution-flow .evo-iteration i:last-child:before{animation-delay:2s}
- .evolution-flow .evo-two .evo-iteration i:first-of-type:before{animation-delay:1.3s}
- .evolution-flow .evo-two .evo-iteration i:last-child:before{animation-delay:3.3s}
- .evolution-flow .evo-stage>h3{position:relative}
- .evolution-flow .evo-stage>h3:after{content:'';position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#7fa8ed);transform:scaleX(0);transform-origin:left;animation:evo-progress 8s ease-in-out infinite;animation-play-state:paused}
- .evolution-flow .evo-two>h3:after{animation-delay:3s}
- .evolution-flow .evo-output svg{animation:evo-document 8s ease-in-out infinite;animation-play-state:paused}
- .evolution-flow .evo-two .evo-output svg{animation-delay:3s}
- .evolution-flow .evo-ecosystem>i{animation:evo-arrival 8s ease-in-out infinite;animation-play-state:paused}
- .evolution-flow.is-flow-active .evo-arrow:before,.evolution-flow.is-flow-active .evo-iteration i:before,.evolution-flow.is-flow-active .evo-stage>h3:after,.evolution-flow.is-flow-active .evo-output svg,.evolution-flow.is-flow-active .evo-ecosystem>i{animation-play-state:running}
+  .evo-beam b {
+    position:absolute;
+    top:calc(50% + var(--drift,0px));
+    left:0;
+    display:block;
+    width:3px;
+    height:3px;
+    border-radius:50%;
+    background:#5d96d5;
+    opacity:0;
+    animation:evo-particle 2.6s linear infinite paused;
+    animation-delay:calc(var(--phase,0s) + var(--stagger,0s));
+  }
+  .evo-beam b:nth-child(2) { --drift:-1px;--stagger:-.65s;width:2px;height:2px; }
+  .evo-beam b:nth-child(3) { --drift:.5px;--stagger:-1.4s;width:2px;height:2px; }
+  .evo-arrow:nth-child(4),.evo-two .evo-beam { --phase:-.8s; }
+  .evo-arrow:nth-child(6),.evo-iteration .evo-beam:last-child { --phase:-1.6s; }
+  .evo-output svg { animation:evo-document 8s ease-in-out infinite paused; }
+  .evo-two .evo-output svg { animation-delay:3s; }
+  .evo-ecosystem>i { animation:evo-arrival 8s ease-in-out infinite paused; }
+  .evolution-flow.is-flow-active .evo-beam b,
+  .evolution-flow.is-flow-active .evo-output svg,
+  .evolution-flow.is-flow-active .evo-ecosystem>i { animation-play-state:running; }
 }
-@keyframes evo-transfer{0%{opacity:0;transform:translateX(-3px)}20%,70%{opacity:.85}100%{opacity:0;transform:translateX(20px)}}
-@keyframes evo-progress{0%,8%{transform:scaleX(0);opacity:0}12%{opacity:.65}42%,65%{transform:scaleX(1);opacity:.65}78%,100%{transform:scaleX(1);opacity:0}}
-@keyframes evo-document{0%,40%,70%,100%{transform:translateY(0);opacity:.8}50%,60%{transform:translateY(-2px);opacity:1}}
-@keyframes evo-arrival{0%,65%,100%{transform:scale(1);opacity:.8}78%{transform:scale(1.08);opacity:1}}
+@keyframes evo-particle {
+  0% { left:0;opacity:0;transform:translate(-50%,-50%); }
+  12%,82% { opacity:1; }
+  100% { left:100%;opacity:0;transform:translate(-50%,-50%); }
+}
+@keyframes evo-document {
+  0%,40%,70%,100% { transform:translateY(0); }
+  50%,60% { transform:translateY(-2px); }
+}
+@keyframes evo-arrival {
+  0%,65%,100% { transform:scale(1); }
+  78% { transform:scale(1.08); }
+}

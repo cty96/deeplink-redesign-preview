@@ -1,3 +1,4 @@
+/* Architecture color assets refreshed from Figma 5639:22691 on 2026-11-18. */
 /* Figma 5639:22602 / 5639:22691 / 5652:3005, updated 2026-11-18. */
 html body #main .home-v2 .home-architecture-surface { background:#fff!important; }
 html body #main .home-v2 :is(.home-core-features,#technology .fd-part-key,.home-surface:has(>#news),.fd-part-02,.fd-standard) { background:#f9fafb!important; }
@@ -11,25 +12,25 @@ html body #main .home-v2 #framework .architecture-v3 * { box-sizing:border-box;c
 html body #main .home-v2 #framework .architecture-v3 :is(.architecture-layers,.architecture-layer-body) { display:flex;flex-direction:column;min-width:0;gap:12px; }
 html body #main .home-v2 #framework .architecture-v3 .architecture-layers { gap:20px; }
 html body #main .home-v2 #framework .architecture-v3 .architecture-layer { display:grid;grid-template-columns:94px minmax(0,1fr);gap:16px;min-width:0; }
-html body #main .home-v2 #framework .architecture-v3 .architecture-layer-title { display:flex;align-items:center;justify-content:center;margin:0;padding:2px 8px;min-height:0;border-radius:16px;font-size:18px;line-height:27px;font-weight:700;background:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/b9f9e.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
-html body #main .home-v2 #framework .architecture-v3 .product-layer .architecture-layer-title { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/5e278.png')!important; }
-html body #main .home-v2 #framework .architecture-v3 .hardware-layer .architecture-layer-title { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/57312.png')!important; }
+html body #main .home-v2 #framework .architecture-v3 .architecture-layer-title { display:flex;align-items:center;justify-content:center;margin:0;padding:2px 8px;min-height:0;border-radius:16px;font-size:18px;line-height:27px;font-weight:700;background:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/41d3c.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
+html body #main .home-v2 #framework .architecture-v3 .product-layer .architecture-layer-title { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/afd37.png')!important; }
+html body #main .home-v2 #framework .architecture-v3 .hardware-layer .architecture-layer-title { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/4939b.png')!important; }
 html body #main .home-v2 #framework .architecture-v3 :is(.architecture-grid,.application-scenarios) { gap:10px; }
 html body #main .home-v2 #framework .architecture-v3 .application-scenarios { display:grid;grid-template-columns:repeat(3,minmax(0,1fr)); }
 html body #main .home-v2 #framework .architecture-v3 .application-scenario { display:flex;flex-direction:column;gap:16px;align-items:stretch;min-width:0;min-height:104px;height:auto;padding:0 0 16px;border:1px solid #f8fbff;border-radius:16px;background:transparent!important;box-shadow:none!important;overflow:hidden; }
-html body #main .home-v2 #framework .architecture-v3 :is(.application-scenario h4,.toolchain-group h5,.product-surface h4) { width:100%;display:flex;align-items:center;justify-content:center;min-height:40px;margin:0;padding:8px 10px;font-size:14px;line-height:24px;font-weight:600;text-align:center;background:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/c8711.png') center/100% 100% no-repeat; }
-html body #main .home-v2 #framework .architecture-v3 .application-scenario h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/7be9d.png'); }
-html body #main .home-v2 #framework .architecture-v3 .application-scenario:first-child h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/65332.png'); }
+html body #main .home-v2 #framework .architecture-v3 :is(.application-scenario h4,.toolchain-group h5,.product-surface h4) { width:100%;display:flex;align-items:center;justify-content:center;min-height:40px;margin:0;padding:8px 10px;font-size:14px;line-height:24px;font-weight:600;text-align:center;background:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/a54ae.png') center/100% 100% no-repeat; }
+html body #main .home-v2 #framework .architecture-v3 .application-scenario h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/53dc3.png'); }
+html body #main .home-v2 #framework .architecture-v3 .application-scenario:first-child h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/1e67a.png'); }
 html body #main .home-v2 #framework .architecture-v3 .application-scenario p { margin:0;padding:0 12px;font-size:14px;line-height:24px;text-align:center; }
 html body #main .home-v2 #framework .architecture-v3 :is(.quiet-row>div,.model-row>div) { display:flex;justify-content:center;align-items:center;height:40px;min-height:40px;padding:8px 12px;border:1px solid #f8fbff;border-radius:16px!important;background:transparent!important;box-shadow:none!important;font-size:14px;line-height:24px;font-weight:400; }
 html body #main .home-v2 #framework .architecture-v3 .capability-row { display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid #f8fbff;border-radius:16px; }
 html body #main .home-v2 #framework .architecture-v3 .capability-row>div { flex:1;min-width:0;height:auto;min-height:24px;padding:0;background:transparent!important;border:0;border-radius:0!important;font-size:14px;line-height:24px;text-align:center; }
 html body #main .home-v2 #framework .architecture-v3 .architecture-divider { flex:none;display:block;max-width:none; }
-html body #main .home-v2 #framework .architecture-v3 .fusion-surface { min-height:56px;height:56px;padding:16px;display:flex;justify-content:center;align-items:center;font-size:14px;line-height:24px;font-weight:600;border:0;border-radius:16px;background:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/30c01.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
+html body #main .home-v2 #framework .architecture-v3 .fusion-surface { min-height:56px;height:56px;padding:16px;display:flex;justify-content:center;align-items:center;font-size:14px;line-height:24px;font-weight:600;border:0;border-radius:16px;background:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/0b4af.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
 html body #main .home-v2 #framework .architecture-v3 .toolchain-surface { min-height:220px;padding:18px;border:1px solid #f8fbff;border-radius:16px;background:transparent!important;box-shadow:none!important;display:flex;flex-direction:column;gap:16px; }
-html body #main .home-v2 #framework .architecture-v3 .toolchain-surface>h4 { margin:0;padding:8px 0;min-height:40px;border-radius:16px;font-size:14px;line-height:24px;font-weight:500;text-align:center;background:url('/deeplink-redesign-preview/home-assets/figma-review-20261118/6d935.png') center/100% 100% no-repeat; }
+html body #main .home-v2 #framework .architecture-v3 .toolchain-surface>h4 { margin:0;padding:8px 0;min-height:40px;border-radius:16px;font-size:14px;line-height:24px;font-weight:500;text-align:center;background:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/a2b94.png') center/100% 100% no-repeat; }
 html body #main .home-v2 #framework .architecture-v3 .toolchain-group { min-width:0;padding:0 0 8px;border:1px solid #f8fbff;border-radius:16px;overflow:hidden;background:transparent!important;box-shadow:none!important; }
-html body #main .home-v2 #framework .architecture-v3 .toolchain-group h5 { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261118/26f7c.png'); }
+html body #main .home-v2 #framework .architecture-v3 .toolchain-group h5 { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/83932.png'); }
 html body #main .home-v2 #framework .architecture-v3 .feature-nodes { display:flex;flex-direction:column;gap:0; }
 html body #main .home-v2 #framework .architecture-v3 .feature-nodes>div { min-height:42px;display:flex;align-items:center;gap:10px;padding:8px 10px; }
 html body #main .home-v2 #framework .architecture-v3 .feature-nodes span { min-width:0;flex:1;text-align:center;font-size:14px;line-height:24px; }
@@ -37,9 +38,9 @@ html body #main .home-v2 #framework .architecture-v3 .product-surface { min-heig
 html body #main .home-v2 #framework .architecture-v3 .product-nodes { display:flex;align-items:center;gap:12px;padding:0 10px 8px; }
 html body #main .home-v2 #framework .architecture-v3 .product-nodes>span { flex:1;min-width:0;min-height:40px;height:auto;padding:9px 4px;font-size:14px;line-height:21px;background:transparent!important;border:0; }
 html body #main .home-v2 #framework .architecture-v3 .hardware-row { gap:20px; }
-html body #main .home-v2 #framework .architecture-v3 .hardware-row>div { height:61px;min-height:61px;display:flex;align-items:center;justify-content:center;gap:0;padding:2px 8px;border:0;border-radius:16px;font-size:14px;line-height:24px;background:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/a345b.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
-html body #main .home-v2 #framework .architecture-v3 .hardware-row>div:first-child { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/479db.png')!important; }
-html body #main .home-v2 #framework .architecture-v3 .architecture-validation { display:flex;align-items:center;justify-content:center;min-width:0;padding:16px 12px;border:0;border-radius:16px;background:url('/deeplink-redesign-preview/home-assets/figma-review-20261117/architecture/c83c1.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
+html body #main .home-v2 #framework .architecture-v3 .hardware-row>div { height:61px;min-height:61px;display:flex;align-items:center;justify-content:center;gap:0;padding:2px 8px;border:0;border-radius:16px;font-size:14px;line-height:24px;background:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/38f30.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
+html body #main .home-v2 #framework .architecture-v3 .hardware-row>div:first-child { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/ab520.png')!important; }
+html body #main .home-v2 #framework .architecture-v3 .architecture-validation { display:flex;align-items:center;justify-content:center;min-width:0;padding:16px 12px;border:0;border-radius:16px;background:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/6a748.png') center/100% 100% no-repeat!important;box-shadow:none!important; }
 html body #main .home-v2 #framework .architecture-v3 .architecture-validation p { margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;font-size:16px;line-height:24px;font-weight:400;letter-spacing:0;writing-mode:horizontal-tb; }
 html body #main .home-v2 #framework .architecture-v3 .architecture-validation p>span:last-child { writing-mode:vertical-rl;text-orientation:upright;text-combine-upright:none;font-size:14px;letter-spacing:2px; }
 @media(max-width:1000px) and (min-width:769px){
@@ -52,7 +53,7 @@ html body #main .home-v2 #framework .architecture-v3 .architecture-validation p>
  html body #main .home-v2 #framework .framework-mobile { margin:0; }
  html body #main .home-v2 #framework .framework-container-desc { font-size:14px;line-height:26px; }
  html body #main .home-v2 #framework .architecture-v3 .architecture-layer { grid-template-columns:1fr; }
- html body #main .home-v2 #framework .architecture-v3 .architecture-layer-title { min-height:48px;background-image:linear-gradient(#e4eaff,#ccd8ff)!important; }
+ html body #main .home-v2 #framework .architecture-v3 .architecture-layer-title { min-height:48px;background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/41d3c.png')!important; }
  html body #main .home-v2 #framework .architecture-v3 .application-scenarios { grid-template-columns:1fr; }
  html body #main .home-v2 #framework .architecture-v3 .application-scenario { min-height:96px; }
  html body #main .home-v2 #framework .architecture-v3 .capability-row { display:grid;grid-template-columns:repeat(2,minmax(0,1fr)); }
@@ -71,8 +72,8 @@ html body #main .home-v2 #framework .architecture-v3 .architecture-validation p>
 html body #main .home-v2 #standards>.fd-title-sy { width:100%;max-width:none;margin-left:auto!important;margin-right:auto!important;text-align:center; }
 html body #main .home-v2 #framework .architecture-v3 { background:#fff!important;box-shadow:0 4px 28px rgba(28,47,74,.035)!important; }
 html body #main .home-v2 #framework .architecture-v3 .application-scenario { gap:0;padding:0;border:0;min-height:96px; }
-html body #main .home-v2 #framework .architecture-v3 .application-scenario h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261118/95ede.png');border-radius:16px 16px 0 0; }
-html body #main .home-v2 #framework .architecture-v3 .application-scenario:first-child h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-review-20261118/b8993.png'); }
+html body #main .home-v2 #framework .architecture-v3 .application-scenario h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/53dc3.png');border-radius:16px 16px 0 0; }
+html body #main .home-v2 #framework .architecture-v3 .application-scenario:first-child h4 { background-image:url('/deeplink-redesign-preview/home-assets/figma-architecture-colors-20261118/1e67a.png'); }
 html body #main .home-v2 #framework .architecture-v3 :is(.application-scenario p,.quiet-row>div,.model-row>div,.capability-row,.feature-nodes,.product-nodes) { background:linear-gradient(180deg,rgba(248,251,255,.5),rgba(234,237,255,.5))!important;border:0;border-radius:16px; }
 html body #main .home-v2 #framework .architecture-v3 .application-scenario p { padding:16px 4px; }
 html body #main .home-v2 #framework .architecture-v3 .toolchain-group { padding:0;border:0; }

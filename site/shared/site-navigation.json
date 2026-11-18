@@ -169,11 +169,11 @@
       {
         "key": "partner2",
         "name": {
-          "CN": "产业生态成果",
-          "EN": "Ecosystem Outcomes"
+          "CN": "超节点白皮书",
+          "EN": "SuperPod Whitepaper"
         },
-        "path": "/deeplink-redesign-preview/products/solutions.html#ecosystem",
-        "type": "self"
+        "path": "https://deeplink-org.github.io/superpod-whitepaper/",
+        "type": "external"
       }
     ]
   }

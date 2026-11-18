@@ -1,0 +1,71 @@
+/* Five text roles for the merged homepage. Artwork, surfaces and borders retain their colors.
+   A named layer lets these semantic roles take precedence over older unlayered !important colors. */
+@layer deeplink-home-text {
+  body:has(.home-v2) {
+    --dl-text-heading:#1f2329;
+    --dl-text-body:#444444;
+    --dl-text-muted:#737373;
+    --dl-text-brand:#0d53de;
+    --dl-text-inverse:#ffffff;
+    --dl-home-text-heading:var(--dl-text-heading);
+    --dl-home-text-body:var(--dl-text-body);
+    --dl-home-text-muted:var(--dl-text-muted);
+    --dl-home-text-brand:var(--dl-text-brand);
+    --dl-home-text-inverse:var(--dl-text-inverse);
+  }
+
+  /* Normal copy uses an opaque neutral gray, including text nested in links and cards. */
+  .home-v2,
+  .home-v2 :where(*) {
+    color:var(--dl-text-body)!important;
+  }
+
+  .home-v2 :is(h1,h2,h3,h4,h5,h6,strong,b,[role="heading"],
+    .fd-title-sy,.fd-title,:where(#keyComponents)>.title,.key-technology-mobile>.title,
+    .fd-standard-content-right-title,.fd-standard-content-right-title *,
+    .architecture-layer-title,.fusion-surface,.fd-news-right-title,
+    .fd-news-right-item-title,.fd-news-right-item-title *) {
+    color:var(--dl-text-heading)!important;
+  }
+
+  .home-v2 :is(.fd-date,.fd-image-text,.title-kicker,.section-eyebrow,
+    .chronology-date,.chronology-date *,
+    .chronology-nodes button:not([aria-current]),.chronology-nodes button:not([aria-current]) *,
+    .chronology-years button:not([aria-current]),
+    .fd-news-right-item-time,.publication-page-status,.award-live,.case-live,
+    button:disabled,button:disabled *) {
+    color:var(--dl-text-muted)!important;
+  }
+
+  /* One blue for actions and active navigation; hover on feature cards remains near-black. */
+  .home-v2 :is(.v2-pill,.v2-pill *,
+    .fd-standard-content-right-link,.fd-standard-content-right-link *,
+    .fd-standard-content-right-tag,.fd-standard-content-right-tag *,
+    .revision-text-link,.revision-text-link *,
+    .el-tabs__item.is-active,.el-tabs__item.is-active *,
+    [role="tab"][aria-selected="true"],[role="tab"][aria-selected="true"] *,
+    button[aria-current],button[aria-current] *,
+    .fd-standard-content-left-menu-active,.fd-standard-content-left-menu-active *,
+    .van-tab--active,.van-tab--active *,
+    .sticky-nav .nav-tab.active,.sticky-nav .nav-tab.active *) {
+    color:var(--dl-text-brand)!important;
+  }
+
+  /* Labels over the hero, blue panels and publication artwork remain legible in white. */
+  .home-v2 :is(.revision-brand,.revision-brand *,
+    .fd-vision,.fd-vision *,
+    .solution-content-overlay,.solution-content-overlay *,
+    .publication-badge,.publication-badge *,
+    .fd-news-left-item-title,.fd-news-left-item-title *,
+    .fd-news-left-item-time,.fd-news-left-item-time *) {
+    color:var(--dl-text-inverse)!important;
+  }
+}
+
+/* Dark panels own an inverse text role, including semantic headings. */
+@layer deeplink-home-text {
+  html body #main .home-v2 :is(.solution-content-overlay,.fd-vision,.publication-badge,[data-text-tone="inverse"]),
+  html body #main .home-v2 :is(.solution-content-overlay,.fd-vision,.publication-badge,[data-text-tone="inverse"]) :where(*) {
+    color:var(--dl-text-inverse,#fff)!important;
+  }
+}

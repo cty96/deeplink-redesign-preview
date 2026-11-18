@@ -53,3 +53,22 @@ html body.prd-strict.kernelswift .ks-metrics .metric-languages strong { max-widt
  html body.prd-strict.kernelswift main#main .ks-try-link { font-size:14px;padding:11px 22px; }
  html body.prd-strict.kernelswift .ks-metrics .metric-languages strong { font-size:14px!important;line-height:22px!important;overflow-wrap:normal; }
 }
+/* 2026-11-18: Figma canvas colors and the revised solution hero. */
+html body.prd-strict.solutions main#main>:is(#fusion,#validation,#customers,#ecosystem) { background:#fff!important; }
+html body.prd-strict.solutions main#main>#mixed-compute { background:#f9fafb!important; }
+html body.prd-strict.solutions main#main #ecosystem .geo-label { background:#ffffffc9; }
+html body.prd-strict.solutions main#main>#contact.solution-contact {
+  background:linear-gradient(180deg,#fff -29.458982%,#3373ff 75.823285%,#000 204.501613%)!important;
+}
+html body.prd-strict.solutions main#main #introduction h1 strong { display:block;white-space:nowrap; }
+html body.prd-strict.solutions main#main #introduction .solution-consult {
+  box-sizing:border-box;width:148px;height:48px;min-height:48px;gap:24px;padding:12px 24px;
+  border:1px solid #0238b8!important;border-radius:50px;background:#fff!important;
+  font-size:15px;line-height:22px;font-weight:500;
+}
+html body.prd-strict.solutions main#main #introduction .solution-consult-icon { display:none; }
+html body.prd-strict.solutions main#main #introduction .solution-consult::after {
+  content:'';flex:none;width:14px;height:14px;background:#0238b8;
+  mask:url('assets/figma-review-20261106/consult-chevron.svg') center/14px 14px no-repeat;
+  -webkit-mask:url('assets/figma-review-20261106/consult-chevron.svg') center/14px 14px no-repeat;
+}

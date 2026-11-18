@@ -7,13 +7,15 @@
   --dl-type-subsection:24px;
   --dl-type-card:20px;
   --dl-type-lead:18px;
-  --dl-type-body:14px;
+  --dl-type-body:16px;
   --dl-type-ui:14px;
+  --dl-type-tab:20px;
   --dl-type-caption:12px;
-  --dl-text-heading:#1c2f4a;
-  --dl-text-body:#61738e;
-  --dl-text-muted:#8191a8;
+  --dl-text-heading:#1f2329;
+  --dl-text-body:#444444;
+  --dl-text-muted:#737373;
   --dl-text-brand:#0d53de;
+  --dl-text-inverse:#ffffff;
 }
 body,button,input,select,textarea { font-family:var(--dl-font-sans); }
 :is(.fd-navigation-wrap,.partners-wrap,.verification-wrap,.kernelswift-page,.form-container,.registration-info-page,.fd-page-wrapper,.fd-agreement-wrap),
@@ -80,8 +82,7 @@ body:is(.prd-strict,.solutions) :is(h1,h2,h3,h4,p,button,label,input,textarea,[r
 .chronology-date span { font-size:var(--dl-type-body) !important; }
 
 /* Tabs and labelled actions; icon-only controls retain their visual dimensions. */
-:is(.product-tabs button,.tab-title,.el-tabs__item,.prd-tab,.solution-tabs .tab,.local-nav a,.section-nav a,
- .product-banner-copy>a,.hero-explore,.solution-contact-box>a,.solution-hero-cta,.prd-strict .btn,.solutions .btn,
+:is(.product-banner-copy>a,.hero-explore,.solution-contact-box>a,.solution-hero-cta,.prd-strict .btn,.solutions .btn,
  .partners-wrap .be-partner-btn,.verification-wrap .learn-more-btn,.form-container button,.registration-info-page button) {
   font-size:var(--dl-type-ui) !important; line-height:1.6 !important; font-weight:500 !important; font-family:var(--dl-font-sans) !important;
 }
@@ -103,11 +104,147 @@ body:is(.prd-strict,.solutions) :is(h1,h2,h3,h4,p,button,label,input,textarea,[r
 .partners-wrap :is(td,th),.fd-table-content :is(td,th) { font-size:var(--dl-type-body) !important; line-height:1.7 !important; }
 
 @media(max-width:768px) {
-  :root { --dl-type-hero:32px; --dl-type-section:24px; --dl-type-subsection:20px; --dl-type-card:18px; --dl-type-lead:16px; --dl-type-ui:13px; }
+  :root { --dl-type-hero:32px; --dl-type-section:24px; --dl-type-subsection:20px; --dl-type-card:20px; --dl-type-lead:16px; --dl-type-ui:13px; }
   :is(.revision-brand h1,.prd-strict .modern-hero h1,.solutions .modern-hero h1,.partners-wrap .partners-plan,.verification-wrap .partners-plan,.kernelswift-page .h-title) { letter-spacing:-.015em !important; }
   :is(.core-feature-tagline,.section-subtitle,.prd-section-subtitle,.solution-module-heading p) { font-size:var(--dl-type-body) !important; }
 }
 @media(max-width:768px) and (max-height:700px) {
   #chipEvaluation .evaluation-scene .compass-title { font-size:20px !important; }
   .chronology-event h3 { font-size:16px !important; }
+}
+
+/* Shared homepage roles for secondary pages. Layered rules override legacy scoped
+   !important declarations without changing diagram labels, metrics or code. */
+@layer deeplink-page-text {
+  :is(body.prd-strict main,.partners-wrap,.verification-wrap,.kernelswift-page,
+    .fd-page-wrapper,.fd-agreement-wrap,.fd-table-content,.form-container,.registration-info-page) {
+    font-family:var(--dl-font-sans)!important;
+    font-size:var(--dl-type-body);
+  }
+  :is(body.prd-strict main,.partners-wrap,.verification-wrap,.kernelswift-page,
+    .fd-page-wrapper,.fd-agreement-wrap,.fd-table-content,.form-container,.registration-info-page)
+    :where(div,span,p,li,em,i,b,strong,small,button,a,h1,h2,h3,h4,h5,label,input,textarea,th,td) {
+    font-family:var(--dl-font-sans)!important;
+    color:var(--dl-text-body)!important;
+  }
+  :is(body.prd-strict main,.partners-wrap,.verification-wrap,.kernelswift-page,
+    .fd-page-wrapper,.fd-agreement-wrap,.fd-table-content,.form-container,.registration-info-page)
+    :is(h1,h2,h3,h4,h5,[role="heading"],.feature-title,.card-title,.skill-title,
+      .topic-title,.sec-title,.section-title,.solution-core-item>strong,.solution-group-heading,
+      .solution-feature-headline,.layer-title,.flow-core>strong) {
+    color:var(--dl-text-heading)!important;
+  }
+  :is(body.prd-strict main,.partners-wrap,.verification-wrap,.kernelswift-page,
+    .fd-page-wrapper,.fd-agreement-wrap,.fd-table-content,.form-container,.registration-info-page)
+    :is(h1,h2,h3,h4,h5,[role="heading"],.feature-title,.card-title,.skill-title,
+      .topic-title,.sec-title,.section-title,.solution-core-item>strong,.solution-group-heading,
+      .solution-feature-headline,.layer-title,.flow-core>strong) :where(span,strong,b,i,em) {
+    color:inherit!important;
+    font-size:inherit;
+  }
+  body.prd-strict main :is(
+    .feature-description,.scenario-copy p,.inference-benefits p,.cap-story-copy p,
+    .deployment-description p,.access-card p,.modern-hero .intro,.solution-intro,
+    .prd-tech-intro,.cap-summary,.scenario-title-detail,
+    .operator-square-description,.ks-evolution-overview>p,
+    .solution-summary-copy,.solution-group-value-copy,.solution-point-copy,
+    .solution-core-points,.solution-fact em,.solution-module-value p,.customer-story p,
+    .case-copy,.case-copy p,.v2-case-card p,.solution-contact-content p) {
+    font-size:var(--dl-type-body)!important;
+    line-height:1.75!important;
+  }
+  body.prd-strict main :is(
+    .feature-description,.scenario-copy p,.inference-benefits p,.deployment-description p,
+    .access-card p,.modern-hero .intro,.solution-intro,.cap-summary,
+    .solution-summary-copy,.solution-group-value-copy,.solution-point-copy,.case-copy)
+    :where(span,em,b,strong) {
+    font-size:inherit!important;
+    line-height:inherit!important;
+  }
+  body.prd-strict main :is(.feature-title,.scenario-copy h3,.cap-story>h3,
+    .inference-board>h3,.inference-benefits h3,.deployment-description h3,.access-card h3,
+    .operator-square-intro h3,.solution-group-heading h3,
+    .solution-module-support h3,.case-slide h3,.case-slide h3>span,.v2-case-card h3) {
+    font-size:var(--dl-type-card)!important;
+    line-height:1.5!important;
+    font-weight:600!important;
+  }
+  :is(.product-tabs button,.tab-title,.el-tabs__item,.van-tab,.prd-tab,.solution-tabs .tab,
+    .local-nav a,body.prd-strict main .tabs .tab,
+    body.prd-strict main [role="tab"]) {
+    font-size:var(--dl-type-tab)!important;
+    font-family:var(--dl-font-sans)!important;
+  }
+  :is(body.prd-strict main,.partners-wrap,.verification-wrap,.kernelswift-page,
+    .fd-page-wrapper,.fd-agreement-wrap,.fd-table-content,.form-container,.registration-info-page)
+    :is(time,.metric-caption,.product-metrics em,.metric-value em,.section-eyebrow,
+      .title-kicker,.solution-keywords b,.solution-flow-caption,.solution-flow-stage small,
+      .case-live,.prd-pending,button:disabled) {
+    color:var(--dl-text-muted)!important;
+  }
+  :is(body.prd-strict main,.partners-wrap,.verification-wrap,.kernelswift-page,
+    .fd-page-wrapper,.fd-agreement-wrap,.fd-table-content,.form-container,.registration-info-page)
+    :is(.text-link,.hero-name,.solution-related,.operator-square-link,
+      .solution-highlight-metric,.metric-value,.product-metrics>span>b,
+      .solution-intro-link,.solution-cta,.flow-core>strong,.ks-core>strong,
+      .section-nav a.active,.tabs .tab.active,[role="tab"][aria-selected="true"],
+      .el-tabs__item.is-active,.is-spotlight,.geo-label[aria-pressed="true"]) {
+    color:var(--dl-text-brand)!important;
+  }
+  body.prd-strict main :is(.text-link,.solution-related,.metric-value,
+    .solution-highlight-metric,.operator-square-link,.product-metrics>span>b)
+    :where(span,strong,b,i):not(.metric-caption) { color:inherit!important; }
+  body.prd-strict main :is(.solution-consult,.solution-contact .button,.btn-primary),
+  body.prd-strict main :is(.solution-consult,.solution-contact .button,.btn-primary)
+    :where(span,i,b,strong) { color:var(--dl-text-inverse)!important; }
+}
+
+/* Chapter anchors follow the homepage sticky navigation; content tabs retain 20px. */
+@layer deeplink-page-text {
+  body.prd-strict main .section-nav a { font-size:14px!important;line-height:24px!important;font-weight:400!important; }
+  @media(max-width:1400px) {
+    body.prd-strict main .section-nav a { font-size:12px!important; }
+  }
+  /* Restore the consultation banner's original white heading and blue label. */
+  body.prd-strict.solutions main#main #contact h2,
+  body.prd-strict.solutions main#main #contact h2 :where(*) { color:#fff!important; }
+  body.prd-strict.solutions main#main #contact .button,
+  body.prd-strict.solutions main#main #contact .button :where(span,i,b,strong) { color:var(--dl-text-brand)!important; }
+}
+
+/* Inverse text for the revised dark-blue Figma hero artwork only. */
+@layer deeplink-page-text {
+  html body.prd-strict:is(.training,.solutions) main#main .modern-hero :is(.hero-copy,.solution-hero-copy),
+  html body.prd-strict:is(.training,.solutions) main#main .modern-hero :is(.hero-copy,.solution-hero-copy) :where(h1,h1 *,p,p *) {
+    color:var(--dl-text-inverse,#fff)!important;
+  }
+  html body.prd-strict.solutions main#main .modern-hero .hero-name { color:#c6d8f5!important; }
+  html body.prd-strict.solutions main#main .modern-hero .solution-consult { background:#fff!important;border-color:#fff!important; }
+  html body.prd-strict.solutions main#main .modern-hero .solution-consult,
+  html body.prd-strict.solutions main#main .modern-hero .solution-consult :where(span,i,b,strong) { color:#0238b8!important; }
+}
+
+/* Figma dark-surface text: headings, descriptions and plain links are white. */
+@layer deeplink-page-text {
+  html body.prd-strict main#main [data-text-tone="inverse"],
+  html body.prd-strict main#main [data-text-tone="inverse"] :where(h1,h2,h3,h4,h5,h6,p,li,span,b,strong,em,small,a,button) {
+    color:var(--dl-text-inverse,#fff)!important;
+  }
+  html body.prd-strict.kernelswift main#main #access .access-card :is(h3,p),
+  html body.prd-strict.kernelswift main#main #access .access-card :is(h3,p) :where(*),
+  html body.prd-strict.kernelswift main#main #access #private>.text-link,
+  html body.prd-strict.kernelswift main#main #access #private>.text-link :where(*) {
+    color:var(--dl-text-inverse,#fff)!important;
+  }
+  html body.prd-strict.kernelswift main#main #access .design-pill,
+  html body.prd-strict.kernelswift main#main #access .design-pill :where(*) {
+    color:var(--dl-text-brand,#0d53de)!important;
+  }
+}
+
+/* Audit: blue step labels and the exact Figma consultation outline. */
+@layer deeplink-page-text {
+  html body .partners-wrap .application-process-wrap .tag,
+  html body .partners-wrap .application-process-wrap .tag :where(*) { color:var(--dl-text-inverse,#fff)!important; }
+  html body.prd-strict.solutions main#main #introduction .solution-consult { border-color:#0238b8!important; }
 }

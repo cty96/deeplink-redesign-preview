@@ -11,3 +11,16 @@ html body.prd-strict.training .modern-hero::after { content:none !important; }
  html body.prd-strict.training .modern-hero::before { width:100%; height:310px; aspect-ratio:auto; left:0; top:auto; bottom:0; transform:none; background-size:auto 100% !important; background-position:right center !important; }
  html body.prd-strict.training .modern-hero .hero-grid { min-height:0 !important; padding-bottom:330px !important; }
 }
+
+/* Updated Figma artwork: 5589:4649 / image 5774:5831. Original 700px hero layout. */
+html body.prd-strict.training main#main .modern-hero { background:#0b2363!important; }
+html body.prd-strict.training main#main .modern-hero::before {
+  content:''!important;inset:auto!important;left:calc(50% + 14.79px)!important;top:50%!important;
+  width:max(calc(100% + 29.58px),1333.581px)!important;height:auto!important;aspect-ratio:2048 / 1075!important;
+  transform:translate(-50%,-50%)!important;
+  background:url('assets/training-banner-figma-20261118.png') center/contain no-repeat!important;
+  mask-image:none!important;-webkit-mask-image:none!important;z-index:0!important;
+}
+@media(max-width:768px){
+ html body.prd-strict.training main#main .modern-hero::before { left:50%!important;width:max(calc(100% + 29.58px),1333.581px)!important; }
+}

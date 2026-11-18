@@ -1,6 +1,8 @@
-/* A true circle in ring-local XZ, tilted as a whole. PerspectiveCamera projects it. */
+/* Keep the approved circular layout and camera crop; cards are two thin, unlit faces. */
 export const config=Object.freeze({
-  count:24,radius:8,cardWidth:2.6,cardHeight:4.8,thickness:.075,cornerRadius:.18,
+  staticPreview:true,
+  figmaStaticArtwork:true,
+  count:24,radius:8,cardWidth:2.6,cardHeight:4.8,thickness:.002,cornerRadius:.1,
   width:1280,height:700,elevation:40,roll:6,distance:14,focalLengthPixels:900,
   principalX:1100,principalY:686,centerX:5,phase:-.12,tiltX:6
 });
@@ -16,9 +18,6 @@ export function createOperatorRing(THREE,materials){
   const ring=new THREE.Group();ring.name='operator-card-ring';
   ring.rotation.y=config.phase;ring.rotation.x=THREE.MathUtils.degToRad(config.tiltX);ring.position.x=config.centerX;
   const shape=roundedCardShape(THREE);
-  const bodyGeometry=new THREE.ExtrudeGeometry(shape,{depth:config.thickness,
-    bevelEnabled:true,bevelSize:.022,bevelThickness:.018,bevelSegments:3,steps:1,curveSegments:12});
-  bodyGeometry.translate(0,0,-config.thickness/2);
   const faceGeometry=new THREE.ShapeGeometry(shape,12),pos=faceGeometry.attributes.position;
   const uv=faceGeometry.attributes.uv;
   for(let i=0;i<pos.count;i++)uv.setXY(i,pos.getX(i)/config.cardWidth+.5,pos.getY(i)/config.cardHeight+.5);
@@ -32,13 +31,13 @@ export function createOperatorRing(THREE,materials){
     card.rotation.y=Math.PI/2-theta;
     // Turn each complete card 90 degrees about its local Y axis; keep its center fixed.
     card.rotateY(Math.PI/2);
-    const material=materials(i),body=new THREE.Mesh(bodyGeometry,material.edge);
-    const front=new THREE.Mesh(faceGeometry,material.front);front.position.z=config.thickness/2+.020;
-    const back=new THREE.Mesh(faceGeometry,material.back);back.position.z=-config.thickness/2-.020;back.rotation.y=Math.PI;
-    body.name='glass-volume';front.name='operator-front';back.name='operator-back';
-    card.add(body,front,back);ring.add(card);cards.push(card);
+    const material=materials(i);
+    const front=new THREE.Mesh(faceGeometry,material.front);front.position.z=config.thickness/2;
+    const back=new THREE.Mesh(faceGeometry,material.back);back.position.z=-config.thickness/2;back.rotation.y=Math.PI;
+    front.name='operator-front';back.name='operator-back';
+    card.add(front,back);ring.add(card);cards.push(card);
   }
-  return {ring,cards,geometries:[bodyGeometry,faceGeometry]};
+  return {ring,cards,geometries:[faceGeometry]};
 }
 export function createHeroCamera(THREE){
   const fov=THREE.MathUtils.radToDeg(2*Math.atan(config.height/(2*config.focalLengthPixels)));

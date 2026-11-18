@@ -2,7 +2,12 @@
 .home-v2 .core-v2-grid { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:48px; }
 .home-v2 .core-v2-item { min-height:252px;padding:20px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:48px;box-sizing:border-box;text-align:center; }
 .home-v2 .core-v2-item+article { border-left:.5px solid #0008; }
-.home-v2 .core-v2-item>img { display:block;width:84px;height:84px; }
+/* Figma 5639:22952 / 5755:5659–5674: original raster art and native circular mask. */
+.home-v2 .core-v2-icon { position:relative;display:block;flex:0 0 auto;width:83.8496px;height:83.8496px; }
+.home-v2 .core-v2-icon>img { position:absolute;display:block;max-width:none;width:176px;height:176px;left:-46.075px;top:-44.15px;object-fit:cover;pointer-events:none;mask-image:url('/deeplink-redesign-preview/home-assets/figma-core-20261118/ede8a.svg');mask-mode:alpha;mask-repeat:no-repeat;mask-position:46.075px 44.15px;mask-size:83.8496px 83.8496px; }
+.home-v2 .core-v2-item:nth-child(2) .core-v2-icon>img { width:208px;height:208px;left:-62.075px;top:-62.075px;mask-position:62.075px 62.075px; }
+.home-v2 .core-v2-item:nth-child(3) .core-v2-icon>img { width:182.24px;height:182.24px;left:-49.195px;top:-49.195px;mask-position:49.195px 49.195px; }
+.home-v2 .core-v2-item:nth-child(4) .core-v2-icon>img { width:166px;height:166px;left:-41.075px;top:-40.075px;mask-position:41.075px 40.075px; }
 .home-v2 .core-v2-item h3 { margin:0 0 16px;font-size:20px;line-height:30px;font-weight:600;color:#000; }
 .home-v2 .core-v2-item p { margin:0;font-size:14px;line-height:17px;color:#000; }
 html body .home-v2 .home-core-features { background:#f9fafb !important;padding:96px 0; }
@@ -38,20 +43,41 @@ html body .home-v2 #technology .el-tabs__nav-wrap::after { display:block;height:
 .publication-badge.badge-2>img { width:120%;height:233.32%;left:-10%;top:-62.32%; }
 .publication-badge.badge-3>img { width:102.1%;height:197.9%;left:-1.05%;top:-44.6%; }
 .publication-badge.badge-4>img { width:120%;height:165%;left:-10%;top:-32%; }
+.publication-badge.badge-5>img { width:116.49%;height:151.95%;left:-8.245%;top:-25.98%; }
+.publication-badge.badge-6>img { width:101.38%;height:132.23%;left:-.69%;top:-16.12%;transform:scaleX(-1); }
 .publication-badge>strong { font-weight:600; }
 .publication-copy { min-width:0;display:flex;flex-direction:column;gap:16px; }
 .publication-copy>strong { font-size:20px;line-height:30px;font-weight:600;color:#121316cc;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
 .publication-copy>span { font-size:14px;line-height:21px;color:#12131699;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden; }
-.awards-carousel { padding:96px 0;position:relative; }
-.awards-stage { position:relative;height:521px;overflow:hidden;touch-action:pan-y; }
-.award-card { position:absolute;left:50%;top:48px;width:300px;height:425px;display:grid;place-items:center;transform:translateX(calc(-50% + var(--award-offset)*382px)) scale(var(--award-scale));opacity:0;pointer-events:none;transition:transform 420ms cubic-bezier(.2,.7,.2,1),opacity 300ms;transform-origin:center; }
-.award-card.is-visible { opacity:.75;pointer-events:auto; }
-.award-card.is-active { opacity:1; }
-.award-card>img { display:block;width:100%;height:100%;object-fit:contain;border-radius:4px; }
-.award-prev,.award-next { display:block;position:absolute;top:50%;transform:translateY(-50%);border:0;padding:0;background:none;cursor:pointer;z-index:12; }
-.award-prev { left:0; }.award-next { right:0; }
-.award-prev img,.award-next img { display:block; }
-.award-live { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
+/* Equal-size award images follow the same continuous strip pattern as partner logos. */
+.home-v2 .awards-logo-marquee { overflow:hidden;position:relative;outline-offset:6px;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent); }
+.home-v2 .awards-logo-track { display:flex;width:max-content;animation:award-logos 64s linear infinite; }
+.home-v2 .awards-logo-group { display:flex;align-items:center;gap:40px;padding-right:40px;flex:none; }
+.home-v2 .award-logo { display:grid;place-items:center;flex:0 0 200px;width:200px;height:208px;padding:14px;box-sizing:border-box;border:0;border-radius:12px;background:transparent;cursor:zoom-in; }
+.home-v2 .award-logo>img { display:block;width:100%;height:180px;object-fit:contain; }
+.home-v2 .award-logo:hover { background:#f1f4f8; }
+.home-v2 .awards-logo-marquee:hover .awards-logo-track,.home-v2 .awards-logo-marquee:focus-within .awards-logo-track,.home-v2 .awards-logo-marquee.is-preview-open .awards-logo-track { animation-play-state:paused; }
+.home-v2 .awards-logo-marquee:focus-visible,.home-v2 .award-logo:focus-visible { outline:2px solid #0d53de;outline-offset:-3px; }
+@keyframes award-logos { to { transform:translateX(-50%); } }
+.home-v2 .award-preview {
+ width:min(940px,calc(100% - 32px));
+ max-height:calc(100dvh - 32px);
+ margin:auto;
+ padding:0;
+ border:1px solid #dbe5f5;
+ border-radius:18px;
+ background:#fff;
+ box-shadow:0 20px 70px #10285040;
+ overscroll-behavior:contain;
+}
+.home-v2 .award-preview:not([open]) { display:none; }
+.home-v2 .award-preview::backdrop { background:#14274799; }
+.home-v2 .award-preview-content { padding:clamp(12px,2.5vw,24px); }
+.home-v2 .award-preview-heading { display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:12px; }
+.home-v2 .award-preview-heading h3 { margin:0;font-size:clamp(15px,2vw,20px);line-height:1.4; }
+.home-v2 .award-preview-close { flex:0 0 44px;height:44px;border:1px solid #dce6f7;border-radius:10px;background:#f5f8fd;font-size:24px;line-height:1;cursor:pointer; }
+.home-v2 .award-preview-close:focus-visible { outline:2px solid #0d53de;outline-offset:2px; }
+.home-v2 .award-preview-content>img { display:block;width:auto;height:auto;max-width:100%;max-height:72dvh;margin:auto;object-fit:contain; }
 html body .home-v2 .home-vision-v2 { padding:0 40px 96px;background:#fff !important; }
 html body .home-v2 .home-vision-v2>.fd-content { width:min(1200px,100%);margin:auto;padding:0; }
 html body .home-v2 .home-vision-v2 .fd-vision { margin:0;padding:96px max(24px,calc((100% - 995.22px)/2));background:#136efc;border-radius:40px; }
@@ -77,14 +103,19 @@ html body .home-v2 .home-vision-v2 .fd-vision .fd-content { width:100%;color:#ff
  .publication-badge { width:72px;height:86px;font-size:13px; }
  .publication-copy { gap:10px; }.publication-copy>strong { font-size:15px;line-height:23px; }
  .publication-copy>span { font-size:12px;line-height:20px;-webkit-line-clamp:3; }
- .awards-carousel { padding:48px 0; }.awards-stage { height:380px; }
- .award-card { width:220px;height:312px;top:34px;transform:translateX(calc(-50% + var(--award-offset)*255px)) scale(var(--award-scale)); }
- .award-prev,.award-next { transform:translateY(-50%) scale(.56); }.award-prev { left:-16px; }.award-next { right:-16px; }
+ .home-v2 .awards-logo-group { gap:20px;padding-right:20px; }
+ .home-v2 .award-logo { flex-basis:160px;width:160px;height:176px;padding:12px; }
+ .home-v2 .award-logo>img { height:152px; }
  html body .home-v2 .home-vision-v2 { padding:0 20px 64px; }
  html body .home-v2 .home-vision-v2 .fd-vision { padding:64px 24px;border-radius:24px; }
  html body .home-v2 .home-vision-v2 .fd-title { margin-bottom:32px; }
 }
-@media(prefers-reduced-motion:reduce) { .award-card { transition:none; } }
+@media(prefers-reduced-motion:reduce) {
+ .home-v2 .awards-logo-marquee { overflow-x:auto;mask-image:none;scroll-snap-type:x mandatory; }
+ .home-v2 .awards-logo-track { animation:none; }
+ .home-v2 .awards-logo-group[aria-hidden="true"] { display:none; }
+ .home-v2 .award-logo { scroll-snap-align:start; }
+}
 
 
 
@@ -158,3 +189,27 @@ html body #main .home-v2 .product-v2-card:nth-child(-n+2) .product-v2-copy p { l
 .publication-pagination img { display:block; }
 .publication-page-status { position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
 @media(max-width:768px) { .publication-pagination { margin-top:32px;padding:0 8px; } }
+
+/* Hover reference: deeplink.org.cn/home#technology .fd-hxjz-item.
+   Preserve the current Figma resting layout; each card lifts within its own column. */
+.home-v2 .core-v2-item { position:relative;cursor:pointer;transition:transform 220ms ease-out,background-color 160ms ease-out; }
+.home-v2 .core-v2-copy { position:relative;z-index:1;min-width:0; }
+.home-v2 .core-v2-icon { transition:opacity 160ms ease-out,transform 220ms ease-out; }
+.home-v2 .core-v2-item:focus-visible { outline:2px solid #3373ff;outline-offset:4px; }
+.home-v2 .core-v2-item.is-expanded { height:376px;min-height:376px;width:100%;margin:0 0 -124px;padding:24px 36px;align-items:stretch;justify-content:flex-start;gap:0;transform:translateY(-40px);border-radius:4px;background:transparent; }
+.home-v2 .core-v2-item.is-expanded::before { content:"";position:absolute;inset:0 12px;border-radius:4px;background:#f5faff;pointer-events:none; }
+.home-v2 .core-v2-item.is-expanded .core-v2-icon { position:absolute;left:calc(50% - 41.9248px);top:20px;opacity:0;transform:translateY(-70px); }
+.home-v2 .core-v2-item.is-expanded h3 { color:#000;margin-bottom:8px; }
+.home-v2 .core-v2-item.is-expanded .core-v2-tagline { color:#000;line-height:24px; }
+html body #main .home-v2 .core-v2-item .core-v2-description { margin:24px 0 0;color:rgba(18,19,22,.8);font-size:14px;line-height:24px;text-align:justify;animation:core-detail-enter 180ms ease-out; }
+@keyframes core-detail-enter { from { opacity:0;transform:translateY(4px); } to { opacity:1;transform:translateY(0); } }
+@media(max-width:768px) {
+ .home-v2 .core-v2-item.is-expanded { grid-column:1 / -1;height:auto;min-height:280px;width:auto;margin:0;padding:24px;transform:none; }
+ .home-v2 .core-v2-item.is-expanded::before { inset:0; }
+ .home-v2 .core-v2-item p { text-wrap:balance; }
+ html body #main .home-v2 .core-v2-item .core-v2-description { text-align:left;text-wrap:pretty; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .home-v2 .core-v2-item,.home-v2 .core-v2-icon { transition:none; }
+ html body #main .home-v2 .core-v2-item .core-v2-description { animation:none; }
+}
