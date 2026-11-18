@@ -1,0 +1,68 @@
+/* Updated Figma section 5661:3525. Shared chrome and existing module content stay in their own styles. */
+@media(min-width:769px){
+ html body.prd-strict.training .modern-hero>.wrap,html body.prd-strict.kernelswift .modern-hero>.wrap,html body.prd-strict.solutions .solution-hero.modern-hero>.wrap{width:min(960px,calc(100% - 80px));max-width:960px;margin:auto;padding:68px 0 72px!important;min-height:700px!important;box-sizing:border-box}
+ html body.prd-strict :is(.hero.modern-hero .hero-grid,.solution-hero.modern-hero>.wrap){grid-template-columns:minmax(0,430.77fr) minmax(0,465.23fr);gap:64px}
+ html body.prd-strict .hero.modern-hero .hero-grid{min-height:560px!important;padding:0!important}
+ html body.prd-strict :is(.hero.modern-hero .hero-copy,.solution-hero .solution-hero-copy){width:100%;max-width:430.77px}
+ html body.prd-strict .ks-official-banner-visual{width:100%!important;height:auto!important;aspect-ratio:465.234 / 292.219;max-width:465.234px!important;border-radius:16px!important;overflow:hidden;box-shadow:0 8px 40px #0d53de1a}
+ html body.prd-strict.training .modern-hero::before{top:0;left:50%;width:1243px;height:700px;aspect-ratio:auto;transform:translateX(-50%);background:url('/deeplink-redesign-preview/home-assets/figma-v2-20261117/training-hero/38ad2.png') center/contain no-repeat!important;mask-image:none!important;-webkit-mask-image:none!important}
+ html body.prd-strict.solutions .solution-hero.modern-hero::before{top:76px;left:calc(50% - 911px);width:1646px;height:548px;aspect-ratio:auto;transform:none;background:url('/deeplink-redesign-preview/home-assets/figma-v2-20261117/solutions-hero/167db.png') center/contain no-repeat!important;mask-image:none!important;-webkit-mask-image:none!important}
+}
+html body.prd-strict.solutions .solution-cases-v2{padding:96px 0;background:#fff;overflow:hidden}
+.solution-cases-v2>.wrap{width:min(1200px,calc(100% - 80px));max-width:1200px}
+.solution-cases-v2 .section-head{margin:0 0 8px}.solution-cases-v2 h2{margin:0}
+deeplink-case-deck{display:block;width:100%;min-height:622.234px}
+.v2-case-viewport{position:relative;height:578.234px;touch-action:pan-y;outline-offset:-4px}
+.v2-case-card{position:absolute;left:50%;top:176.12px;width:420px;min-height:378px;box-sizing:border-box;padding:24px 28px;border:1px solid #e3ecf8;border-radius:16px;background:linear-gradient(#fff,#fbfdff);box-shadow:0 8px 12px #2a4d840a,inset 0 1px #fffffff2;transform:translateX(calc(-50% + var(--case-x))) translateY(var(--case-y)) scale(var(--case-scale));transform-origin:center;opacity:var(--case-opacity);transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .3s;cursor:pointer}
+.v2-case-card.is-active{cursor:default}
+.v2-case-card h3{height:78px;margin:0 0 42px;display:flex;align-items:center}
+.v2-case-card h3 img{display:block;max-width:184px;width:184px;height:78px;object-fit:contain;object-position:left center}
+html body.prd-strict.solutions .v2-case-card p{font-size:14px;line-height:25.9px;font-weight:400;color:#61738e;margin:0 0 13px;letter-spacing:-.15px}
+.v2-case-card p:last-child{margin-bottom:0}
+.v2-case-controls{display:flex;align-items:center;justify-content:center;gap:24px;min-height:44px}
+.v2-case-controls>button{width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid #dce6f5;border-radius:50%;background:#fff;cursor:pointer}
+.v2-case-controls>button img{display:block}
+.v2-case-controls button:hover{background:#edf4ff}.v2-case-controls button:focus-visible{outline:2px solid #0d53de;outline-offset:3px}
+.v2-case-dots{display:flex;gap:2px}.v2-case-dots button{position:relative;width:28px;height:40px;border:0;padding:0;background:transparent;cursor:pointer}.v2-case-dots button:after{content:'';position:absolute;width:6px;height:6px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:8px;background:#d0ddf0}.v2-case-dots button[aria-current=true]:after{width:22px;background:#0d53de}
+.v2-case-live{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+html body.prd-strict.solutions .solution-ecosystem-v2{padding:80px 0 0;background:#f6f7f9;overflow:hidden}
+.solution-ecosystem-v2>.wrap{width:min(1200px,calc(100% - 80px));max-width:1200px}
+.solution-ecosystem-v2 .section-head{margin:0 0 40px}.solution-ecosystem-v2 h2{margin:0}
+.v2-ecosystem-logos{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:16px}
+.v2-ecosystem-logos figure{display:grid;place-items:center;height:80px;min-width:0;margin:0;padding:20px 17px;box-sizing:border-box;background:#fff;border:1px solid #e7edf5;border-radius:8px}
+.v2-ecosystem-logos img{display:block;max-width:100%;width:123.7px;height:40px;object-fit:contain}
+.solutions #ecosystem .geo-stage{position:relative;left:50%;transform:translateX(-50%);width:min(1280px,100vw);max-width:none;aspect-ratio:1800 / 660;margin:40px 0 0;isolation:isolate}
+.solutions #ecosystem .geo-map-canvas{position:absolute;inset:0;width:100%;height:100%}
+.solutions #ecosystem .geo-map-canvas>svg{display:block;width:100%;height:100%}
+.solutions #ecosystem .geo-map-leaders{position:absolute;inset:0;pointer-events:none;stroke:#a5c4fb;stroke-width:1}
+.solutions #ecosystem .geo-leader-mobile{display:none}
+.solutions #ecosystem .geo-label{position:absolute;left:var(--map-x);top:var(--map-y);transform:translate(-50%,-50%);font-family:inherit;font-size:12px;line-height:20px;font-weight:400;color:#4d78ad;border:0;background:#f6f7f9c9;border-radius:4px;padding:2px 4px;white-space:nowrap;cursor:pointer;box-shadow:none}
+.solutions #ecosystem .geo-label[aria-pressed=true],.solutions #ecosystem .geo-label:hover{color:#0d53de;background:#e3edff}
+.solutions #ecosystem .geo-region .geo-province{fill:#78aaff;fill-opacity:0;stroke:#4386ed;stroke-opacity:0;stroke-width:1.2;pointer-events:none;transition:fill-opacity .3s,stroke-opacity .3s}
+.solutions #ecosystem .geo-region.is-active .geo-province{fill-opacity:.42;stroke-opacity:.9}
+@media(max-width:768px){
+ .solution-cases-v2>.wrap,.solution-ecosystem-v2>.wrap{width:calc(100% - 40px)}
+ html body.prd-strict.solutions .solution-cases-v2{padding:64px 0}
+ deeplink-case-deck{min-height:594px}.v2-case-viewport{height:550px}.v2-case-card{top:60px;width:min(310px,calc(100vw - 64px));padding:24px;transform:translateX(calc(-50% + var(--case-offset)*315px)) scale(var(--case-scale));min-height:400px}
+ .v2-case-card h3{margin-bottom:24px}.v2-case-controls{gap:8px}.v2-case-dots button{width:24px}
+ html body.prd-strict.solutions .solution-ecosystem-v2{padding-top:64px}
+ .v2-ecosystem-logos{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.v2-ecosystem-logos figure{height:68px;padding:14px 8px}
+ .solutions #ecosystem .geo-stage{width:760px;height:278.67px;margin-top:30px}
+ .solutions #ecosystem .geo-label{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.v2-case-card{transition:none}}
+/* Match the nested Figma container offsets while keeping reveal effects off the map's centering transform. */
+html body.prd-strict.solutions .solution-cases-v2 .section-head{margin:0 auto 8px!important;width:100%;max-width:1000px}
+html body.prd-strict.solutions .solution-ecosystem-v2 .section-head{margin:0 auto 40px!important;width:100%;max-width:1000px}
+html body.prd-strict.solutions #ecosystem .geo-stage{transform:translateX(-50%)!important;aspect-ratio:1280 / 445.328;height:auto;margin-top:16px}
+html body.prd-strict.solutions #ecosystem .geo-map-canvas{top:-5.389%;bottom:auto;height:105.389%}
+@media(max-width:768px){html body.prd-strict.solutions #ecosystem .geo-stage{width:760px;height:264.414px}}
+
+/* Keep the globe edges inside the viewport, including on narrow screens. */
+html body.prd-strict.solutions #ecosystem .geo-stage { left:auto;transform:none!important;width:100%;max-width:1280px;height:auto;aspect-ratio:2360 / 660;margin:24px auto 0;padding:0; }
+html body.prd-strict.solutions #ecosystem .geo-map-canvas { position:absolute;inset:0;width:100%;height:100%; }
+html body.prd-strict.solutions .solution-ecosystem-v2 { padding-bottom:24px; }
+@media(max-width:768px){
+ html body.prd-strict.solutions #ecosystem .geo-stage { width:100%;height:auto;aspect-ratio:2360 / 660;margin-top:24px; }
+ html body.prd-strict.solutions #ecosystem .geo-label { font-size:9px;line-height:14px;padding:1px 2px; }
+}

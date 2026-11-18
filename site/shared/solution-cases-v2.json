@@ -1,0 +1,52 @@
+[
+  {
+    "name": "仪电",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/5b9cd.png",
+    "paragraphs": [
+      "智算云平台融合了DeepLink能力，支持多个集群间的混训混推任务；并依靠DeepLink跨集群异构能力，实现与其他集群异构混训能力。",
+      "指导并参与智算创新型智能算力集群的建设与测试工作，同时联合编制《智算中心异构能力评估》上海市地方标准，《智能算力云平台评估规范》和《基于光互连的智能算力集群测试方法》2项团体标准。"
+    ]
+  },
+  {
+    "name": "中国联通",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/9ba70.png",
+    "paragraphs": [
+      "携手实现全球首个跨1500km的千公里跨域异构混训验证项目，并在跨域异构条件下，完成垂域模型训练。此外，在“联通星罗”平台多区域调度与高速跨域网络的算网条件下，实现异构算力的统一编排与混合训练、不同区域算力的动态汇聚与弹性拼接。"
+    ]
+  },
+  {
+    "name": "中国电信",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/1c622.png",
+    "paragraphs": [
+      "依托电信的算力与网络底座，实验室在上海建成了超大规模跨域混训集群原型，并实现千亿参数大模型20天不间断训练，等效算力达单芯片单集群算力的90%。后与息壤算网深度集成，实现了北京、上海与贵州等多地智算中心的互联和大模型混训。"
+    ]
+  },
+  {
+    "name": "上海 IXP",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/7c8aa.png",
+    "paragraphs": [
+      "国家（上海）新型互联网交换中心、上海人工智能实验室共同发起，联合运营商、云平台和芯片厂商等多家单位联合攻关，完成跨域异构算力调度商用验证。这一成果标志着上海在构建高效、协同、自主的算力调度体系方面取得了重要阶段性突破，将为国产大模型研发及人工智能产业高质量发展注入强劲动能。"
+    ]
+  },
+  {
+    "name": "湖南大学",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/26e6f.png",
+    "paragraphs": [
+      "集成DeepLink跨域异构混训标准方案，树立与智算服务平台合作模式。"
+    ]
+  },
+  {
+    "name": "厦门数智创新",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/82bc3.png",
+    "paragraphs": [
+      "以厦门为例，打造面向最终用户的混训应用标杆。辐射其他类型的标杆如 航天科技。"
+    ]
+  },
+  {
+    "name": "云眼视界",
+    "logo": "/deeplink-redesign-preview/home-assets/figma-v2-20261117/solution-cases/73f9f.png",
+    "paragraphs": [
+      "集成标准能力，完成方案预适配，形成快速可推广的标准方案包。"
+    ]
+  }
+]

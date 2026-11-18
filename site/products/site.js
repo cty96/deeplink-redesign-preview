@@ -5,8 +5,13 @@ document.addEventListener('click',e=>{document.querySelectorAll('.nav-product[op
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.nav-product[open]').forEach(d=>d.open=false);document.querySelector('.main-nav')?.classList.remove('open');mobileToggle?.setAttribute('aria-expanded','false');}});
 document.querySelectorAll('[role=tablist]').forEach(list=>{
  const tabs=[...list.querySelectorAll('[role=tab]')];
+ const hoverScenes=document.body.classList.contains('kernelswift')&&!!list.closest('#scenarios');
  const activate=tab=>{tabs.forEach(t=>{const selected=t===tab;t.setAttribute('aria-selected',String(selected));t.tabIndex=selected?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!selected;const description=t.querySelector('.feature-description');if(description)description.hidden=!selected;});};
- tabs.forEach(tab=>tab.addEventListener('focus',()=>tab.scrollIntoView({block:'nearest',inline:'nearest'})));
+ if(list.classList.contains('solution-compute-tabs')){
+  const followHash=()=>{const tab=tabs.find(t=>'#'+t.getAttribute('aria-controls')===location.hash);if(tab)activate(tab);};
+  followHash();window.addEventListener('hashchange',followHash);
+ }
+ tabs.forEach(tab=>{tab.addEventListener('focus',()=>{if(hoverScenes)activate(tab);tab.scrollIntoView({block:'nearest',inline:'nearest'});});if(hoverScenes)tab.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch')activate(tab);});});
  tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>activate(tab));tab.addEventListener('keydown',e=>{const vertical=list.getAttribute('aria-orientation')==='vertical';let n;if(e.key===(vertical?'ArrowDown':'ArrowRight'))n=(i+1)%tabs.length;if(e.key===(vertical?'ArrowUp':'ArrowLeft'))n=(i-1+tabs.length)%tabs.length;if(e.key==='Home')n=0;if(e.key==='End')n=tabs.length-1;if(n!==undefined){e.preventDefault();activate(tabs[n]);tabs[n].focus();}});});
 });
 if('IntersectionObserver' in window){

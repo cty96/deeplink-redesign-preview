@@ -1,0 +1,74 @@
+[
+  {
+    "id": "computing-2023",
+    "title": "2023 算力中国·年度突破成果",
+    "description": "人工智能开放计算体系 DeepLink",
+    "image": "/deeplink-redesign-preview/home-assets/awards/computing-2023.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/computing-2023.pdf",
+    "width": 1273,
+    "height": 1800
+  },
+  {
+    "id": "asplos-2023",
+    "title": "ASPLOS 2023 Distinguished Paper Award",
+    "description": "Lucid: A Non-Intrusive, Scalable and Interpretable Scheduler for Deep Learning Training Jobs",
+    "image": "/deeplink-redesign-preview/home-assets/awards/asplos-2023.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/asplos-2023.pdf",
+    "width": 1800,
+    "height": 1394
+  },
+  {
+    "id": "asplos-2024",
+    "title": "ASPLOS 2024 Best Paper Award",
+    "description": "Centauri: Enabling Efficient Scheduling for Communication-Computation Overlap in Large Model Training via Communication Partitioning",
+    "image": "/deeplink-redesign-preview/home-assets/awards/asplos-2024.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/asplos-2024.pdf",
+    "width": 1308,
+    "height": 1800
+  },
+  {
+    "id": "aiia-2024",
+    "title": "2024 年人工智能先锋案例「技术底座」",
+    "description": "DeepLink 人工智能开放计算体系",
+    "image": "/deeplink-redesign-preview/home-assets/awards/aiia-2024.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/aiia-2024.pdf",
+    "width": 1273,
+    "height": 1800
+  },
+  {
+    "id": "computing-2025",
+    "title": "2025 算力中国·年度重大突破成果",
+    "description": "DeepLink 超大规模跨域混训技术方案",
+    "image": "/deeplink-redesign-preview/home-assets/awards/computing-2025.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/computing-2025.pdf",
+    "width": 1273,
+    "height": 1800
+  },
+  {
+    "id": "youth-2025",
+    "title": "2025 年度上海市科技系统五四青年典型集体",
+    "description": "「深度共联」（DeepLink）青年团队",
+    "image": "/deeplink-redesign-preview/home-assets/awards/youth-2025.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/youth-2025.pdf",
+    "width": 1800,
+    "height": 1273
+  },
+  {
+    "id": "computing-2026",
+    "title": "2026 算力中国·年度重大突破成果",
+    "description": "「深度共联跨域异构算力混训混推调度」联合应用实践",
+    "image": "/deeplink-redesign-preview/home-assets/awards/computing-2026.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/computing-2026.jpg",
+    "width": 850,
+    "height": 1202
+  },
+  {
+    "id": "gmvps-2026",
+    "title": "GMVPS 2026 产业应用案例入编",
+    "description": "DeepLink 多元算力混合训推技术方案",
+    "image": "/deeplink-redesign-preview/home-assets/awards/gmvps-2026.webp",
+    "original": "/deeplink-redesign-preview/home-assets/awards/gmvps-2026.pdf",
+    "width": 1273,
+    "height": 1800
+  }
+]

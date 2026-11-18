@@ -1,6 +1,11 @@
 (() => {
   'use strict';
   if (customElements.get('deeplink-header')) return;
+  const currentHref=path=>{
+    if(!path.startsWith('/'))return path;
+    const url=new URL(path,location.origin);if(!/\/products\/[^/]+\.html$/.test(url.pathname))return path;
+    url.searchParams.set('nav','20261118-nav-stable');return url.pathname+url.search+url.hash;
+  };
   const escape = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const github = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.2.8-.5v-2c-3.2.7-3.8-1.4-3.8-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.5 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.1 1.2a10.6 10.6 0 0 1 5.7 0c2.2-1.5 3.1-1.2 3.1-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3 0 4.3-2.7 5.2-5.3 5.5.4.4.8 1.1.8 2.1v3.1c0 .3.2.6.8.5A11.1 11.1 0 0 0 12 .9Z"/></svg>';
   const css = `
@@ -29,10 +34,17 @@
       const signin=root.querySelector('.signin');if(signin)signin.addEventListener('click',()=>{window.location.href='/deeplink-redesign-preview/home?signin=1';});
       root.addEventListener('keydown',e=>{if(e.key==='Escape'){this.closeMenus();root.querySelector('.toggle').focus();}});
       document.addEventListener('click',this.handleOutside);document.addEventListener('scroll',this.handleScroll,true);
-      navigationPromise=navigationPromise||fetch('/deeplink-redesign-preview/shared/site-navigation.json?v=20261105-brand').then(r=>{if(!r.ok)throw new Error('Navigation unavailable');return r.json();});
+      navigationPromise=navigationPromise||fetch('/deeplink-redesign-preview/shared/site-navigation.json?v=20261118-nav-stable',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Navigation unavailable');return r.json();}).then(groups=>{
+        // Apply the same product order on every entry page, including older data exports.
+        const order=['tools2','tools0','tools1','tools3'];
+        return groups.map(group=>group.key==='tools'?{...group,children:[...group.children].sort((a,b)=>{
+          const rank=item=>{const index=order.indexOf(item.key);return index<0?order.length:index;};
+          return rank(a)-rank(b);
+        })}:group);
+      });
       navigationPromise.then(groups=>{
         if(!this.isConnected)return;
-        root.querySelector('.navigation').innerHTML=groups.map(group=>`<details class="group ${group.key==='tools'?'products-group':''}"><summary>${escape(group.name[lang])}${group.isNew?'<small class="new">New</small>':''}<svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg></summary><div class="dropdown ${group.key==='tools'?'product-mega':''}">${(group.key==='home'?[{name:{CN:'首页概览',EN:'Home'},path:'/deeplink-redesign-preview/home'}]:[]).concat(group.children).map(item=>`<a href="${escape(item.path)}" ${item.path.startsWith('https://')?'target="_blank" rel="noopener noreferrer"':''}>${item.summary?`<h3>${escape(lang==='CN'?item.menuName:item.name[lang])}</h3><p class="product-menu-description">${escape(item.summary)}</p>`:escape(item.name[lang])}</a>`).join('')}</div></details>`).join('');
+        root.querySelector('.navigation').innerHTML=groups.map(group=>`<details class="group ${group.key==='tools'?'products-group':''}"><summary>${escape(group.name[lang])}${group.isNew?'<small class="new">New</small>':''}<svg class="chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg></summary><div class="dropdown ${group.key==='tools'?'product-mega':''}">${(group.key==='home'?[{name:{CN:'首页概览',EN:'Home'},path:'/deeplink-redesign-preview/home'}]:[]).concat(group.children).map(item=>`<a href="${escape(currentHref(item.path))}" ${item.path.startsWith('https://')?'target="_blank" rel="noopener noreferrer"':''}>${item.summary?`<h3>${escape(lang==='CN'?item.menuName:item.name[lang])}</h3><p class="product-menu-description">${escape(item.summary)}</p>`:escape(item.name[lang])}</a>`).join('')}</div></details>`).join('');
         root.querySelectorAll('details').forEach(detail=>detail.addEventListener('toggle',()=>{if(detail.open)root.querySelectorAll('details').forEach(other=>{if(other!==detail)other.open=false;});}));
         root.querySelectorAll('.dropdown a').forEach(link=>link.addEventListener('click',()=>this.closeMenus()));
       }).catch(()=>{navigationPromise=null;root.querySelector('.navigation').innerHTML='<a href="/deeplink-redesign-preview/home">首页</a>';});

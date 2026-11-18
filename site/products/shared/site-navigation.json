@@ -41,7 +41,7 @@
           "CN": "生态伙伴",
           "EN": "Ecosystem"
         },
-        "path": "/deeplink-redesign-preview/home#ecosystem",
+        "path": "/deeplink-redesign-preview/products/solutions.html#ecosystem",
         "type": "self"
       },
       {
@@ -65,6 +65,17 @@
     "isNew": true,
     "children": [
       {
+        "key": "tools2",
+        "name": {
+          "CN": "超智融合平台",
+          "EN": "DeepFusion"
+        },
+        "path": "https://deepfusion.deeplink.org.cn/#/login",
+        "type": "self",
+        "summary": "打通跨域算力资源，提升资源调度与科研任务执行效率；",
+        "menuName": "超智融合平台"
+      },
+      {
         "key": "tools0",
         "name": {
           "CN": "混合训推一体工具链",
@@ -85,17 +96,6 @@
         "type": "self",
         "summary": "自动生成和优化高性能算子，降低多元芯片适配成本；",
         "menuName": "KernelSwift智能算子迁移系统"
-      },
-      {
-        "key": "tools2",
-        "name": {
-          "CN": "超智融合平台",
-          "EN": "DeepFusion"
-        },
-        "path": "https://deepfusion.deeplink.org.cn/#/login",
-        "type": "self",
-        "summary": "打通跨域算力资源，提升资源调度与科研任务执行效率；",
-        "menuName": "超智融合平台"
       },
       {
         "key": "tools3",
@@ -163,7 +163,7 @@
           "CN": "工作组",
           "EN": "Working Group"
         },
-        "path": "/deeplink-redesign-preview/home#working-group",
+        "path": "/deeplink-redesign-preview/deepeval",
         "type": "self"
       },
       {
@@ -172,7 +172,7 @@
           "CN": "产业生态成果",
           "EN": "Ecosystem Outcomes"
         },
-        "path": "/deeplink-redesign-preview/home#ecosystem",
+        "path": "/deeplink-redesign-preview/products/solutions.html#ecosystem",
         "type": "self"
       }
     ]

@@ -1,0 +1,31 @@
+/* Figma 5639:22604: original gradient, artwork crop, copy position. */
+html body .fd-navigation-wrap .revision-brand.has-operator-motion { height:700px;min-height:700px;margin-top:64px;padding:0 !important;overflow:clip;background:linear-gradient(to top,#fff 7.714%,#3373ff 32.194%,#000 110%) !important; }
+html body .fd-navigation-wrap .revision-brand.has-operator-motion::before,html body .fd-navigation-wrap .revision-brand.has-operator-motion::after { display:none !important; }
+html body .fd-navigation-wrap .has-operator-motion .revision-brand-inner { position:relative;width:min(1118px,calc(100% - 80px));height:100%;margin:auto; }
+html body .fd-navigation-wrap .has-operator-motion .revision-brand-copy { position:absolute;top:162px;left:0;width:720px;max-width:100%; }
+html body .fd-navigation-wrap .has-operator-motion .revision-eyebrow { display:block !important;color:#fff !important;font-size:18px !important;line-height:21px !important;font-weight:600 !important;margin:0 0 24px; }
+html body .fd-navigation-wrap .has-operator-motion .revision-brand-copy h1 { font-size:48px !important;line-height:62px !important;font-weight:600 !important;color:#fff !important;margin:0 0 24px !important;letter-spacing:0 !important; }
+html body .fd-navigation-wrap .has-operator-motion .revision-brand-copy h1 span { white-space:nowrap; }
+html body .fd-navigation-wrap .has-operator-motion .revision-brand-inner .revision-brand-copy>p:not(.revision-eyebrow) { display:block !important;max-width:589px !important;font-size:14px !important;line-height:21px !important;color:#fff !important;margin:0 0 24px; }
+.has-operator-motion>.hero-live { display:none!important; }
+.has-operator-motion .revision-brand-inner { z-index:2; }
+.operator-motion { position:absolute;inset:0;z-index:0;overflow:clip;pointer-events:none; }
+.operator-motion::after { content:'';position:absolute;inset:auto 0 0;height:110px;background:linear-gradient(transparent,#fff);z-index:30; }
+.operator-motion-scene { position:absolute;top:0;width:100%;height:700px;left:0; }
+.operator-3d-canvas { display:block;width:100%;height:700px; }
+.operator-motion-toggle { position:absolute;right:32px;bottom:24px;z-index:31;display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid #dce7f6;border-radius:24px;background:#ffffffed;color:#345780;font-family:inherit;font-size:12px;font-weight:500;line-height:20px;cursor:pointer;pointer-events:auto; }
+.operator-motion-toggle::before { content:'';display:block;width:8px;height:10px;border-left:2px solid currentColor;border-right:2px solid currentColor;box-sizing:border-box; }
+.operator-motion-toggle[data-paused=true]::before { width:0;height:0;border:5px solid transparent;border-left:8px solid currentColor;border-right:0; }
+.operator-motion-toggle:hover { background:#edf4ff;border-color:#b9d0f1; }
+.operator-motion-toggle:focus-visible { outline:2px solid #3373ff;outline-offset:3px; }
+@media(max-width:768px) {
+ html body .fd-navigation-wrap .revision-brand.has-operator-motion { height:780px;min-height:780px; }
+ html body .fd-navigation-wrap .has-operator-motion .revision-brand-inner { width:calc(100% - 40px); }
+ html body .fd-navigation-wrap .has-operator-motion .revision-brand-copy { top:80px; }
+ html body .fd-navigation-wrap .has-operator-motion .revision-brand-copy h1 { font-size:28px !important;line-height:40px !important; }
+ html body .fd-navigation-wrap .has-operator-motion .revision-eyebrow { font-size:16px !important; }
+ html body .fd-navigation-wrap .has-operator-motion .revision-brand-inner .revision-brand-copy>p:not(.revision-eyebrow) { font-size:13px !important;line-height:22px !important; }
+ .operator-motion-scene { top:420px;width:1280px;left:50%;transform:translateX(-50%); }.operator-3d-canvas { transform:translateX(-316.25px) scale(.55);transform-origin:top center; }
+ .operator-motion::after { height:40px; }
+ .operator-motion-toggle { right:20px;bottom:16px; }
+}

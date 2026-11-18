@@ -1,14 +1,20 @@
 {
-  "version": "2026-11-06-current",
+  "version": "2026-11-18-motion-nav",
   "media_release": "preview-media-20261106",
   "files": {
-    "home/index.html": "c8054560e9e30ae8263e8ab0d120e0671c3117a96c10a67b73dc75c6616e4a8d",
-    "products/training.html": "67a25bdd489c5a98e8de0805a9d0802f6411cadf21e5534a1f9667dad3ac2863",
-    "products/kernelswift.html": "fc358499475021c052282feb1f22395675cbd8b35b0052afd131399f9da68f9a",
-    "products/solutions.html": "f6185bb66053dba39299c907ffa1327d65bd7344a64c69d604334696500068b1",
-    "products/product-presentation.css": "af4f4f1aaf5c1e957631718f850f230d6c6d97383022aedc54889e5fe4e3baae",
-    "products/solution-bento.css": "ff884dc350fdf75ead86c5b21b153b07ba7d658af53d6b3ddababdae6e6e30b9",
-    "shared/site-header.js": "710134e8f77ca9ec0892d6484d774a3f316e92d86046fef1f5479cc4cbf46d00",
-    "shared/site-review.css": "e1ed8ed1624d8284dda3a7110386ce972e64ad70496687317a24425025414940"
+    "home/index.html": "5942c9f84a5c6b9eb885150a0e9fb96fc1cff1cc3f4bab7db02b984cb942e686",
+    "products/training.html": "7bd0e984dd9eff4ba82f57ef180f15e6151dc69bf8c69783d95de323a7a146be",
+    "products/kernelswift.html": "f576d1014f80e792c6d98384cc89efd4b0fa91920b1be2964e3cb67cd43feedc",
+    "products/solutions.html": "3ee79ca42d38438756b5e46b24f44445f6647ce8e6a0e43f820b6cfcc1e9f9ea",
+    "shared/home-operator-motion.js": "9b72c3f940e3778ba086ad8deaf2db7eae952a3e16131f9bafd4b6e8a14e9894",
+    "shared/home-operator-motion.css": "8d7c109ec03f531a3060c1d9b3c398e8a8c9aeb26aa6b2b0a9b6a0d38ef691a4",
+    "shared/home-operator-orbit.js": "c6a696209690af97d6e70d63562ba3f6aefbdbb047c00de79ccf9cee17edd689",
+    "shared/site-header.js": "965c0e629f125762c6e4fe4fcc4bdc5d2584322627a785e64eeacf81dd893b7a",
+    "shared/site-footer.js": "edec4df04999fdb748e130617b47aa2d8a34432f9c297c29d9f7b48c8fcbca0a",
+    "shared/site-navigation.json": "ab902be1573fb035ae81b8f08445c6f5c1395d09b5371e12a69f805ab22fe139",
+    "shared/home-design-review.css": "7ef0a84a2ad4905c0d21855167d7060a2d3544047abefe9a0403ffead14ba3b2",
+    "shared/solution-case-deck.js": "e8f287c204bb4808cf59c386fec39c4066f7739371cbe865aafd90dfe7efe6a3",
+    "products/product-v2.css": "b12e0e2cdf8e80362a8c0473a8a855453016fbe2c20a50c8c530568c53abc446",
+    "products/review-20261117.css": "18ed5e15b9179363c139b586d349f8ffbfb58959d884879e6fac21c1dc127994"
   }
 }

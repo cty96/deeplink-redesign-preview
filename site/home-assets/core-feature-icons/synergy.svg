@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84"><title>软硬协同</title><defs>
+ <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d5e5ff"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f9ff"/><stop offset="1" stop-color="#98bcff"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#73a5ff"/><stop offset="1" stop-color="#2c6ce1"/></linearGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#4f83d3" flood-opacity=".16"/></filter></defs>
+ <rect x="9" y="12" width="66" height="62" rx="19" fill="url(#surface)" stroke="#e0ebfc"/>
+ <g stroke="#3678e7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#shadow)"><rect x="20" y="33" width="33" height="29" rx="7" fill="url(#glass)"/><path d="M26 28v5m9-5v5m10-5v5M26 62v5m9-5v5m10-5v5M15 40h5m-5 10h5m33-10h5m-5 10h5"/><rect x="34" y="21" width="31" height="27" rx="6" fill="url(#surface)"/><path d="m43 30-4 4 4 4m13-8 4 4-4 4m-7-9-2 10"/></g><path d="M28 48h9v8h-9z" fill="url(#accent)" stroke="none"/></g></svg>

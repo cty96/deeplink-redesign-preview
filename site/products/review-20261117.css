@@ -1,0 +1,55 @@
+/* Figma latest module canvas roles; 2026-11-17 review. */
+html body.prd-strict.training #introduction>.modern-hero,html body.prd-strict.solutions main#main>#introduction,html body.prd-strict.solutions #introduction>.modern-hero { background:#eaf0f7!important; }
+html body.prd-strict.training main#main>:is(#capabilities,#architecture),html body.prd-strict.kernelswift main#main>:is(#features,#scenarios,#access),html body.prd-strict.solutions main#main>:is(#mixed-training,#validation,#ecosystem) { background:#f9fafb!important; }
+html body.prd-strict.training main#main>:is(#deployment,#cases,#ecosystem),html body.prd-strict.kernelswift main#main>:is(#compatibility,#operators,#evolution,#ecosystem),html body.prd-strict.solutions main#main>:is(#fusion,#mixed-inference,#customers) { background:#fff!important; }
+html body.prd-strict.kernelswift main#main>#introduction,html body.prd-strict.kernelswift #introduction>.modern-hero { background:#f5f8fd!important; }
+html body.prd-strict.solutions #ecosystem .geo-label { background:#f9fafbc9; }
+/* The new hero action reuses the established Figma capsule and states. */
+html body.prd-strict.kernelswift .ks-hero-actions { display:flex;align-items:center;margin-top:28px; }
+html body.prd-strict.kernelswift .ks-try-link { display:inline-flex;width:max-content;text-decoration:none!important; }
+html body.prd-strict.kernelswift main#main .ks-try-link:hover .design-pill { background:#3373ff;color:#fff!important; }
+html body.prd-strict.kernelswift .ks-try-link:focus-visible { outline:2px solid #3373ff;outline-offset:5px;border-radius:20px; }
+/* Seven models retain their own marks and gain distinct, quiet color accents. */
+html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node { --model-color:#526f98;--model-tint:#eef4ff;border-top:2px solid var(--model-color); }
+html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:nth-child(-n+4) { --model-color:#2d6fc3;--model-tint:#eaf3ff; }
+html body.prd-strict.kernelswift #compatibility .flow-models>.ks-brand-node:nth-child(n+5) { --model-color:#7550c8;--model-tint:#f0eaff; }
+html body.prd-strict.kernelswift #compatibility .flow-models .ks-node-badge { width:32px;height:32px;border-radius:8px;background:var(--model-tint); }
+html body.prd-strict.kernelswift #compatibility .flow-models .ks-node-label { color:var(--model-color)!important;font-weight:500; }
+/* Ten domestic chip brands: two columns, five rows on desktop. */
+html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat { min-height:470px; }
+html body.prd-strict.kernelswift #compatibility .flow-chips>.ks-brand-node:last-child { grid-column:auto;justify-self:stretch;width:auto; }
+html body.prd-strict.kernelswift #compatibility .ks-chip-node[aria-label="太初"] img { width:90px;height:38px; }
+/* Updated language and mode metric. */
+html body.prd-strict.kernelswift .ks-metrics .metric-languages strong { max-width:350px;font-size:19px;line-height:28px;text-align:center;font-weight:500;white-space:normal; }
+html body.prd-strict.kernelswift .ks-metrics .metric-languages small { display:block;font-size:12px;line-height:20px;font-weight:400; }
+@media(max-width:768px){
+ html body.prd-strict.kernelswift #compatibility .compatibility.flow-compat { min-height:0; }
+ html body.prd-strict.kernelswift #compatibility .flow-chips>.ks-brand-node:last-child { grid-column:2; }
+ html body.prd-strict.kernelswift .ks-metrics .metric-languages strong { font-size:14px;line-height:22px; }
+ html body.prd-strict.kernelswift .ks-metrics .metric-languages small { font-size:10px;line-height:17px;overflow-wrap:anywhere; }
+}
+
+html body.prd-strict.training main#main>#introduction { background:#fff!important; }
+
+/* Mixed training / inference use the homepage technology tab pattern. */
+html body.prd-strict.solutions main#main>#mixed-compute { background:#f9fafb!important; }
+html body.prd-strict.solutions #mixed-compute .solution-compute-tabs { display:flex;justify-content:center;gap:0;border-bottom:1px solid #e3e9f2;margin:0 0 48px; }
+html body.prd-strict.solutions #mixed-compute .solution-compute-tabs button { appearance:none;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;padding:12px 24px;color:#637b9f;font:inherit;font-size:14px;line-height:24px;cursor:pointer; }
+html body.prd-strict.solutions #mixed-compute .solution-compute-tabs button[aria-selected="true"] { border-bottom-color:#0d53de;color:#0d53de!important;font-weight:600; }
+html body.prd-strict.solutions #mixed-compute .solution-compute-tabs button:focus-visible { outline:2px solid #3373ff;outline-offset:4px; }
+html body.prd-strict.solutions #mixed-compute .solution-compute-panel { padding:0;background:transparent; }
+html body.prd-strict.solutions #mixed-compute .solution-compute-panel[hidden] { display:none!important; }
+html body.prd-strict.solutions #mixed-compute .solution-module-heading { position:absolute;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip-path:inset(50%); }
+@media(max-width:768px){ html body.prd-strict.solutions #mixed-compute .solution-compute-tabs { margin-bottom:32px; } }
+
+/* Browser review 2026-11-18: product identity, shared hero CTA and consistent mode type. */
+html body.prd-strict.kernelswift main#main .modern-hero h1 .hero-name { font-family:inherit;font-size:24px!important;line-height:32px!important;font-weight:600!important;letter-spacing:-.3px;font-style:normal;color:#0d53de!important;margin-bottom:16px; }
+html body.prd-strict.kernelswift main#main .ks-try-link { box-sizing:border-box;width:148px;min-height:48px;padding:12px 24px;display:inline-flex;align-items:center;justify-content:center;gap:24px;background:#1557db;color:#fff!important;border:1px solid #1557db;border-radius:50px;font-family:inherit;font-size:15px;font-weight:500;line-height:22px; }
+html body.prd-strict.kernelswift main#main .ks-try-link:hover { background:#104cc6;color:#fff!important; }
+html body.prd-strict.kernelswift .ks-try-link .solution-consult-icon { display:block;width:14px;height:14px;flex:none; }
+html body.prd-strict.kernelswift .ks-metrics .metric-languages strong { max-width:350px;font-family:inherit;font-size:18px!important;line-height:28px!important;font-weight:500!important;color:#0d53de!important;white-space:normal;text-wrap:balance; }
+@media(max-width:768px){
+ html body.prd-strict.kernelswift main#main .modern-hero h1 .hero-name { font-size:20px!important;line-height:28px!important; }
+ html body.prd-strict.kernelswift main#main .ks-try-link { font-size:14px;padding:11px 22px; }
+ html body.prd-strict.kernelswift .ks-metrics .metric-languages strong { font-size:14px!important;line-height:22px!important;overflow-wrap:normal; }
+}
