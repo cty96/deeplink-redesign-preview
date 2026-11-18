@@ -1,8 +1,8 @@
 {
-  "version": "2026-11-18-motion-nav",
+  "version": "2026-11-18-motion-nav-r2",
   "media_release": "preview-media-20261106",
   "files": {
-    "home/index.html": "5942c9f84a5c6b9eb885150a0e9fb96fc1cff1cc3f4bab7db02b984cb942e686",
+    "home/index.html": "391c85061068ccc4b4d4ee03641cace6b2c0dfe45425d4edeef3f2513155414b",
     "products/training.html": "7bd0e984dd9eff4ba82f57ef180f15e6151dc69bf8c69783d95de323a7a146be",
     "products/kernelswift.html": "f576d1014f80e792c6d98384cc89efd4b0fa91920b1be2964e3cb67cd43feedc",
     "products/solutions.html": "3ee79ca42d38438756b5e46b24f44445f6647ce8e6a0e43f820b6cfcc1e9f9ea",
