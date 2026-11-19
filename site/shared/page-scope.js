@@ -2,7 +2,7 @@
 (function () {
   var base = new URL('../', document.currentScript.src).pathname;
   var path = window.location.pathname.slice(base.length - 1).replace(/\/+$/, '') || '/';
-  var home = path === '/' || path === '/deeplink-redesign-preview/home';
+  var home = path === '/' || path === '/home';
   document.documentElement.dataset.deeplinkPageScope = home ? 'redesign' : 'original';
   if (home) document.write([
   "<link rel=\"stylesheet\" href=\"/deeplink-redesign-preview/products/flat-carousel.css\">",
